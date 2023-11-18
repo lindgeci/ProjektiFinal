@@ -1,9 +1,10 @@
 * {
     box-sizing: border-box;
+    
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial',  sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
@@ -34,7 +35,8 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
 }
 
 nav a {
@@ -50,16 +52,22 @@ nav a:hover {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: 20px; 
+    
     padding: 100px 50px 50px; 
 }
 
 .left{
  width: 100%;
+ height: 1000px;
+ margin-top: 20px;
 }
 
 .right {
     width: 100%;
     margin-top: 20px;
+}
+p{
+    text-align: justify;
 }
 
 .title {
@@ -69,15 +77,54 @@ nav a:hover {
     text-align: center;
 }
 
-.img {
-    background-color: #ddd;
-    height: 150px;
-    margin-bottom: 10px;
+
+
+#p1{
+    font-size: large;
 }
+/* qitu e kum lan */
+.img1 img {
+    width: 100%;
+    max-width: 730px;
+    height: auto;
+    max-height: 300px;
+}
+
+
+.page2 {
+    flex: 0 0 calc(55% - 10px); /* me bo qet div te gjon 55% edhe hapsira mes divave me kon 10%*/
+    margin-bottom: 30px;
+}
+
+.page3 {
+    flex: 0 0 calc(45% - 10px); /* me bo qet div te gjon 45% edhe hapsira mes divave me kon 10%*/
+    margin-bottom: 30px;
+}
+
+.lajmi2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px ;
+}
+
+h2{
+    text-align: center;
+}
+
+.img {
+    background-color: #421c1c;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+
 
 .img img {
     width: 100%;
     height: 100%;
+    
 }
 
 p {
@@ -92,26 +139,20 @@ a {
     padding: 5px 10px;
     display: inline-block;
     border-radius: 3px;
+    margin-bottom: 10px;
 }
 
 a:hover {
     background-color: #555;
     color: #fff;
+    
 }
 
 .right {
     position: relative;
 }
 
-.newspart {
-    background-color: transparent;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.8;
-}
+
 
 .newspart{
     animation: slide 8s infinite;
@@ -133,7 +174,7 @@ a:hover {
 .title h2 {
     margin-top: 0;
     color: #333;
-    text-decoration: underline;
+    
 }
 
 .newsPart {
