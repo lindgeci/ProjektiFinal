@@ -49,22 +49,34 @@ nav a:hover {
 }
 
 .main {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 20px; 
-    
-    padding: 100px 50px 50px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px; 
+    margin-top: 40px;
 }
 
-.left{
- width: 100%;
- height: 1000px;
- margin-top: 20px;
-}
 
 .right {
+    flex: 0 0 calc(48% - 10px);
+    margin-bottom: 20px; 
+   
+}
+
+.left {
+    flex: 0 0 calc(52% - 10px);
+    margin-bottom: 20px; 
+    margin-right: 20px;
+    padding-bottom: 350px;
+    
+}  
+
+.img img {
     width: 100%;
-    margin-top: 20px;
+    max-width: 730px;
+    height: auto;
+    max-height: 400px;
 }
 p{
     text-align: justify;
@@ -76,8 +88,6 @@ p{
     padding: 15px;
     text-align: center;
 }
-
-
 
 #p1{
     font-size: large;
@@ -94,6 +104,7 @@ p{
 .page2 {
     flex: 0 0 calc(55% - 10px); /* me bo qet div te gjon 55% edhe hapsira mes divave me kon 10%*/
     margin-bottom: 30px;
+    
 }
 
 .page3 {
@@ -107,6 +118,31 @@ p{
     justify-content: space-between;
     margin-left: 50px;
     margin-right: 50px ;
+}
+
+.lajmi3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.page4 {
+    flex: 0 0 calc(55% - 10px); /* me bo qet div te gjon 55% edhe hapsira mes divave me kon 10%*/
+    margin-bottom: 30px;
+}
+
+.page5 {
+    flex: 0 0 calc(45% - 10px); /* me bo qet div te gjon 45% edhe hapsira mes divave me kon 10%*/
+    margin-bottom: 30px;
+}
+
+.img2 img {
+    width: 100%;
+    max-width: 730px;
+    height: auto;
+    max-height: 300px;
 }
 
 h2{
@@ -184,57 +220,58 @@ a:hover {
 }
 
 
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
 .footer {
     background-color: #333;
-    color: gray;
-    padding: 20px;
-    margin-top: 20px;
+    color: #ddd;
+    padding: 20px 0; 
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.section {
+    flex-basis: 25%; 
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.categories div,
+.contact-info span {
+    font-weight: bold;
+    color: white;
 }
 
 
-.left {
+textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+.icon {
     display: flex;
 }
 
-.categories {
-    margin-right: 20px;
-}
-
-.contactUs {
-    margin-right: 20px;
-}
-
-.categories p {
-    font-weight: bold;
-}
-
-.contactUs p {
-    font-weight: bold;
-}
-
-.categories div {
-    margin-top: 5px;
-}
-
-.contactUs div {
-    margin-top: 5px;
-}
-
-.contactUs span {
-    font-weight: normal;
+.icon a {
+    margin-right: 10px;
+    
 }
 
 .icon img {
-    width: 20px;
-    margin-right: 10px;
-}
-
-.right {
-    flex-grow: 1;
-}
-
-.newsletter p {
-    font-weight: bold;
+    height: 30px; 
+    width: 40px; 
 }
 
 .email {
@@ -251,6 +288,7 @@ a:hover {
     padding: 5px 10px;
     border: none;
     margin-left: 5px;
+    cursor: pointer;
 }
 
 .email button:hover {
@@ -259,8 +297,6 @@ a:hover {
 }
 
 .copyrights {
-    margin-top: 20px;
+    margin-top: 20px; /* Adjust the margin as needed */
     text-align: center;
 }
- 
-
