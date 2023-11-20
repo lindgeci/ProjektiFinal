@@ -1,6 +1,21 @@
 * {
     box-sizing: border-box;
-    
+    flex-wrap: wrap;
+}
+
+@media screen and (max-height: 400px) {
+    body{
+
+        background-color: pink;
+    }
+}
+
+
+@media screen and (max-height: 600px) {
+    body{
+
+        background-color: red;
+    }
 }
 
 body {
@@ -58,11 +73,14 @@ nav a:hover {
 }
 
 
+
 .right {
     flex: 0 0 calc(48% - 10px);
     margin-bottom: 20px; 
    
 }
+
+
 
 .left {
     flex: 0 0 calc(52% - 10px);
@@ -74,12 +92,11 @@ nav a:hover {
 
 .img img {
     width: 100%;
-    max-width: 730px;
-    height: auto;
-    max-height: 400px;
+    height: 100%;
 }
 p{
     text-align: justify;
+    
 }
 
 .title {
@@ -88,16 +105,21 @@ p{
     padding: 15px;
     text-align: center;
 }
-
+/* #foto{
+    background-color: white;
+    
+    height: 100%;
+    width: 100%;
+    color: white;
+} */
 #p1{
     font-size: large;
 }
-/* qitu e kum lan */
+
+
 .img1 img {
     width: 100%;
-    max-width: 730px;
-    height: auto;
-    max-height: 300px;
+    height: 100%;
 }
 
 
@@ -140,21 +162,12 @@ p{
 
 .img2 img {
     width: 100%;
-    max-width: 730px;
-    height: auto;
-    max-height: 300px;
+    height: 100%;
 }
 
 h2{
     text-align: center;
 }
-
-.img {
-    background-color: #421c1c;
-    height: 300px;
-    margin-bottom: 20px;
-}
-
 
 
 .img img {
@@ -233,7 +246,7 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     color: white;
 }
@@ -241,6 +254,7 @@ body {
 .section {
     flex-basis: 25%; 
     margin-bottom: 20px;
+    
 }
 
 h2 {
@@ -297,6 +311,45 @@ textarea {
 }
 
 .copyrights {
-    margin-top: 20px; /* Adjust the margin as needed */
+    margin-top: 20px; 
     text-align: center;
 }
+
+.search{
+    display: flex;
+    margin-left: 50px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    
+    
+}
+
+.search1{
+    display: flex;
+}
+
+.search input{
+
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    width: 300px;
+}
+
+.search button{
+
+    padding: 8px 12px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #817d7d;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search button:hover{
+    background-color: #817d7d;
+    border-radius: #817d7d;
+    
+}
+
+

@@ -2,9 +2,11 @@
 <html>
 <head>
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>News Website</title>
     <link rel="stylesheet" href="style.css">
+
+
 </head>
 <body>
     <header>
@@ -23,11 +25,18 @@
             </ul>
         </nav>
     </header>
+    <div class="search">
+        <div class="search1">
+            <input type="search" id="pc" placeholder="Search...">
+            <button onclick="checkSearch()">Search</button>
+        </div>
+    </div>
+    
     <div class="main">
         <div class="left">
             <div class="box">
                 <div class="title">
-                    <h2>Breaking News</h2>
+                    <h3>Breaking News</h3>
                 </div>
                 <div class="newsBox">
                     <div class="newsItem">
@@ -50,7 +59,7 @@
         <div class="right">
             <div class="box">
                 <div class="title">
-                    <h2>Headlines</h2>
+                    <h3>Headlines</h3>
                 </div>
                 <div class="newsBox">
                     <div class="newsItem">
@@ -79,7 +88,7 @@
             
            
             <div class="title">
-                <h2>Latest in Business</h2>
+                <h3>Latest in Business</h3>
             </div>
             <div class="newsBox">
 
@@ -110,7 +119,7 @@
         <div class="box">  
             
             <div class="title">
-                <h2>Latest in Tech</h2>
+                <h3>Latest in Tech</h3>
             </div>
             <div class="newsBox">
 
@@ -134,7 +143,7 @@
         <div class="page4">
             <div class="box"> 
             <div class="title">
-                <h2>Latest in World</h2>
+                <h3>Latest in World</h3>
             </div>
             <div class="newsBox">
                 <div class="newsItem">
@@ -150,7 +159,7 @@
                     <p>Ukraine this week claimed to have “gained a foothold” on the left bank of the Dnipro River, a welcome boost after its much vaunted counteroffensive failed to make major gains.
                         But it has been worse news elsewhere for Kyiv, after Germany admitted European targets for providing ammunition would fall short.                     
                         Here are the main developments from Ukraine this week.</p>
-                    <a href="#">Read more</a>
+                    <a href="worldNews">Read more</a>
                 </div>
             </div>
             </div>
@@ -159,7 +168,7 @@
             <div class="box"> 
              
                 <div class="title">
-                    <h2>World News</h2>
+                    <h3>World News</h3>
                 </div>
                 <div class="newsBox">
                     <div class="newsItem">
@@ -186,6 +195,8 @@
 
     </div>
 
+    
+
         <footer>
             <footer class="footer">
                 <div class="container">
@@ -203,14 +214,14 @@
                     <div class="section contact-us">
                         <h2>Contact Us</h2>
                         <div class="contact-info">
-                            <p>Phone: <span>123456789</span></p>
-                            <p>Email: <span>newsWEB@gmail.com</span></p>
-                            <p>Address: <span>Prishtine, Kosova</span></p>
+                            <p>Phone: <span>+383 123-456-789</span></p>
+                            <p>Email: <span>newsWEB@ubt-uni.net</span></p>
+                            <p>Address: <span>Prishtine, Kosove</span></p>
                         </div>
                         <textarea placeholder="Write your comment..."></textarea>
                     </div>
             
-                    <div class="section social-icons">
+                    <div class="section1 social-icons">
                         <h2>Follow Us</h2>
                         <div class="icon">
                             <a href="https://twitter.com/?lang=en"><img src="twitter-icon.png" alt="Twitter"></a>
@@ -222,8 +233,8 @@
                     <div class="section newsletter">
                         <h2>Subscribe to Our News</h2>
                         <div class="email">
-                            <input type="email" placeholder="Enter Your Email Here">
-                            <button>Subscribe</button>
+                            <input type="email" id="emailInput" placeholder="Enter Your Email Here">
+                            <button onclick="checkEmail()">Subscribe</button>
                         </div>
                     </div>
                 </div>
@@ -232,6 +243,33 @@
                     <p>&copy; 2023 New York Times</p>
                 </div>
             </div>
-        </footer>        
+        </footer>  
+        
+        
+        <script>
+
+
+            function checkEmail() {
+
+
+                var domain = document.getElementById("emailInput").value.split('@')[1];
+        
+                if (domain !== "ubt-uni.net") {
+                    alert("Please use the correct email domain!");
+                } else {
+                    alert("You have successfully subscribed!");
+                }
+            }
+
+
+            function checkSearch() {
+
+                var searchValue = document.getElementById("pc").value;
+
+                if (searchValue.trim() === "") {
+                         alert("Please write something in the search bar!");
+                    }
+    }
+        </script>
 </body>
 </html>
