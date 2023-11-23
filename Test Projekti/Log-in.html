@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    
+    <title>News Website</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>The New York Times</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="businessNews">Business</a></li>
+                <li><a href="worldNews">World</a></li>
+                <li><a href="technologyNews">Technology</a></li>
+                <li><a href="sportsNews">Sports</a></li>
+                <li><a href="healthNews">Health</a></li>
+                <li><a href="Log-in.html">Log-in</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+<div class="LoginRegister">
+
+
+
+    <div class="Register">
+        <h2>Register</h2>
+        <p id = "RegEmri">Emri: <input type="text"></p>
+        <p id = "RegMbiemri">Mbiemri: <input type="text"></p>
+        <p id = "RegEmail">Email: <input type="text"></p>
+        <p id = "RegPassword">Password: <input type="password"></p>
+        <p id = "RegDataELindjes">Data e Lindjes: <input type="date"></p>
+        <p id = "RegGjinia">
+            Gjinia:
+            <input type="radio" name="gjinia">F
+            <input type="radio" name="gjinia">M
+        </p>
+        <div class="butoni">
+            <button id="butoni" onclick="logiforma()">Log-in</button>
+        </div>
+    </div>
+
+
+    <div class = "Log-in">
+
+        <h2>Log-in</h2>
+        <p id = "LogEmri">Emri: <input type="text"></p>
+        <p id = "LogMbiemri">Mbiemri: <input type="text"></p>
+        <p id = "LogEmail">Email: <input type="text"></p>
+        <p id = "LogPassword">Password: <input type="password"></p>
+        <div class="butoni1">
+            <button id="butoni1" onclick="registerforma()">Log-in</button>
+        </div>
+
+    </div>
+
+</div>
+    
+
+        <footer>
+            <footer class="footer">
+                <div class="container">
+                    <div class="section categories">
+                        <h2>Categories</h2>
+                        <div class="kategorite">
+                            <p>Business</p>
+                            <p>World</p>
+                            <p>Technology</p>
+                            <p>Sports</p>
+                            <p>Lifestyle</p>
+                        </div>
+                    </div>
+            
+                    <div class="section contact-us">
+                        <h2>Contact Us</h2>
+                        <div class="contact-info">
+                            <p>Phone: <span>+383 123-456-789</span></p>
+                            <p>Email: <span>newsWEB@ubt-uni.net</span></p>
+                            <p>Address: <span>Prishtine, Kosove</span></p>
+                        </div>
+                        <textarea placeholder="Write your comment..."></textarea>
+                    </div>
+            
+                    <div class="section1 social-icons">
+                        <h2>Follow Us</h2>
+                        <div class="icon">
+                            <a href="https://twitter.com/?lang=en"><img src="twitter-icon.png" alt="Twitter"></a>
+                            <a href="https://www.instagram.com/"><img src="instagram-icon.png" alt="Instagram"></a>
+                            <a href="https://www.facebook.com/login/"><img src="facebook-icon.png" alt="Facebook"></a>
+                        </div>
+                    </div>
+            
+                    <div class="section newsletter">
+                        <h2>Subscribe to Our News</h2>
+                        <div class="email">
+                            <input type="email" id="emailInput" placeholder="Enter Your Email Here">
+                            <button onclick="checkEmail()">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="copyrights">
+                    <p>&copy; 2023 New York Times</p>
+                </div>
+            </div>
+        </footer>  
+        
+        
+        <script>
+
+
+            function checkEmail() {
+
+
+                let domain = document.getElementById("emailInput").value.split('@')[1];
+        
+                if (domain !== "ubt-uni.net") {
+                    alert("Please use the correct email domain!");
+                } else {
+                    alert("You have successfully subscribed!");
+                }
+            }
+
+
+            function checkSearch() {
+
+                if(document.getElementById("pc").value==''){
+                    alert("Please put something on the search bar!");
+                }
+
+                
+            }
+
+
+            function logiforma() {
+            if (
+                document.getElementById("RegEmri").querySelector("input").value === '' ||
+                document.getElementById("RegMbiemri").querySelector("input").value === '' ||
+                document.getElementById("RegEmail").querySelector("input").value === '' ||
+                document.getElementById("RegPassword").querySelector("input").value === ''
+            ) {
+                alert("Please fill out all the forms!");
+            } else {
+                alert("You have been logged-in successfully");
+            }
+        }
+
+        function registerforma() {
+            if (
+                document.getElementById("LogEmri").querySelector("input").value === '' ||
+                document.getElementById("LogMbiemri").querySelector("input").value === '' ||
+                document.getElementById("LogEmail").querySelector("input").value === '' ||
+                document.getElementById("LogPassword").querySelector("input").value === ''
+            ) {
+                alert("Please fill out all the forms!");
+            } else {
+                alert("You have been registered successfully");
+            }
+        }
+
+
+            
+        </script>
+</body>
+</html>

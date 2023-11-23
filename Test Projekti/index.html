@@ -15,13 +15,13 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="businessNews">Business</a></li>
                 <li><a href="worldNews">World</a></li>
                 <li><a href="technologyNews">Technology</a></li>
                 <li><a href="sportsNews">Sports</a></li>
                 <li><a href="healthNews">Health</a></li>
-                <li><a href="Login">Log-in</a></li>
+                <li><a href="Log-in.html">Log-in</a></li>
             </ul>
         </nav>
     </header>
@@ -202,7 +202,7 @@
                 <div class="container">
                     <div class="section categories">
                         <h2>Categories</h2>
-                        <div>
+                        <div class="kategorite">
                             <p>Business</p>
                             <p>World</p>
                             <p>Technology</p>
@@ -252,7 +252,7 @@
             function checkEmail() {
 
 
-                var domain = document.getElementById("emailInput").value.split('@')[1];
+                let domain = document.getElementById("emailInput").value.split('@')[1];
         
                 if (domain !== "ubt-uni.net") {
                     alert("Please use the correct email domain!");
@@ -264,12 +264,15 @@
 
             function checkSearch() {
 
-                var searchValue = document.getElementById("pc").value;
+                if(document.getElementById("pc").value==''){
+                    alert("Please put something on the search bar!");
+                }
 
-                if (searchValue.trim() === "") {
-                         alert("Please write something in the search bar!");
-                    }
-    }
+                
+            }
+
+
+
         </script>
 </body>
 </html>

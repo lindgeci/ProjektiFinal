@@ -105,13 +105,7 @@ p{
     padding: 15px;
     text-align: center;
 }
-/* #foto{
-    background-color: white;
-    
-    height: 100%;
-    width: 100%;
-    color: white;
-} */
+
 #p1{
     font-size: large;
 }
@@ -262,9 +256,11 @@ h2 {
     margin-bottom: 10px;
 }
 
-.categories div,
-.contact-info span {
-    font-weight: bold;
+
+.kategorite p{
+    color: white;
+}
+.contact-info p{
     color: white;
 }
 
@@ -312,7 +308,6 @@ textarea {
 
 .copyrights {
     margin-top: 20px; 
-    text-align: center;
 }
 
 .search{
@@ -338,6 +333,7 @@ textarea {
 
 .search button{
 
+    
     padding: 8px 12px;
     background-color: #333;
     color: #fff;
@@ -351,5 +347,70 @@ textarea {
     border-radius: #817d7d;
     
 }
+
+
+
+.LoginRegister {
+    display: flex;  
+    justify-content: space-around; 
+}
+
+
+/* Register Forma */
+.Register {
+    text-align: center;
+    border: 1px solid #817d7d;
+    background-color: #817d7d;
+    border-radius: #817d7d;
+    border-radius: 10px;  
+    
+    padding: 40px;
+    margin: 80px;
+    
+}
+
+.Register p {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+#butoni{
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid #817d7d;
+    border-radius: 10px;
+}
+
+
+
+
+/* Log-in Forma */
+
+.Log-in {
+    text-align: center;
+    border: 1px solid #817d7d;
+    background-color: #817d7d;
+    border-radius: #817d7d;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 80px;
+    
+}
+
+.Log-in p {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+#butoni1{
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid #817d7d;
+    border-radius: 10px;
+}
+
 
 
