@@ -22,7 +22,7 @@ body {
     font-family: 'Arial',  sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #f4f4f4;
     color: #333;
 }
 
@@ -56,7 +56,7 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: gray;
+    color: black;
 }
 nav a:hover {
     color: #000;
@@ -72,37 +72,38 @@ nav a:hover {
     margin-top: 40px;
 }
 
-
-
 .right {
-    flex: 0 0 calc(48% - 10px);
+    flex: 0 0 calc(50% - 10px);
     margin-bottom: 20px; 
    
 }
 
-
-
 .left {
-    flex: 0 0 calc(52% - 10px);
+    flex: 0 0 calc(50% - 10px);
     margin-bottom: 20px; 
-    margin-right: 20px;
-    padding-bottom: 350px;
     
 }  
+
+.box1 p{
+    color: white;
+}
+
 
 .img img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
+
 p{
     text-align: justify;
     
 }
 
 .title {
-    margin-bottom: 20px;
-    font-size: 20px;
-    padding: 15px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
     text-align: center;
 }
 
@@ -111,83 +112,55 @@ p{
 }
 
 
+.img1 {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
 .img1 img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
-
-.page2 {
-    flex: 0 0 calc(55% - 10px); /* me bo qet div te gjon 55% edhe hapsira mes divave me kon 10%*/
-    margin-bottom: 30px;
-    
-}
-
-.page3 {
-    flex: 0 0 calc(45% - 10px); /* me bo qet div te gjon 45% edhe hapsira mes divave me kon 10%*/
-    margin-bottom: 30px;
-}
-
-.lajmi2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 50px;
-    margin-right: 50px ;
-}
-
-.lajmi3{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.page4 {
-    flex: 0 0 calc(55% - 10px); /* me bo qet div te gjon 55% edhe hapsira mes divave me kon 10%*/
-    margin-bottom: 30px;
-}
-
-.page5 {
-    flex: 0 0 calc(45% - 10px); /* me bo qet div te gjon 45% edhe hapsira mes divave me kon 10%*/
-    margin-bottom: 30px;
-}
-
-.img2 img {
+.img2 {
     width: 100%;
-    height: 100%;
+    height: 150px;
+    overflow: hidden;
 }
 
 h2{
     text-align: center;
 }
 
-
-.img img {
+.img2 img {
     width: 100%;
     height: 100%;
-    
+    object-fit: cover;
+}
+
+h3 {
+    margin: 10px 0;
 }
 
 p {
-    line-height: 1.5;
     color: #555;
 }
 
+
 a {
-    color: black;
-    text-decoration: none;
-    background-color: #ddd;
-    padding: 5px 10px;
     display: inline-block;
-    border-radius: 3px;
-    margin-bottom: 10px;
-}
+    margin-top: 10px;
+    background-color: gray;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+  }
 
 a:hover {
     background-color: #555;
-    color: #fff;
     
 }
 
@@ -206,25 +179,115 @@ a:hover {
 }
 
 
-.box {
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #fff;
-    margin-bottom: 20px;
+.box1 {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px 8px 0;
+    margin-bottom: 10px;
+   
 }
 
 .title h2 {
-    margin-top: 0;
-    color: #333;
+    background-color: #333;
+    color: white;
+
     
 }
 
 .newsPart {
-    max-height: 300px;
-    overflow-y: scroll;
-    padding-right: 20px; 
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: -10px;
 }
+
+.newsBox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+}
+.newsItem {
+    flex: 0 0 calc(33% - 20px); 
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-right: 20px; 
+}
+
+@media screen and (max-width: 768px) {
+    .newsItem {
+        flex: 0 0 calc(50% - 20px);
+        margin-right: 20px;
+    }
+}
+
+.lajmi2 {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.page2 {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.page3 {
+    flex: 1;
+    margin: 0 10px;
+}    
+
+.lajmi3 {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lajmi4 {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page4 {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.lajmi5 {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page5 {
+    flex: 1;
+    margin: 0 10px;
+}   
+
+.lajmi6 {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page6 {
+    flex: 1;
+    margin: 0 10px;
+}          
 
 
 body {
@@ -294,7 +357,7 @@ textarea {
 }
 
 .email button {
-    background-color: #ddd;
+    background-color: black;
     padding: 5px 10px;
     border: none;
     margin-left: 5px;
@@ -303,11 +366,11 @@ textarea {
 
 .email button:hover {
     background-color: #555;
-    color: #fff;
+    color: white;
 }
 
 .copyrights {
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 .search{
@@ -334,7 +397,7 @@ textarea {
 .search button{
 
     
-    padding: 8px 12px;
+    padding: 8px 10px;
     background-color: #333;
     color: #fff;
     border: 1px solid #817d7d;
@@ -349,7 +412,6 @@ textarea {
 }
 
 
-
 .LoginRegister {
     display: flex;  
     justify-content: space-around; 
@@ -358,59 +420,77 @@ textarea {
 
 /* Register Forma */
 .Register {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px; 
+    max-width: 500px; 
+    width: 100%;
+    margin: 20px;
     text-align: center;
-    border: 1px solid #817d7d;
-    background-color: #817d7d;
-    border-radius: #817d7d;
-    border-radius: 10px;  
-    
-    padding: 40px;
-    margin: 80px;
-    
+}
+
+.Register h2 {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    margin-bottom: 20px; 
 }
 
 .Register p {
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-    color: white;
+    margin: 15px 0;
 }
-#butoni{
-    width: 100px;
-    height: 50px;
+
+ input {
+    width: 100%;
+    padding: 15px; 
+    box-sizing: border-box;
+    margin-top: 10px; 
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+    font-size: 14px; 
+}
+
+button {
+    background-color: #512da8;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    border: 1px solid #817d7d;
-    border-radius: 10px;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 15px;
 }
 
-
+.Register a {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    margin-top: 15px; 
+}
 
 
 /* Log-in Forma */
 
 .Log-in {
-    text-align: center;
-    border: 1px solid #817d7d;
-    background-color: #817d7d;
-    border-radius: #817d7d;
+    background-color: #fff;
     border-radius: 10px;
-    padding: 40px;
-    margin: 80px;
-    
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px; 
+    max-width: 500px;
+    width: 100%;
+    margin: 20px;
+    text-align: center;
 }
 
 .Log-in p {
+    margin: 15px 0;
+}
+
+.Log-in h2 {
     text-align: center;
-    font-family: 'Arial', sans-serif;
-    color: white;
+    color: black;
+    font-size: 30px;
+    margin-bottom: 20px; 
 }
-
-#butoni1{
-    width: 100px;
-    height: 50px;
-    cursor: pointer;
-    border: 1px solid #817d7d;
-    border-radius: 10px;
-}
-
-
-

@@ -27,41 +27,31 @@
     </header>
     
 <div class="LoginRegister">
-
-
-
     <div class="Register">
-        <h2>Register</h2>
-        <p id = "RegEmri">Emri: <input type="text"></p>
-        <p id = "RegMbiemri">Mbiemri: <input type="text"></p>
-        <p id = "RegEmail">Email: <input type="text"></p>
-        <p id = "RegPassword">Password: <input type="password"></p>
-        <p id = "RegDataELindjes">Data e Lindjes: <input type="date"></p>
-        <p id = "RegGjinia">
-            Gjinia:
-            <input type="radio" name="gjinia">F
-            <input type="radio" name="gjinia">M
-        </p>
-        <div class="butoni">
-            <button id="butoni" onclick="logiforma()">Log-in</button>
-        </div>
+        <form>
+            <h2>Register</h2>
+            <p id = "RegEmri">Emri: <input type="text"></p>
+            <p id = "RegMbiemri">Mbiemri: <input type="text"></p>
+            <p id = "RegEmail">Email: <input type="text"></p>
+            <p id = "RegPassword">Password: <input type="password"></p>
+            </p>
+            <button>Sign Up</button>
+        <form>
     </div>
-
 
     <div class = "Log-in">
+      <form>
+           <h1>Log-In</h1>
 
-        <h2>Log-in</h2>
-        <p id = "LogEmri">Emri: <input type="text"></p>
-        <p id = "LogMbiemri">Mbiemri: <input type="text"></p>
-        <p id = "LogEmail">Email: <input type="text"></p>
-        <p id = "LogPassword">Password: <input type="password"></p>
-        <div class="butoni1">
-            <button id="butoni1" onclick="registerforma()">Log-in</button>
-        </div>
-
+          <p id = "LogEmail">Email: <input type="text"></p>
+          <p id = "LogPassword">Password: <input type="password"></p>
+          <a href="#">Forget Your Password?</a>
+            <button>Sign In</button>
+     </form>
     </div>
-
+    
 </div>
+
     
 
         <footer>
@@ -82,7 +72,7 @@
                         <h2>Contact Us</h2>
                         <div class="contact-info">
                             <p>Phone: <span>+383 123-456-789</span></p>
-                            <p>Email: <span>newsWEB@ubt-uni.net</span></p>
+                            <p>Email: <span>NYTimes@gmail.com</span></p>
                             <p>Address: <span>Prishtine, Kosove</span></p>
                         </div>
                         <textarea placeholder="Write your comment..."></textarea>
@@ -107,7 +97,7 @@
                 </div>
             
                 <div class="copyrights">
-                    <p>&copy; 2023 New York Times</p>
+                    <p>&copy; 2023 𝔗𝔥𝔢 𝔑𝔢𝔴 𝔜𝔬𝔯𝔨 𝔗𝔦𝔪𝔢𝔰</p>
                 </div>
             </div>
         </footer>  
@@ -121,7 +111,7 @@
 
                 let domain = document.getElementById("emailInput").value.split('@')[1];
         
-                if (domain !== "ubt-uni.net") {
+                if (domain !== "@gmail.com") {
                     alert("Please use the correct email domain!");
                 } else {
                     alert("You have successfully subscribed!");
@@ -154,8 +144,6 @@
 
         function registerforma() {
             if (
-                document.getElementById("LogEmri").querySelector("input").value === '' ||
-                document.getElementById("LogMbiemri").querySelector("input").value === '' ||
                 document.getElementById("LogEmail").querySelector("input").value === '' ||
                 document.getElementById("LogPassword").querySelector("input").value === ''
             ) {
@@ -164,6 +152,8 @@
                 alert("You have been registered successfully");
             }
         }
+
+
 
 
             
