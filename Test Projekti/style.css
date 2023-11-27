@@ -2,22 +2,24 @@
     box-sizing: border-box;
     flex-wrap: wrap;
 }
-
 @media screen and (max-height: 400px) {
     body{
 
         background-color: pink;
     }
 }
-
-
 @media screen and (max-height: 600px) {
     body{
 
         background-color: red;
     }
 }
-
+@media screen and (max-width: 768px) {
+    .newsItem {
+        flex: 0 0 calc(50% - 20px);
+        margin-right: 20px;
+    }
+}
 body {
     font-family: 'Arial',  sans-serif;
     margin: 0;
@@ -25,7 +27,6 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
-
 header {
     background-color: #333;
     color: #fff;
@@ -36,24 +37,20 @@ header {
     align-items: center;
     border-bottom: 2px solid #555;
 }
-
 .logo h1 {
     margin: 0;
     font-size: 35px;
 }
-
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
 }
-
 nav ul li {
     margin-right: 20px;
     margin-top: 10px;
 }
-
 nav a {
     text-decoration: none;
     color: black;
@@ -63,146 +60,168 @@ nav a:hover {
     background-color: #ddd;
 }
 
+
+
+/* SEARCH BOXI NE FILLIM */
+.search{
+    display: flex;
+    margin-left: 50px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    
+}
+.search1{
+    display: flex;
+}
+.search input{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    width: 300px;
+    flex: 1;
+}
+.search button{ 
+    padding: 8px 10px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #817d7d;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+.search button:hover{
+    background-color: #817d7d;
+    border-radius: #817d7d;
+    
+}
+/* KETO PERFUNDON PJESA E HEADER */
+
+
+
+
+/* DIVI I PARE */
 .main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 50px;
-    margin-right: 50px; 
+    margin-left: 20px;
+    margin-right: 20px; 
     margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .right {
     flex: 0 0 calc(50% - 10px);
-    margin-bottom: 20px; 
-   
-}
-
+    margin-bottom: 20px;
+    background-color: #f0f0f0; 
+    padding: 10px; 
+    border-radius: 10px;
+} 
 .left {
     flex: 0 0 calc(50% - 10px);
-    margin-bottom: 20px; 
-    
-}  
-
+    margin-bottom: 20px;
+    background-color: #f0f0f0; 
+    padding: 10px; 
+    border-radius: 10px;
+} 
 .box1 p{
     color: white;
 }
-
-
+.img {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+}
 .img img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
-}
-
-p{
-    text-align: justify;
     
 }
-
 .title {
     background-color: #333;
     color: white;
     padding: 10px;
     text-align: center;
+    border-radius: 8px 8px 0px 0px;
+    
 }
+/* KETO PERFUNDON DIVI I PARE */
 
-#p1{
-    font-size: large;
+
+
+
+/* KODE TE PERBASHKETA */
+.newsItem1 {
+    margin-bottom: 15px; 
 }
-
-
-.img1 {
-    width: 100%;
-    height: 150px;
-    overflow: hidden;
+p{
+    text-align: justify;
 }
-
-.img1 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.img2 {
-    width: 100%;
-    height: 150px;
-    overflow: hidden;
-}
-
-h2{
-    text-align: center;
-}
-
-.img2 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 h3 {
     margin: 10px 0;
 }
-
 p {
     color: #555;
 }
-
-
 a {
     display: inline-block;
     margin-top: 10px;
+    margin-bottom: 10px;
     background-color: gray;
     color: white;
     padding: 8px 16px;
     text-decoration: none;
     border-radius: 4px;
-  }
-
+}
 a:hover {
     background-color: #555;
-    
 }
-
-.right {
-    position: relative;
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
 }
-
-
-
-.newspart{
-    animation: slide 8s infinite;
-}
-
-.right .img {
-    animation: slide 8s infinite;
-}
-
-
-.box1 {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    border-radius: 8px 8px 0;
+h2 {
+    font-size: 18px;
     margin-bottom: 10px;
-   
+    text-align: center;
 }
-
+textarea {
+    width: 100%;
+    padding: 10px;
+}
 .title h2 {
     background-color: #333;
     color: white;
-
-    
 }
+/* KETU PERFUNDONJNE KODET E PERBASHKETA */
 
-.newsPart {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    margin: -10px;
+
+
+/* DIVI I DYTE */
+.lajmi2 {
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
+.img1 {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+}
+.img1 img {
+    width: 100%;
+    object-fit: cover;
+}
+.page2 {
+    flex: 1;
+    margin: 0 10px;
+}
 .newsBox {
     display: flex;
     flex-wrap: nowrap;
@@ -214,29 +233,14 @@ a:hover {
     padding: 10px;
     box-sizing: border-box;
     margin-right: 20px; 
+    
 }
-
-@media screen and (max-width: 768px) {
-    .newsItem {
-        flex: 0 0 calc(50% - 20px);
-        margin-right: 20px;
-    }
-}
-
-.lajmi2 {
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+/* KETU PERFUNDON DIVI I DYTE */
 
 
-.page2 {
-    flex: 1;
-    margin: 0 10px;
-}
 
+
+/* DIVI I TRETE */
 .page3 {
     flex: 1;
     margin: 0 10px;
@@ -248,10 +252,28 @@ a:hover {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    margin-right: 20px;
 }
+/* KETO  PERFUNDON DIVI I TRETE */
+
+
+
+
+
+/* .newspart{
+    animation: slide 8s infinite; QITA SE PASH KERKUN QE OSHTE E PERDORT NE HTML
+} */
+
+
+
+
+/* DIVI I KATERT */
 
 .lajmi4 {
     margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right:20px;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
@@ -260,23 +282,67 @@ a:hover {
 
 .page4 {
     flex: 1;
-    margin: 0 10px;
+    margin: 0 30px;
+}
+.img2 {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
 }
 
+.img2 img {
+    width: 100%;
+    object-fit: cover;
+}
+/* KETU PERFUNDON DIVI I KATERT */
+
+
+
+/* DIVI I PESTE  */
 .lajmi5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px; 
+    margin-top: 40px;
     margin-bottom: 40px;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
+.left1 {
+    flex: 0 0 calc(50% - 10px);
+    margin-bottom: 20px;
+    background-color: #f0f0f0; 
+    padding: 10px; 
+    border-radius: 8px;
+} 
+.right1 {
+    flex: 0 0 calc(50% - 10px);
+    margin-bottom: 20px;
+    background-color: #f0f0f0; 
+    padding: 10px; 
+    border-radius: 8px;
+} 
 .page5 {
     flex: 1;
     margin: 0 10px;
-}   
+} 
+/* KETU PERFUNDON DIVI I PESTE */
 
+
+
+
+/* DIVI I FUNDIT */
 .lajmi6 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px; 
+    margin-top: 40px;
     margin-bottom: 40px;
     padding: 20px;
     background-color: #fff;
@@ -284,134 +350,88 @@ a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.left2 {
+    flex: 0 0 calc(50% - 10px);
+    margin-bottom: 20px;
+    background-color: #f0f0f0; 
+    padding: 10px; 
+    border-radius: 10px;
+} 
+.right2 {
+    flex: 0 0 calc(50% - 10px);
+    margin-bottom: 20px;
+    background-color: #f0f0f0; 
+    padding: 10px; 
+    border-radius: 10px;
+}
 .page6 {
     flex: 1;
     margin: 0 10px;
 }          
+/* KETU PERFUNDON DIVI I GJASHTE */
 
 
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-}
 
+
+
+/* KETU FILLON FOOTER */
 .footer {
     background-color: #333;
     color: #ddd;
     padding: 20px 0; 
 }
-
 .container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     color: white;
 }
-
 .section {
     flex-basis: 25%; 
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;  
 }
-
-h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-
 .kategorite p{
     color: white;
 }
 .contact-info p{
     color: white;
 }
-
-
-textarea {
-    width: 100%;
-    padding: 10px;
-}
-
 .icon {
     display: flex;
 }
-
 .icon a {
-    margin-right: 10px;
-    
+    margin-right: 10px;  
 }
-
 .icon img {
     height: 30px; 
     width: 40px; 
 }
-
 .email {
     display: flex;
 }
-
 .email input {
     flex-grow: 1;
     padding: 5px;
 }
-
 .email button {
     background-color: black;
     padding: 5px 10px;
     border: none;
-    margin-left: 5px;
     cursor: pointer;
 }
-
 .email button:hover {
     background-color: #555;
     color: white;
 }
-
 .copyrights {
     margin-top: 20px;
 }
-
-.search{
-    display: flex;
-    margin-left: 50px;
-    margin-top: 70px;
-    margin-bottom: 70px;
-    
-    
-}
-
-.search1{
-    display: flex;
-}
-
-.search input{
-
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px 0 0 4px;
-    width: 300px;
-}
-
-.search button{
-
-    
-    padding: 8px 10px;
-    background-color: #333;
-    color: #fff;
-    border: 1px solid #817d7d;
-    border-radius: 0 4px 4px 0;
-    cursor: pointer;
-}
-
-.search button:hover{
-    background-color: #817d7d;
-    border-radius: #817d7d;
-    
-}
+/* KETU PERUNDON FOOTER */
 
 
+
+
+/* LOGIN_REGISTER FORMA */
 .LoginRegister {
     display: flex;  
     justify-content: space-around; 
@@ -426,21 +446,18 @@ textarea {
     padding: 30px; 
     max-width: 500px; 
     width: 100%;
-    margin: 20px;
+    margin: 40px;
     text-align: center;
 }
-
 .Register h2 {
     text-align: center;
     color: black;
     font-size: 30px;
     margin-bottom: 20px; 
 }
-
 .Register p {
     margin: 15px 0;
 }
-
  input {
     width: 100%;
     padding: 15px; 
@@ -450,7 +467,6 @@ textarea {
     border-radius: 5px; 
     font-size: 14px; 
 }
-
 button {
     background-color: #512da8;
     color: #fff;
@@ -462,17 +478,10 @@ button {
     font-size: 16px;
     margin-top: 15px;
 }
-
-.Register a {
-    display: block;
-    text-align: right;
-    text-decoration: none;
-    margin-top: 15px; 
-}
+/* KETU PERFUNDON REGISTER FORMA */
 
 
 /* Log-in Forma */
-
 .Log-in {
     background-color: #fff;
     border-radius: 10px;
@@ -480,17 +489,16 @@ button {
     padding: 30px; 
     max-width: 500px;
     width: 100%;
-    margin: 20px;
+    margin: 40px;
     text-align: center;
 }
-
 .Log-in p {
     margin: 15px 0;
 }
-
 .Log-in h2 {
     text-align: center;
     color: black;
     font-size: 30px;
     margin-bottom: 20px; 
 }
+/* KETU PERFUNDON LOGIN FORMA */
