@@ -26,101 +26,130 @@
     
     <div class="LoginRegister">
         <div class="Register">
-            <form>
+            <form onsubmit="return validateRegistrationForm()">
                 <h2>Register</h2>
-                <p >Emri: <input  id="RegEmri" type="text"></p>
-                <p >Mbiemri: <input id="RegMbiemri" type="text"></p>
-                <p >Email: <input  id="RegEmail" type="text"></p>
-                <p >Password: <input id="RegPassword" type="password"></p>
-                <button onclick="registerforma()">Register</button>
+                <p>Name: <input id="name" type="text" required></p>
+                <p>Surname: <input id="surname" type="text" required></p>
+                <p>Email: <input id="regEmail" type="email" required></p>
+                <p>Password: <input id="regPassword" type="password" required></p>
+                <button type="submit">Register</button>
             </form>
         </div>
 
         <div class="Log-in">
-            <form>
+            <form onsubmit="return validateLoginForm()">
                 <h1>Log-In</h1>
-                <p >Email: <input  id="LogEmail" type="text"></p>
-                <p >Password: <input id="LogPassword" type="password"></p>
+                <p>Email: <input id="loginEmail" type="email" required></p>
+                <p>Password: <input id="loginPassword" type="password" required></p>
                 <a href="#">Forget Your Password?</a>
-                <button onclick="loginforma()">Log in</button>
+                <button type="submit">Log in</button>
             </form>
         </div>
     </div>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="section categories">
-                <h2>Categories</h2>
-                <div class="kategorite">
-                    <p>Business</p>
-                    <p>World</p>
-                    <p>Technology</p>
-                    <p>Sports</p>
-                    <p>Lifestyle</p>
+    <footer>
+        <footer class="footer">
+            <div class="container">
+                <div class="section categories">
+                    <h2>Categories</h2>
+                    <div class="kategorite">
+                        <p>Business</p>
+                        <p>Technology</p>
+                        <p>Sports</p>
+                        <p>World</p>
+                        <p>Health</p>
+                    </div>
+                </div>
+        
+                <div class="section contact-us">
+                    <h2>Contact Us</h2>
+                    <div class="contact-info">
+                        <p>Phone: <span>+383 123-456-789</span></p>
+                        <p>Email: <span>NYTimes@gmail.com</span></p>
+                        <p>Address: <span>Prishtine, Kosove</span></p>
+                    </div>
+                    <textarea placeholder="Write your comment..."></textarea>
+                </div>
+        
+                <div class="section1 social-icons">
+                    <h2>Follow Us</h2>
+                    <div class="icon">
+                        <a href="https://twitter.com/?lang=en"><img src="indexphoto/twitter-icon.png" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/"><img src="indexphoto/instagram-icon.png" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/login/"><img src="indexphoto/facebook-icon.png" alt="Facebook"></a>
+                    </div>
+                </div>
+        
+                <div class="section newsletter">
+                    <h2>Subscribe to Our News</h2>
+                    <div class="email">
+                        <input type="email" id="emailInput" placeholder="Enter Your Email Here">
+                        <button onclick="checkEmail()">Subscribe</button>
+                    </div>
                 </div>
             </div>
-
-            <div class="section contact-us">
-                <h2>Contact Us</h2>
-                <div class="contact-info">
-                    <p>Phone: <span>+383 123-456-789</span></p>
-                    <p>Email: <span>NYTimes@gmail.com</span></p>
-                    <p>Address: <span>Prishtine, Kosove</span></p>
-                </div>
-                <textarea placeholder="Write your comment..."></textarea>
+        
+            <div class="copyrights">
+                <p>&copy; 2023 𝔗𝔥𝔢 𝔑𝔢𝔴 𝔜𝔬𝔯𝔨 𝔗𝔦𝔪𝔢𝔰</p>
             </div>
-
-            <div class="section1 social-icons">
-                <h2>Follow Us</h2>
-                <div class="icon">
-                    <a href="https://twitter.com/?lang=en"><img src="indexphoto/twitter-icon.png" alt="Twitter"></a>
-                    <a href="https://www.instagram.com/"><img src="indexphoto/instagram-icon.png" alt="Instagram"></a>
-                    <a href="https://www.facebook.com/login/"><img src="indexphoto/facebook-icon.png" alt="Facebook"></a>
-                </div>
-            </div>
-
-            <div class="section newsletter">
-                <h2>Subscribe to Our News</h2>
-                <div class="email">
-                    <input type="email" id="emailInput" placeholder="Enter Your Email Here">
-                    <button onclick="checkEmail()">Subscribe</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="copyrights">
-            <p>&copy; 2023 𝔗𝔥𝔢 𝔑𝔢𝔴 𝔜𝔬𝔯𝔨 𝔗𝔦𝔪𝔢𝔰</p>
         </div>
     </footer>
 
     <script>
-        
-        function registerforma() {
-            if (
-                document.getElementById("RegEmri").value === '' ||
-                document.getElementById("RegMbiemri").value === '' ||
-                document.getElementById("RegEmail").value === '' ||
-                document.getElementById("RegPassword").value === ''
-            ) {
-                alert("Please fill out all the forms!");
-            } else {
-                alert("You have been registered successfully");
+        function validateRegistrationForm() {
+            var name = document.getElementById("name").value;
+            var surname = document.getElementById("surname").value;
+            var email = document.getElementById("regEmail").value;
+            var password = document.getElementById("regPassword").value;
+
+            var nameRegex = /^[a-zA-Z\s]+$/;
+            if (!nameRegex.test(name)) {
+                alert("Please enter a valid name");
+                return false;
             }
+
+            var surnameRegex = /^[a-zA-Z\s]+$/;
+            if (!surnameRegex.test(surname)) {
+                alert("Please enter a valid surname");
+                return false;
+            }
+
+            var emailRegex = /^[^\s@]+@[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email address");
+                return false;
+            }
+
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters");
+                return false;
+            }
+
+            alert("Registration validation successful");
+            return true;
         }
 
-        
-        function loginforma() {
-            if (
-                document.getElementById("LogEmail").value === '' ||
-                document.getElementById("LogPassword").value === ''
-            ) {
-                alert("Please fill out all the forms!");
-            } else {
-                alert("You have been logged-in successfully");
-            }
-        }
+        function validateLoginForm() {
+            var loginEmail = document.getElementById("loginEmail").value;
+            var loginPassword = document.getElementById("loginPassword").value;
 
-        
+            var emailRegex = /^[^\s@]+@[^\s@]+$/;
+            if (!emailRegex.test(loginEmail)) {
+                alert("Please enter a valid email address");
+                return false;
+            }
+
+            var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$/;
+            if (!passwordRegex.test(loginPassword)){
+                alert("Password must have at least 6 characters, including one uppercase letter, one lowercase letter, and one digit.");
+                return false;
+            }
+
+            alert("Login validation successful");
+            return true;
+        }
     </script>
 </body>
 </html>
+
+  
