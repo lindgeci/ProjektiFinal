@@ -90,6 +90,54 @@
         </div>
     </div>
 
+    <div class="lajmi2">
+        <div class="page2">
+            <div class="box" >
+                
+               
+                <div class="title">
+                    <h3>Health</h3>
+                </div>
+                <div class="newsBox">
+    
+                    <div class="slider">
+                        <div class="list">
+                            <div class="item">
+                                <img src="indexphoto/foto74.jpg" alt="foto74">
+                                
+                            </div>
+                            <div class="item">
+                                <img src="indexphoto/foto75.jpg" alt="foto75">
+                            </div>
+                               
+                            <div class="item">
+                                <img src="indexphoto/foto76.jpg" alt="foto76">
+                            </div>
+                               
+                            <div class="item">
+                                <img src="indexphoto/foto77.jpg" alt="foto77">
+                               
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button id="prev"></button>
+                            <button id="next"></button>
+                        </div>
+                        <ul class="dots">
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+    
+                </div>
+                
+            </div>
+         </div>
+        
+        </div>
+    </div>
 <div class="lajmi2">
     <div class="page2">
         <div class="box" >
@@ -116,7 +164,7 @@
                     </p>
                 </div>
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto76.jpg" alt = "foto60" ></div>
+                    <div class="img1"><img src="indexphoto/foto76.jpg" alt = "foto76" ></div>
                     <h3>Bad habits of night owls may lead to type 2 diabetes, study says</h3>
                     <p>
                         If you’re groggy in the morning but perky in the evening, you may be a night owl — a sleep pattern or chronotype that makes you more inclined to want to stay up late and sleep in.
@@ -124,7 +172,7 @@
                     </p>
                 </div>
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto77.jpg" alt = "foto61" ></div>
+                    <div class="img1"><img src="indexphoto/foto77.jpg" alt = "foto77" ></div>
                     <h3>When daylight saving ends, don’t be surprised if you feel these health impacts</h3>
                    <p>
                         When the clock is set back, does your world get turned a little upside down?
@@ -352,6 +400,45 @@
 
                 
             }
+            let slider = document.querySelector('.slider .list');
+            let items = document.querySelectorAll('.slider .list .item');
+            let next = document.getElementById('next');
+            let prev = document.getElementById('prev');
+            let dots = document.querySelectorAll('.slider .dots li');
+
+            let lengthItems = items.length - 1;
+            let active = 0;
+            next.onclick = function(){
+            active = active + 1 <= lengthItems ? active + 1 : 0;
+            reloadSlider();
+            }
+            prev.onclick = function(){
+            active = active - 1 >= 0 ? active - 1 : lengthItems;
+            reloadSlider();
+            }
+
+           let refreshInterval = setInterval(()=> {next.click()}, 3000);
+           function reloadSlider(){
+           slider.style.left = -items[active].offsetLeft + 'px';
+
+           let last_active_dot = document.querySelector('.slider .dots li.active');
+           last_active_dot.classList.remove('active');
+           dots[active].classList.add('active');
+
+           clearInterval(refreshInterval);
+           refreshInterval = setInterval(()=> {next.click()}, 3000);   
+         }
+
+        dots.forEach((li, key) => {
+        li.addEventListener('click', ()=>{
+         active = key;
+         reloadSlider();
+        })
+       })
+       window.onresize = function(event) {
+       reloadSlider();
+      };
+
 
 
         </script>
