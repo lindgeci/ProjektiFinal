@@ -100,36 +100,23 @@
                 </div>
                 <div class="newsBox">
     
-                    <div class="slider">
-                        <div class="list">
-                            <div class="item">
-                                <img src="indexphoto/foto74.jpg" alt="foto74">
-                                
-                            </div>
-                            <div class="item">
-                                <img src="indexphoto/foto75.jpg" alt="foto75">
-                            </div>
-                               
-                            <div class="item">
-                                <img src="indexphoto/foto76.jpg" alt="foto76">
-                            </div>
-                               
-                            <div class="item">
-                                <img src="indexphoto/foto77.jpg" alt="foto77">
-                               
-                            </div>
+                      
+                    <div class="slideshow">
+                        <div class="mySlides fade">
+                            <img src="indexphoto/foto74.jpg" style="width:100%">
+                          </div>
+                        
+                          <div class="mySlides fade">
+                            <img src="indexphoto/foto75.jpg" style="width:100%">
+                          </div>
+                        
+                          <div class="mySlides fade">
+                            <img src="indexphoto/foto76.jpg" style="width:100%">
                         </div>
-                        <div class="buttons">
-                            <button id="prev"></button>
-                            <button id="next"></button>
-                        </div>
-                        <ul class="dots">
-                            <li class="active"></li>
-                            <li ></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
+                          <div class="mySlides fade">
+                            <img src="indexphoto/foto77.jpg" style="width:100%">
+
+                          </div>
     
                 </div>
                 
@@ -138,6 +125,7 @@
         
         </div>
     </div>
+
 <div class="lajmi2">
     <div class="page2">
         <div class="box" >
@@ -400,46 +388,35 @@
 
                 
             }
+            let slideIndex = 0;
+             showSlides();
 
-            let slider = document.querySelector('.slider .list');
-            let items = document.querySelectorAll('.slider .list .item');
-            let next = document.getElementById('next');
-            let prev = document.getElementById('prev');
-            let dots = document.querySelectorAll('.slider .dots li');
 
-            let lengthItems = items.length - 1;
-            let active = 0;
-            next.onclick = function(){
-            active = active + 1 <= lengthItems ? active + 1 : 0;
-            reloadSlider();
+             function showSlides() {
+   
+                let i;
+   
+                let slides = document.getElementsByClassName("mySlides");
+   
+                for (i = 0; i < slides.length; i++) {
+      
+                    slides[i].style.display = "none";
+   
+                }
+   
+                slideIndex++;
+   
+                if (slideIndex > slides.length) {
+      
+                    slideIndex = 1;
+   
+                }
+   
+                slides[slideIndex - 1].style.display = "block";
+   
+                setTimeout(showSlides, 2000);
+
             }
-            
-            prev.onclick = function(){
-            active = active - 1 >= 0 ? active - 1 : lengthItems;
-            reloadSlider();
-            }
-
-           let refreshInterval = setInterval(()=> {next.click()}, 3000);
-           function reloadSlider(){
-           slider.style.left = -items[active].offsetLeft + 'px';
-
-           let last_active_dot = document.querySelector('.slider .dots li.active');
-           last_active_dot.classList.remove('active');
-           dots[active].classList.add('active');
-
-           clearInterval(refreshInterval);
-           refreshInterval = setInterval(()=> {next.click()}, 3000);   
-         }
-
-        dots.forEach((li, key) => {
-        li.addEventListener('click', ()=>{
-         active = key;
-         reloadSlider();
-         })
-            })
-       window.onresize = function(event) {
-       reloadSlider();
-      };
 
 
 
