@@ -2,8 +2,15 @@
     box-sizing: border-box;
    
 }
-@media screen and (max-width: 250px) {
-    html{
+@media screen and (max-width: 682.50px) {
+    body{
+
+        background-color: rgb(29, 11, 14);
+    }
+}
+
+@media screen and (max-height: 477.50px) {
+    body{
 
         background-color: rgb(29, 11, 14);
     }
@@ -201,8 +208,8 @@ textarea {
 .lajmi2 {
     margin-bottom: 50px;
     margin-top: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 350px;
+    margin-right: 350px;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
