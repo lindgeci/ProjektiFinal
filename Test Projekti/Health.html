@@ -125,7 +125,7 @@
                         </div>
                         <ul class="dots">
                             <li class="active"></li>
-                            <li></li>
+                            <li ></li>
                             <li></li>
                             <li></li>
                         </ul>
@@ -400,6 +400,7 @@
 
                 
             }
+
             let slider = document.querySelector('.slider .list');
             let items = document.querySelectorAll('.slider .list .item');
             let next = document.getElementById('next');
@@ -412,6 +413,7 @@
             active = active + 1 <= lengthItems ? active + 1 : 0;
             reloadSlider();
             }
+            
             prev.onclick = function(){
             active = active - 1 >= 0 ? active - 1 : lengthItems;
             reloadSlider();
@@ -433,8 +435,8 @@
         li.addEventListener('click', ()=>{
          active = key;
          reloadSlider();
-        })
-       })
+         })
+            })
        window.onresize = function(event) {
        reloadSlider();
       };

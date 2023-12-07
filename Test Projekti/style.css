@@ -2,19 +2,13 @@
     box-sizing: border-box;
    
 }
-@media screen and (max-width: 400px) {
-    body{
+@media screen and (max-width: 250px) {
+    html{
 
-        background-color: pink;
+        background-color: rgb(29, 11, 14);
     }
 }
 
-@media screen and (max-width: 768px) {
-    .newsItem {
-        flex: 0 0 calc(50% - 20px);
-        margin-right: 20px;
-    }
-}
 body {
     font-family: 'Arial',  sans-serif;
     margin: 0;
@@ -68,39 +62,34 @@ nav a:hover {
 
 
 /* SEARCH BOXI NE FILLIM */
-.search{
+.search {
     display: flex;
     margin-left: 70px;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-bottom: 70px;
-    
-}
-.search1{
-    display: flex;
-}
-
-.search input{
+  }
+  
+  .search input {
+    flex: 1; 
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: 200px;
-    flex: 1;
-    
-}
-.search button{ 
+  }
+  
+  .search button {
     padding: 8px 10px;
     background-color: #333;
     color: #fff;
     border: 1px solid #817d7d;
     border-radius: 4px;
     cursor: pointer;
-    
-}
-.search button:hover{
+  }
+  
+  .search button:hover {
     background-color: #817d7d;
-    border-radius: #817d7d;
-    
-}
+    border-radius: 4px;
+  }
+  
 /* KETO PERFUNDON PJESA E HEADER */
 
 
