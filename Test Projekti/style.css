@@ -443,6 +443,7 @@ textarea {
 /* LOGIN_REGISTER FORMA */
 .LoginRegister {
     display: flex;  
+    
     justify-content: space-around; 
 }
 
