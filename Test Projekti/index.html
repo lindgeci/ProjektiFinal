@@ -22,7 +22,7 @@
                 <li><a href="World.html">World</a></li>
                 <li><a href="Sports.html">Sports</a></li>
                 <li><a href="Health.html">Health</a></li>
-                <li><a href="Log-in.html">Log-in</a></li>
+                <li><a href="Login.html">Log-in</a></li>
             </ul>
         </nav>
     </header>
@@ -330,53 +330,52 @@
     </div>
 
 
-        <footer>
-            <footer class="footer">
-                <div class="container">
-                    <div class="section categories">
-                        <h2>Categories</h2>
-                        <div class="kategorite">
-                            <p>Business</p>
-                            <p>Technology</p>
-                            <p>Sports</p>
-                            <p>World</p>
-                            <p>Health</p>
-                        </div>
-                    </div>
-            
-                    <div class="section contact-us">
-                        <h2>Contact Us</h2>
-                        <div class="contact-info">
-                            <p>Phone: <span>+383 123-456-789</span></p>
-                            <p>Email: <span>NYTimes@gmail.com</span></p>
-                            <p>Address: <span>Prishtine, Kosove</span></p>
-                        </div>
-                        <textarea placeholder="Write your comment..."></textarea>
-                    </div>
-            
-                    <div class="section1 social-icons">
-                        <h2>Follow Us</h2>
-                        <div class="icon">
-                            <a href="https://twitter.com/?lang=en"><img src="indexphoto/twitter-icon.png" alt="Twitter"></a>
-                            <a href="https://www.instagram.com/"><img src="indexphoto/instagram-icon.png" alt="Instagram"></a>
-                            <a href="https://www.facebook.com/login/"><img src="indexphoto/facebook-icon.png" alt="Facebook"></a>
-                        </div>
-                    </div>
-            
-                    <div class="section newsletter">
-                        <h2>Subscribe to Our News</h2>
-                        <div class="email">
-                            <input type="email" id="emailInput" placeholder="Enter Your Email Here">
-                            <button onclick="checkEmail()">Subscribe</button>
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="copyrights">
-                    <p>&copy; 2023 𝔗𝔥𝔢 𝔑𝔢𝔴 𝔜𝔬𝔯𝔨 𝔗𝔦𝔪𝔢𝔰</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="section">
+                <h2>Categories</h2>
+                <div class="kategorite">
+                    <p>Business</p>
+                    <p>Technology</p>
+                    <p>Sports</p>
+                    <p>World</p>
+                    <p>Health</p>
                 </div>
             </div>
-        </footer>  
+    
+            <div class="section">
+                <h2>Contact Us</h2>
+                <div class="contact-info">
+                    <p>Phone: <span>+383 123-456-789</span></p>
+                    <p>Email: <span>NYTimes@gmail.com</span></p>
+                    <p>Address: <span>Prishtine, Kosove</span></p>
+                </div>
+                <textarea id="commentInput" name="comment" placeholder="Write your comment..."></textarea>
+            </div>
+    
+            <div class="section1">
+                <h2>Follow Us</h2>
+                <div class="icon">
+                    <a href="https://twitter.com/?lang=en"><img src="indexphoto/twitter-icon.png" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/"><img src="indexphoto/instagram-icon.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/login/"><img src="indexphoto/facebook-icon.png" alt="Facebook"></a>
+                </div>
+            </div>
+    
+            <div class="section">
+                <h2>Subscribe to Our News</h2>
+                <div class="email">
+                    <input type="email" id="emailInput" placeholder="Enter Your Email Here">
+                    <button onclick="checkEmail()">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="copyrights">
+            <p>&copy; 2023 𝔗𝔥𝔢 𝔑𝔢𝔴 𝔜𝔬𝔯𝔨 𝔗𝔦𝔪𝔢𝔰</p>
+        </div>
+    </footer>
+        
         
         
         <script>
@@ -402,45 +401,7 @@
                 } 
             }
 
-            let slider = document.querySelector('.slider .list');
-            let items = document.querySelectorAll('.slider .list .item');
-            let next = document.getElementById('next');
-            let prev = document.getElementById('prev');
-            let dots = document.querySelectorAll('.slider .dots li');
-
-            let lengthItems = items.length - 1;
-            let active = 0;
-            next.onclick = function(){
-            active = active + 1 <= lengthItems ? active + 1 : 0;
-            reloadSlider();
-            }
-            prev.onclick = function(){
-            active = active - 1 >= 0 ? active - 1 : lengthItems;
-            reloadSlider();
-            }
-
-           let refreshInterval = setInterval(()=> {next.click()}, 3000);
-           function reloadSlider(){
-           slider.style.left = -items[active].offsetLeft + 'px';
-
-           let last_active_dot = document.querySelector('.slider .dots li.active');
-           last_active_dot.classList.remove('active');
-           dots[active].classList.add('active');
-
-           clearInterval(refreshInterval);
-           refreshInterval = setInterval(()=> {next.click()}, 3000);   
-         }
-
-        dots.forEach((li, key) => {
-        li.addEventListener('click', ()=>{
-         active = key;
-         reloadSlider();
-        })
-       })
-       window.onresize = function(event) {
-       reloadSlider();
-      };
-
+            
 
 
         </script>
