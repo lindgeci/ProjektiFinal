@@ -15,13 +15,13 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Business.html">Business</a></li>
-                <li><a href="Technology.html">Technology</a></li>
-                <li><a href="World.html">World</a></li>
-                <li><a href="Sports.html">Sports</a></li>
-                <li><a href="Health.html">Health</a></li>
-                <li><a href="Login.html">Log-in</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="Business.php">Business</a></li>
+                <li><a href="Technology.php">Technology</a></li>
+                <li><a href="World.php">World</a></li>
+                <li><a href="Sports.php">Sports</a></li>
+                <li><a href="Health.php">Health</a></li>
+                <li><a href="Login.php">Log-in</a></li>
             </ul>
         </nav>
     </header>
