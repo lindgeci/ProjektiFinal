@@ -9,6 +9,92 @@
 
 </head>
 <body>
+<?php
+    session_start();
+
+    function isLoggedIn()
+    {
+        return isset($_SESSION['user']);
+    }
+
+    function isAdmin()
+    {
+        return isLoggedIn() && $_SESSION['user']['role'] === 'admin';
+    }
+
+    function registerUser($name, $email, $password, $role = 'user')
+    {
+        $users = getUsers();
+
+        foreach ($users as $user) {
+            if ($user['email'] === $email) {
+                return "Email is already registered";
+            }
+        }
+
+    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+    $users[] = ['name' => $name, 'surname' => $surname, 'email' => $email, 'password' => $hashedPassword, 'role' => $role];
+    saveUsers($users);
+
+
+        return "Registration successful";
+    }
+
+    function authenticateUser($email, $password)
+    {
+        $users = getUsers();
+
+        foreach ($users as $user) {
+            if ($user['email'] === $email && password_verify($password, $user['password'])) {
+                $_SESSION['user'] = $user;
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    function getUsers()
+    {
+        $file = 'users.json';
+
+        if (file_exists($file)) {
+            $data = file_get_contents($file);
+            return json_decode($data, true);
+        }
+
+        return [];
+    }
+
+    function saveUsers($users)
+    {
+        $file = 'users.json';
+        file_put_contents($file, json_encode($users));
+    }
+
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        if (isset($_POST['register'])) {
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+            $role = isset($_POST['role']) ? $_POST['role'] : 'user';
+
+            echo registerUser($name, $email, $password, $role);
+        } elseif (isset($_POST['login'])) {
+            $email = $_POST['loginEmail'];
+            $password = $_POST['loginPassword'];
+
+
+            if (authenticateUser($email, $password)) {
+    
+                session_regenerate_id(true);
+                echo "Login successful. Welcome, " . $_SESSION['user']['name'] . ". Your role is: " . $_SESSION['user']['role'];
+            } else {
+                echo "Invalid email or password";
+            }
+        }
+    }
+    ?>
     <header>
         <div class="logo">
             <h1>𝔗𝔥𝔢 𝔑𝔢𝔴 𝔜𝔬𝔯𝔨 𝔗𝔦𝔪𝔢𝔰</h1>
@@ -329,6 +415,7 @@
         return true;
     }
 </script>
+
 
 
 </body>
