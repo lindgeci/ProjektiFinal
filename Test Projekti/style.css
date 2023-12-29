@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
-    
-    
+       
 }
 
 
@@ -506,7 +505,14 @@ button {
 }
 /* KETU PERFUNDON LOGIN FORMA */
 
-
+#h2Login {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
 /* KODI PER FOTO NE SLIDER */
 .mySlides img {
     width: 100%;
