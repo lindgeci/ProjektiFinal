@@ -9,74 +9,7 @@
 
 </head>
 <body>
-<?php
-   session_start();
 
-   function isLoggedIn()
-   {
-       return isset($_SESSION['user']);
-   }
-   
-   function isAdmin()
-   {
-       return isLoggedIn() && $_SESSION['user']['role'] === 'admin';
-   }
-   
-   function registerUser($name, $surname, $email, $password, $role = 'user')
-   {
-       $users = getUsers();
-   
-       foreach ($users as $user) {
-           if ($user['email'] === $email) {
-               return "Email is already registered";
-           }
-       }
-   
-       $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
-       $users[] = ['name' => $name, 'surname' => $surname, 'email' => $email, 'password' => $hashedPassword, 'role' => $role];
-       saveUsers($users);
-   
-       return "Registration successful";
-   }
-   
-   function authenticateUser($email, $password)
-{
-    $users = getUsers();
-
-    foreach ($users as $user) {
-        if ($user['email'] === $email && password_verify($password, $user['password'])) {
-            $_SESSION['user'] = $user;
-            return true;
-        }
-    }
-   
-    return false;
-}
-
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        if (isset($_POST['register'])) {
-            $name = $_POST['name'];
-            $surname = $_POST['surname'];
-            $email = $_POST['email'];
-            $password = $_POST['password'];
-            $role = isset($_POST['role']) ? $_POST['role'] : 'user';
-
-            echo registerUser($name, $surname, $email, $password, $role);
-        } elseif (isset($_POST['login'])) {
-            $email = $_POST['loginEmail'];
-            $password = $_POST['loginPassword'];
-
-
-            if (authenticateUser($email, $password)) {
-    
-                session_regenerate_id(true);
-                echo "Login successful. Welcome, " . $_SESSION['user']['name'] . ". Your role is: " . $_SESSION['user']['role'];
-            } else {
-                echo "Invalid email or password";
-            }
-        }
-    }
-    ?>
     <header>
         <div class="logo">
             <h1>𝔗𝔥𝔢 𝔑𝔢𝔴 𝔜𝔬𝔯𝔨 𝔗𝔦𝔪𝔢𝔰</h1>
@@ -96,21 +29,21 @@
     
     <div class="LoginRegister">
         <div class="Register">
-            <form onsubmit="return validateRegistrationForm()">
+            <form action="register.php" method="post" onsubmit="return validateRegistrationForm()">
                 <h2>Register</h2>
-                <p>Name: <input id="name" type="text" required autocomplete="given-name"></p>
-                <p>Surname: <input id="surname" type="text" required autocomplete="family-name"></p>
-                <p>Email: <input id="regEmail" type="email" required autocomplete="email"></p>
-                <p>Password: <input id="regPassword" type="password" required autocomplete="new-password"></p>
+                <p>Name: <input id="name" type="text" name="name" required autocomplete="given-name"></p>
+                <p>Surname: <input id="surname" type="text" name="surname" required autocomplete="family-name"></p>
+                <p>Email: <input id="regEmail" type="email" name="regEmail" required autocomplete="email"></p>
+                <p>Password: <input id="regPassword" type="password" name="regPassword" required autocomplete="new-password"></p>
                 <button type="submit">Register</button>
             </form>
         </div>
 
         <div class="Log-in">
-            <form onsubmit="return validateLoginForm()">
+            <form action="log-in.php" method="post" onsubmit="return validateLoginForm()">
                 <h1>Log-In</h1>
-                <p>Email: <input id="loginEmail" type="email" required autocomplete="email"></p>
-                <p>Password: <input id="loginPassword" type="password" required autocomplete="current-password"></p>
+                <p>Email: <input id="loginEmail" type="email" name="loginEmail" required autocomplete="email"></p>
+                <p>Password: <input id="loginPassword" type="password" name="loginPassword" required autocomplete="current-password"></p>
                 <button type="submit">Log in</button>
             </form>
         </div>
