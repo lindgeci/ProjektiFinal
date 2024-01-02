@@ -22,7 +22,7 @@ $users = file_exists($usersFilePath) ? json_decode(file_get_contents($usersFileP
             header('Location: index.php');
             exit();
         } else {
-            echo "Email already exists or is empty";
+            echo "Email already exists";
         }
     }
 
