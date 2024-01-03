@@ -76,7 +76,7 @@
                 
                     <div class="newsItem1"> 
                         <div class="img"><img src="indexphoto/foto10.webp" alt="foto10"></div>
-                        <h2>Turmoil in UK government after key minister slams police ahead of pro-Palestinian march on Armistice Day</h2>
+                        <h3>Turmoil in UK government after key minister slams police ahead of pro-Palestinian march on Armistice Day</h3>
                         <p>The British government is braced for a tricky weekend.
                             Tricky because Rishi Sunak, a prime minister whose grip on power appears to slip at every turn, is a crisis-time leader who seemingly struggles with handling crises.                           
                             On Saturday, the UK will mark Armistice Day – the date commemorating the de-facto end of World War I. Also on Saturday, pro-Palestinian protesters will march through central London demanding a ceasefire in the Israel-Hamas conflict. The march will end outside the US embassy in south London.
@@ -199,15 +199,15 @@
    </div>
 </div> 
     
-    <div class="lajmi5">
-        <div class="left1">
+    <div class="main">
+        <div class="left">
             <div class="box"> 
                 <div class="title">
                     <h3>Latest in World</h3>
                 </div>
                 <div class="newsBox1">
                     <div class="newsItem1">
-                        <div class="img2"><img src="indexphoto/foto52.jpg" alt="foto52"></div>
+                        <div class="img"><img src="indexphoto/foto52.jpg" alt="foto52"></div>
                         <h3>Tensions grow in Kyiv over status of war, as Zelensky insists conflict with Russia is not at a ‘stalemate’</h3>
                         <p>
                             Apparent divisions between Ukrainian President Volodymyr Zelensky and his military command are becoming increasingly public, after a bitter back-and-forth over the state of play in the war with Russia.
@@ -218,13 +218,13 @@
                 </div>
             </div>
         </div>
-        <div class="right1">
+        <div class="right">
             <div class="box"> 
                 <div class="title">
                     <h3>Latest in World</h3>
                 </div>
                     <div class="newsItem1">
-                        <div class="img2"><img src="indexphoto/foto43.jpg" alt="foto43"></div>
+                        <div class="img"><img src="indexphoto/foto43.jpg" alt="foto43"></div>
                         <h3>US government’s proposal to boost EV sales is challenging but not impossible</h3>
                         <p>
                             The US government is planning to change auto emissions standards in a way that means automakers would need to sell a lot more electric vehicles. By 2032, electric vehicles would need to make up about two-thirds of all the new cars sold in America.
@@ -239,15 +239,15 @@
         
 
 
-    <div class="lajmi6">
-        <div class="left2">
+    <div class="main">
+        <div class="left">
             <div class="box"> 
                 <div class="title">
                     <h3>Latest in World</h3>
                 </div>
                 <div class="newsBox1">
                     <div class="newsItem1">
-                        <div class="img2"><img src="indexphoto/foto44.webp" alt="foto44"></div>
+                        <div class="img"><img src="indexphoto/foto44.webp" alt="foto44"></div>
                         <h3>The Future of Text Generation: Unleashing the Power of AI</h3>
                         <p>
                             n a world where words have the power to captivate, motivate, and educate, the future of text generation is poised to revolutionize the way we communicate. As advancements in Artificial Intelligence (AI) continue to push the boundaries of what is possible, text generation stands at the forefront of this digital evolution.
@@ -258,14 +258,14 @@
                 </div>
             </div>
         </div>
-        <div class = "right2">
+        <div class = "right">
             <div class="box">
                 <div class="title">
                     <h3>Latest in World</h3>
                 </div>
                 <div class="newsBox1">
                     <div class="newsItem1">
-                        <div class="img2"><img src="indexphoto/foto53.webp" alt="foto53"></div>
+                        <div class="img"><img src="indexphoto/foto53.webp" alt="foto53"></div>
                         <h3>Russia launches deadly missile strike on civilian ship at Ukrainian Black Sea port, Kyiv says</h3>
                        <p>
                             A Russian missile struck a cargo ship as it docked in the Ukrainian Black Sea port of Odesa, killing the pilot and injuring four others, Ukrainian officials said.

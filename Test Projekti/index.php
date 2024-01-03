@@ -44,7 +44,7 @@
                 <div class="newsBox1">
                     <div class="newsItem1">
                     <div class="img"><img src="indexphoto/foto1.jpg" alt="foto1"></div>
-                    <h2> Jude Bellingham: England and Real Madrid midfielder wins Golden Boy award.</h2>
+                    <h3> Jude Bellingham: England and Real Madrid midfielder wins Golden Boy award.</h3>
                     <p>England and Real Madrid midfielder Jude Bellingham has won the 
                         2023 Golden Boy award - given to the best under-21 player in Europe's top flights.
                         Bellingham, 20, moved from Borussia Dortmund to Real in the summer and has scored 13 goals in 14 appearances.
@@ -52,11 +52,11 @@
                         at the Ballon d'Or ceremony in October.
                         Deep into injury time, he latched onto Luka Modrić’s cross and volleyed a late winner into the net to sink Barcelona and prompt wild celebrations on and off the field.
                        </p>
-                        </div>
+                     </div>
 
                     <div class="newsItem1">
                             <div class="img"><img src="indexphoto/foto22.webp" alt = "foto22" ></div>
-                            <h2>Shein files for U.S. IPO as fast-fashion giant   looks to expand its global reach</h2>
+                            <h3>Shein files for U.S. IPO as fast-fashion giant   looks to expand its global reach</h3>
                             <p>
                                 Shein has confidentially filed to go public in the U.S. as the Chinese-founded fast-fashion juggernaut looks to expand its global reach with a long-rumored initial public offering, CNBC has learned. 
                                 The retailer was last valued at $66 billion and could be ready to start trading on the public markets as soon as 2024, people familiar with the matter said Monday. 
@@ -76,13 +76,13 @@
                 <div class="newsBox1">
                     <div class="newsItem1">
                         <div class="img"><img src="indexphoto/foto2.webp" alt="foto2"></div>
-                        <h2>About three-quarters of Americans do not fear getting Covid-19 this holiday season, KFF survey finds</h2>
+                        <h3>About three-quarters of Americans do not fear getting Covid-19 this holiday season, KFF survey finds</h3>
                         <p>Most adults in the United States are not worried about getting sick with Covid-19 or spreading it over the holidays, a new survey from KFF found. Only about half say they plan to get the latest vaccine, and there’s a similar split around plans to take other precautions.</p>
                     </div>
                 
                     <div class="newsItem1"> 
                         <div class="img"><img src="indexphoto/foto3.jpg" alt="foto3"></div>
-                        <h2>Patients and staff leave Gaza's largest hospital.</h2>
+                        <h3>Patients and staff leave Gaza's largest hospital.</h3>
                         <p>Israel’s Benjamin Netanyahu battles on all fronts, amid growing pressure to free hostages
                             CNN analysis: Video suggests IDF might have rearranged weaponry at Al-Shifa prior to news crew visits
                             Opinion Fights over bread, toilets without water, cars run on cooking oil. This is Gaza now.</p>
@@ -93,7 +93,7 @@
     </div>
 
     <div class="lajmi3">
-        <div class="page2">
+        <div class="page3">
             <div class="box" >
                 
                
@@ -203,22 +203,22 @@
         </div>
    </div>
 </div> 
-    <div class="lajmi4"> 
-        <div class="page4">
+    <div class="lajmi3"> 
+        <div class="page3">
             <div class="box"> 
             <div class="title">
                 <h3>Latest in World</h3>
             </div>
             <div class="newsBox">
                 <div class="newsItem">
-                    <div class="img2"> <img src="indexphoto/foto7.jpg" alt = "foto7"></div>
+                    <div class="img1"> <img src="indexphoto/foto7.jpg" alt = "foto7"></div>
                     <h3>The most powerful rocket ever built just went farther than it had ever gone, then was lost</h3>
                     <p>SpaceX’s gargantuan deep-space rocket system, Starship, safely lifted off Saturday morning but ended prematurely with an explosion and a loss of signal.
                         The Super Heavy booster and Starship spacecraft successfully separated after liftoff, as the Starship lit up its engines and pushed away. That process ended up destroying the Super Heavy booster, which erupted into a ball of flames over the Gulf of Mexico. But the Starship spacecraft was able to briefly continue its journey.</p>
                     <a href="World.php">Read more</a>
                 </div>
                 <div class="newsItem">
-                    <div class="img2"><img src="indexphoto/foto8.webp" alt="foto8"></div>
+                    <div class="img1"><img src="indexphoto/foto8.webp" alt="foto8"></div>
                     <h3>Dwindling ammunition, a jailed artist and Kyiv’s new ‘foothold’ in the south: The latest from Ukraine</h3>
                     <p>Ukraine this week claimed to have “gained a foothold” on the left bank of the Dnipro River, a welcome boost after its much vaunted counteroffensive failed to make major gains.
                         But it has been worse news elsewhere for Kyiv, after Germany admitted European targets for providing ammunition would fall short.                     
@@ -226,7 +226,7 @@
                     <a href="World.php">Read more</a>
                 </div>
                 <div class="newsItem">
-                    <div class="img2"><img src="indexphoto/foto9.jpg" alt="foto9"></div>
+                    <div class="img1"><img src="indexphoto/foto9.jpg" alt="foto9"></div>
                     <h3>Gaza's largest hospital is a 'death zone,' WHO says</h3>
                     <p>The Israeli military announced a brief suspension on Sunday of “military activities” in the city of Rafah, in the southern Gaza Strip, for "humanitarian purposes." 
                         The pause took place from 10 a.m. to 2 p.m. local time (3 a.m. to 7 a.m. ET) Sunday, according to an IDF spokesperson. 
@@ -234,7 +234,7 @@
                     <a href="World.php">Read more</a>
                 </div>
                 <div class="newsItem">
-                    <div class="img2"><img src="indexphoto/foto10.webp" alt="foto10"></div>
+                    <div class="img1"><img src="indexphoto/foto10.webp" alt="foto10"></div>
                     <h3>Turmoil in UK government after key minister slams police ahead of pro-Palestinian march on Armistice Day</h3>
                     <p>The British government is braced for a tricky weekend.
                         Tricky because Rishi Sunak, a prime minister whose grip on power appears to slip at every turn, is a crisis-time leader who seemingly struggles with handling crises.                           
@@ -245,15 +245,16 @@
             </div>
         </div>
     </div>
-    <div class="lajmi5">
-        <div class="left1">
+
+    <div class="main">
+        <div class="left">
             <div class="box"> 
                 <div class="title">
                     <h3>Latest in Sports</h3>
                 </div>
                 <div class="newsBox1">
                     <div class="newsItem1">
-                        <div class="img2"><img src="indexphoto/foto16.jpg" alt="foto16"></div>
+                        <div class="img"><img src="indexphoto/foto16.jpg" alt="foto16"></div>
                         <h3>Tottenham 1-2 Aston Villa: Ollie Watkins scores winner as visitors move fourth in Premier League</h3>
                         <p>
                             Aston Villa came from behind in a pulsating encounter at Tottenham to claim a 2-1 win and hand Ange Postecoglou’s side their third successive defeat.
@@ -264,13 +265,13 @@
                 </div>
             </div>
         </div>
-        <div class="right1">
+        <div class="right">
             <div class="box"> 
                 <div class="title">
                     <h3>Latest in Sports</h3>
                 </div>
                     <div class="newsItem1">
-                        <div class="img2"><img src="indexphoto/foto17.jpg" alt="foto17"></div>
+                        <div class="img"><img src="indexphoto/foto17.jpg" alt="foto17"></div>
                         <h3>Francesco Bagnaia wins Valencia MotoGP to retain title as Jorge Martin crashes out</h3>
                         <p>
                             Ducati's Francesco Bagnaia won the season-ending Valencia GP to retain his MotoGP title after his only rival Jorge Martin crashed out early in the race.
@@ -287,15 +288,15 @@
         
 
 
-    <div class="lajmi6">
-        <div class="left2">
+    <div class="main">
+        <div class="left">
             <div class="box"> 
                 <div class="title">
                     <h3>Latest in Health</h3>
                 </div>
                 <div class="newsBox1">
                     <div class="newsItem1">
-                        <div class="img2"><img src="indexphoto/foto20.webp" alt="foto20"></div>
+                        <div class="img"><img src="indexphoto/foto20.webp" alt="foto20"></div>
                         <h3>Recalled applesauce pouches still on some store shelves, FDA says, as more illnesses reported</h3>
                         <p>
                             Cinnamon applesauce pouches that have been recalled after reports of high blood lead levels in children.
@@ -307,14 +308,14 @@
                 </div>
             </div>
         </div>
-        <div class = "right2">
+        <div class = "right">
             <div class="box">
                 <div class="title">
                     <h3>Latest in health</h3>
                 </div>
                 <div class="newsBox1">
                     <div class="newsItem1">
-                        <div class="img2"><img src="indexphoto/foto21.webp" alt="foto21"></div>
+                        <div class="img"><img src="indexphoto/foto21.webp" alt="foto21"></div>
                         <h3>Ultraprocessed foods now account for two-thirds of calories in the diets of children and teens</h3>
                         <p>
                             Children and teens in the United States now get more than two-thirds of their calories from ultraprocessed foods, an analysis of almost two decades worth of data has found.

@@ -70,7 +70,7 @@
                 <div class="newsBox1">
                     <div class="newsItem1"> 
                         <div class="img"><img src="indexphoto/foto57.webp" alt="foto57"></div>
-                        <h2>Max Verstappen ends record-breaking season with Abu Dhabi Grand Prix win</h2>
+                        <h3>Max Verstappen ends record-breaking season with Abu Dhabi Grand Prix win</h3>
                         <p>
                             And so the curtain falls on a Formula One season dominated by Max Verstappen and his Red Bull team, with the Dutchman securing a record-extending 19th victory of the year at the Abu Dhabi Grand Prix.
                             Never before has the sport seen a driver win with such regularity and ease, the three-time world champion again comfortably crossing the finishing line first at the season-ending race at the Yas Marina Circuit.
@@ -199,15 +199,15 @@
    </div>
 </div> 
     
-    <div class="lajmi5">
-        <div class="left1">
+    <div class="main">
+        <div class="left">
             <div class="box"> 
                 <div class="title">
                     <h3>Latest in Sports</h3>
                 </div>
                 <div class="newsBox1">
                     <div class="newsItem1">
-                        <div class="img2"><img src="indexphoto/foto66.jpg" alt="foto52"></div>
+                        <div class="img"><img src="indexphoto/foto66.jpg" alt="foto52"></div>
                         <h3>‘Mia, thanks for inspiring me’: After unimaginable personal tragedy, Camilo Villegas is a champion again</h3>
                         <p>
                             For the briefest of moments, Camilo Villegas simply stood motionless, staring down at the hole and the ball that had just trickled into it. Then, accompanied by the deftest pump of his right fist, he turned his gaze skyward and whispered a message. “Mia, thanks for inspiring me.” Nine years and 8,496 holes since his last win on the PGA Tour, Villegas was a champion again, as a two-stroke victory at the Bermuda Championship earlier this month sealed a long-awaited return to the winner’s circle.
@@ -217,13 +217,13 @@
                 </div>
             </div>
         </div>
-        <div class="right1">
+        <div class="right">
             <div class="box"> 
                 <div class="title">
                     <h3>Latest in Sports</h3>
                 </div>
                     <div class="newsItem1">
-                        <div class="img2"><img src="indexphoto/foto67.webp" alt="foto67"></div>
+                        <div class="img"><img src="indexphoto/foto67.webp" alt="foto67"></div>
                         <h3>The football jersey Tom Brady wore on his final game is headed to auction, where it could sell for a record $2.5 million</h3>
                        <p>
                             The jersey Tom Brady wore in the last game of his 23-season career is heading to auction in Las Vegas next month, where it could fetch as much as $2.5 million.
@@ -238,15 +238,15 @@
         
 
 
-    <div class="lajmi6">
-        <div class="left2">
+    <div class="main">
+        <div class="left">
             <div class="box"> 
                 <div class="title">
                     <h3>Latest in Sports</h3>
                 </div>
                 <div class="newsBox1">
                     <div class="newsItem1">
-                        <div class="img2"><img src="indexphoto/foto68.webp" alt="foto68"></div>
+                        <div class="img"><img src="indexphoto/foto68.webp" alt="foto68"></div>
                         <h3>Buffalo Bills’ Damien Harris was removed from the field on a gurney during New York Giants game</h3>
                         <p>
                             Buffalo Bills running back Damien Harris was transported off the field in an ambulance after sustaining a neck injury during the team’s home game against the New York Giants on Sunday night.
@@ -257,14 +257,14 @@
                 </div>
             </div>
         </div>
-        <div class = "right2">
+        <div class = "right">
             <div class="box">
                 <div class="title">
                     <h3>Latest in Sports</h3>
                 </div>
                 <div class="newsBox1">
                     <div class="newsItem1">
-                        <div class="img2"><img src="indexphoto/foto69.webp" alt="foto69"></div>
+                        <div class="img"><img src="indexphoto/foto69.webp" alt="foto69"></div>
                         <h3>World Series Fast Facts</h3>
                        <p>
                             Here’s a look at Major League Baseball’s World Series.

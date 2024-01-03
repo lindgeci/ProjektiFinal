@@ -57,9 +57,9 @@
                     <h3>Breaking News</h3>
                 </div>
                 <div class="newsBox1">
-                <div class="newsItem1">
+                     <div class="newsItem1">
                         <div class="img"><img src="indexphoto/foto2.webp" alt="foto2"></div>
-                        <h2>About three-quarters of Americans do not fear getting Covid-19 this holiday season, KFF survey finds</h2>
+                        <h3>About three-quarters of Americans do not fear getting Covid-19 this holiday season, KFF survey finds</h3>
                         <p>Most adults in the United States are not worried about getting sick with Covid-19 or spreading it over the holidays, a new survey from KFF found. Only about half say they plan to get the latest vaccine, and there’s a similar split around plans to take other precautions.</p>
                     </div>
                 
@@ -85,7 +85,7 @@
                 <div class="newsBox1">
                     <div class="newsItem1"> 
                         <div class="img"><img src="indexphoto/foto72.webp" alt="foto72"></div>
-                        <h2>Expert: What to do when the Thanksgiving buffet is too risky</h2>
+                        <h3>Expert: What to do when the Thanksgiving buffet is too risky</h3>
                         <p>
                             As people gather for Thanksgiving, they might be bringing along some unexpected guests.
                             These get-togethers are occurring as respiratory viruses such as influenza are on the rise, and Covid-19 and the respiratory syncytial virus are circulating as well. Additionally, there are also foodborne illnesses going around that can result in stomach upset and other symptoms.

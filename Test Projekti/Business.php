@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
     
@@ -41,7 +42,7 @@
                 <div class="newsBox1">
                     <div class="newsItem1">
                     <div class="img"><img src="indexphoto/foto4.webp" alt="foto4"></div>
-                    <h2>ChatGPT parent company OpenAI fires CEO Sam Altman</h2>
+                    <h3>ChatGPT parent company OpenAI fires CEO Sam Altman</h3>
                     <p>
                         OpenAI, the company behind the viral chatbot ChatGPT, fired its CEO and founder, Sam Altman, on Friday. His stunning departure sent shockwaves through the budding AI industry.
                         The company, in a statement, said an internal investigation found that Altman was not always truthful with the board.
@@ -81,7 +82,7 @@
                 
                     <div class="newsItem1"> 
                         <div class="img"><img src="indexphoto/foto11.webp" alt="foto11"></div>
-                        <h2>With Black Friday deals and flashy displays, retailers try to convince reluctant shoppers to spend</h2>
+                        <h3>With Black Friday deals and flashy displays, retailers try to convince reluctant shoppers to spend</h3>
                         <p>
                             Over the past two weeks, many retailers, including Walmart, Nordstrom and Target have said shoppers have made fewer store trips, postponed big purchases or held out for better deals. This week, Lowe’s, Best Buyand Kohl’s
                              all cut their sales forecasts. Even some retailers that raised their outlooks.
@@ -100,9 +101,7 @@
                 <div class="title">
                     <h3>Business</h3>
                 </div>
-                <div class="newsBox">
-                   
-                            <div class="mySlides fade">
+                               <div class="mySlides fade">
                             <img src="indexphoto/foto6.webp">
                              </div>
                         
@@ -117,14 +116,13 @@
                             <div class="mySlides fade">
                             <img src="indexphoto/foto24.webp">
                             </div>
-                        
-                </div> 
+
             </div>
         </div>
     </div>
 
 <div class="lajmi3">
-    <div class="page2">
+    <div class="page3">
         <div class="box" >
             
            
@@ -236,15 +234,15 @@
    </div>
 </div> 
     
-    <div class="lajmi5">
-        <div class="left1">
+    <div class="main">
+        <div class="left">
             <div class="box"> 
                 <div class="title">
                     <h3>Latest in Business</h3>
                 </div>
                 <div class="newsBox1">
                     <div class="newsItem1">
-                        <div class="img2"><img src="indexphoto/foto29.webp" alt="foto29"></div>
+                        <div class="img"><img src="indexphoto/foto29.webp" alt="foto29"></div>
                         <h3>Running a franchise business like fast food is getting more expensive</h3>
                         <p>
                             McDonald’s decision to raise royalty fees for the first time in nearly three decades doesn’t mean a wave of franchisees across corporate brands are about to see their cost of doing business go up, but it does underscore the need for business owners to keep up with changes in the franchise business model. The economics of being in the franchise business may, in fact, continue to increase based on a number of factors, from regulation of the industry to the cost of technological adaptation.
@@ -254,13 +252,13 @@
                 </div>
             </div>
         </div>
-        <div class="right1">
+        <div class="right">
             <div class="box"> 
                 <div class="title">
                     <h3>Latest in Business</h3>
                 </div>
                     <div class="newsItem1">
-                        <div class="img2"><img src="indexphoto/foto30.webp" alt="foto30"></div>
+                        <div class="img"><img src="indexphoto/foto30.webp" alt="foto30"></div>
                         <h3>A big climate change stress test is coming for Amazon sellers and suppliers</h3>
                         <p>
                             As Amazon and other big businesses ramp up efforts to reduce their carbon footprint, they’re putting pressure on their suppliers to do the same, and those who don’t may pay a big price. Starting in 2024, Amazon
@@ -275,15 +273,15 @@
         
 
 
-    <div class="lajmi6">
-        <div class="left2">
+    <div class="main">
+        <div class="left">
             <div class="box"> 
                 <div class="title">
                     <h3>Latest in Business</h3>
                 </div>
                 <div class="newsBox1">
                     <div class="newsItem1">
-                        <div class="img2"><img src="indexphoto/foto31.webp" alt="foto21"></div>
+                        <div class="img"><img src="indexphoto/foto31.webp" alt="foto21"></div>
                         <h3>The IRS is cracking down on a popular small business tax break that could lead to a costly audit    </h3>
                         <p>
                             A cottage industry of specialist firms has sprung up to help business owners claim the Employee Retention Credit (ERC), a governmental tax incentive intended for companies stressed by the pandemic. But businesses need to be careful not to get hoodwinked. 
@@ -294,14 +292,14 @@
                 </div>
             </div>
         </div>
-        <div class = "right2">
+        <div class = "right">
             <div class="box">
                 <div class="title">
                     <h3>Latest in Business</h3>
                 </div>
                 <div class="newsBox1">
                     <div class="newsItem1">
-                        <div class="img2"><img src="indexphoto/foto32.webp" alt="foto32"></div>
+                        <div class="img"><img src="indexphoto/foto32.webp" alt="foto32"></div>
                         <h3>The Fed may wreck one of the greatest booms in history of Main Street America</h3>
                         <p>
                             If a recession is coming, someone forgot to tell the entrepreneurs. As interest rates rise, inflation lingers and home equity that many business founders use to get started shrinks, small business formations are doing something unexpected – they’re rising. Indeed, after a small lull earlier this year, new business formations have recovered to the elevated levels seen last fall, and their owners are hiring quickly, said John Haltiwanger, a University of Maryland economist whose new paper with Federal Reserve economist Ryan Decker documents the trend.

@@ -80,7 +80,7 @@
                 
                     <div class="newsItem1"> 
                         <div class="img"><img src="indexphoto/foto15.avif" alt="foto11"></div>
-                        <h2>One of world's largest icebergs drifting beyond Antarctic waters</h2>
+                        <h3>One of world's largest icebergs drifting beyond Antarctic waters</h3>
                         <p>
                             One of the world’s largest icebergs is drifting beyond Antarctic waters, after being grounded for more than three decades, according to the British Antarctic Survey.
                             The iceberg, known as A23a, split from the Antarctic's Filchner Ice Shelf in 1986. But it became stuck to the ocean floor and had remained for many years in the Weddell Sea.
@@ -199,15 +199,15 @@
    </div>
 </div> 
     
-    <div class="lajmi5">
-        <div class="left1">
+    <div class="main">
+        <div class="left">
             <div class="box"> 
                 <div class="title">
                     <h3>Latest in Tech</h3>
                 </div>
                 <div class="newsBox1">
                     <div class="newsItem1">
-                        <div class="img2"><img src="indexphoto/foto42.jpg" alt="foto42"></div>
+                        <div class="img"><img src="indexphoto/foto42.jpg" alt="foto42"></div>
                         <h3>Jack Ma backs off on plans to sell Alibaba shares after stock plunge</h3>
                         <p>
                             Jack Ma has put off plans to sell hundreds of millions of dollars worth of Alibaba shares after the Chinese tech giant’s stock plummeted last week.
@@ -219,13 +219,13 @@
                 </div>
             </div>
         </div>
-        <div class="right1">
+        <div class="right">
             <div class="box"> 
                 <div class="title">
                     <h3>Latest in Tech</h3>
                 </div>
                     <div class="newsItem1">
-                        <div class="img2"><img src="indexphoto/foto43.jpg" alt="foto43"></div>
+                        <div class="img"><img src="indexphoto/foto43.jpg" alt="foto43"></div>
                         <h3>US government’s proposal to boost EV sales is challenging but not impossible</h3>
                         <p>
                             The US government is planning to change auto emissions standards in a way that means automakers would need to sell a lot more electric vehicles. By 2032, electric vehicles would need to make up about two-thirds of all the new cars sold in America.
@@ -240,15 +240,15 @@
         
 
 
-    <div class="lajmi6">
-        <div class="left2">
+    <div class="main">
+        <div class="left">
             <div class="box"> 
                 <div class="title">
                     <h3>Latest in Tech</h3>
                 </div>
                 <div class="newsBox1">
                     <div class="newsItem1">
-                        <div class="img2"><img src="indexphoto/foto44.webp" alt="foto44"></div>
+                        <div class="img"><img src="indexphoto/foto44.webp" alt="foto44"></div>
                         <h3>The Future of Text Generation: Unleashing the Power of AI</h3>
                         <p>
                             n a world where words have the power to captivate, motivate, and educate, the future of text generation is poised to revolutionize the way we communicate. As advancements in Artificial Intelligence (AI) continue to push the boundaries of what is possible, text generation stands at the forefront of this digital evolution.
@@ -259,14 +259,14 @@
                 </div>
             </div>
         </div>
-        <div class = "right2">
+        <div class = "right">
             <div class="box">
                 <div class="title">
                     <h3>Latest in Tech</h3>
                 </div>
                 <div class="newsBox1">
                     <div class="newsItem1">
-                        <div class="img2"><img src="indexphoto/foto45.jpg" alt="foto45"></div>
+                        <div class="img"><img src="indexphoto/foto45.jpg" alt="foto45"></div>
                         <h3>Microsoft recruits former OpenAI CEO Sam Altman and Co-Founder Greg Brockman</h3>
                        <p>
                             AI experts don’t stay jobless for long, as evidenced by Microsoft’s quick recruitment of former OpenAI CEO Sam Altman and Co-Founder Greg Brockman.

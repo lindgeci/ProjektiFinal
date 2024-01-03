@@ -69,7 +69,7 @@
                 <div class="newsBox1">
                     <div class="newsItem1"> 
                         <div class="img"><img src="indexphoto/foto72.webp" alt="foto72"></div>
-                        <h2>Expert: What to do when the Thanksgiving buffet is too risky</h2>
+                        <h3>Expert: What to do when the Thanksgiving buffet is too risky</h3>
                         <p>
                             As people gather for Thanksgiving, they might be bringing along some unexpected guests.
                             These get-togethers are occurring as respiratory viruses such as influenza are on the rise, and Covid-19 and the respiratory syncytial virus are circulating as well. Additionally, there are also foodborne illnesses going around that can result in stomach upset and other symptoms.
@@ -196,15 +196,15 @@
    </div>
 </div> 
     
-    <div class="lajmi5">
-        <div class="left1">
+    <div class="main">
+        <div class="left">
             <div class="box"> 
                 <div class="title">
                     <h3>Latest in Health</h3>
                 </div>
                 <div class="newsBox1">
                     <div class="newsItem1">
-                        <div class="img2"><img src="indexphoto/foto82.webp" alt="foto52"></div>
+                        <div class="img"><img src="indexphoto/foto82.webp" alt="foto52"></div>
                         <h3>What is nitrous oxide and why is it being banned?</h3>
                         <p>
                             The government has made possession of nitrous oxide, or laughing gas, a criminal offence in England and Wales.
@@ -215,13 +215,13 @@
                 </div>
             </div>
         </div>
-        <div class="right1">
+        <div class="right">
             <div class="box"> 
                 <div class="title">
                     <h3>Latest in Health</h3>
                 </div>
                     <div class="newsItem1">
-                        <div class="img2"><img src="indexphoto/foto21.webp" alt="foto67"></div>
+                        <div class="img"><img src="indexphoto/foto21.webp" alt="foto67"></div>
                         <h3>Ultraprocessed foods now account for two-thirds of calories in the diets of children and teens</h3>
                         <p>
                             Children and teens in the United States now get more than two-thirds of their calories from ultraprocessed foods, an analysis of almost two decades worth of data has found.
@@ -237,15 +237,15 @@
         
 
 
-    <div class="lajmi6">
-        <div class="left2">
+    <div class="main">
+        <div class="left">
             <div class="box"> 
                 <div class="title">
                     <h3>Latest in Health</h3>
                 </div>
                 <div class="newsBox1">
                     <div class="newsItem1">
-                        <div class="img2"><img src="indexphoto/foto20.webp" alt="foto68"></div>
+                        <div class="img"><img src="indexphoto/foto20.webp" alt="foto68"></div>
                         <h3>Recalled applesauce pouches still on some store shelves, FDA says, as more illnesses reported</h3>
                         <p>
                             Cinnamon applesauce pouches that have been recalled after reports of high blood lead levels in children.
@@ -256,14 +256,14 @@
                 </div>
             </div>
         </div>
-        <div class = "right2">
+        <div class = "right">
             <div class="box">
                 <div class="title">
                     <h3>Latest in Health</h3>
                 </div>
                 <div class="newsBox1">
                     <div class="newsItem1">
-                        <div class="img2"><img src="indexphoto/foto83.webp" alt="foto69"></div>
+                        <div class="img"><img src="indexphoto/foto83.webp" alt="foto69"></div>
                         <h3>China says no 'unusual or novel pathogens' after WHO queries respiratory outbreaks</h3>
                        <p>
                             China has reported no "unusual or novel pathogens" in clusters of child pneumonia cases, the World Health Organization has said.
