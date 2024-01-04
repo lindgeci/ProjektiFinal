@@ -101,9 +101,10 @@
                 <div class="title">
                     <h3>Business</h3>
                 </div>
-                               <div class="mySlides fade">
+                            
+                            <div class="mySlides fade">
                             <img src="indexphoto/foto6.webp">
-                             </div>
+                            </div>
                         
                             <div class="mySlides fade">
                             <img src="indexphoto/foto22.webp">
@@ -132,7 +133,7 @@
             <div class="newsBox">
 
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto6.webp" alt = "foto6" ></div>
+                    <div class="img"><img src="indexphoto/foto6.webp" alt = "foto6" ></div>
                     <h3>A record number of $50 bills were printed last year. It’s not why you think</h3>
                     <p>
                         Unless you’re an avid currency collector, an employee of the Bureau of Engraving and Printing, or work at the Federal Reserve, you likely didn’t know that last year a record number of $50 bills were printed.
@@ -142,7 +143,7 @@
                     
                 </div>
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto22.webp" alt = "foto22" ></div>
+                    <div class="img"><img src="indexphoto/foto22.webp" alt = "foto22" ></div>
                     <h3>Shein files for U.S. IPO as fast-fashion giant looks to expand its global reach</h3>
                     <p>
                         Shein has confidentially filed to go public in the U.S. as the Chinese-founded fast-fashion juggernaut looks to expand its global reach with a long-rumored initial public offering, CNBC has learned. 
@@ -152,7 +153,7 @@
                     
                 </div>
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto23.webp" alt = "foto23" ></div>
+                    <div class="img"><img src="indexphoto/foto23.webp" alt = "foto23" ></div>
                     <h3>You can now lease a Rivian R1T electric pickup in select markets</h3>
                     <p>
                         Rivian on Monday started leasing select models of its all-electric R1T pickup truck, a move to expand sales and its customer base beyond early adopters of electric vehicles.
@@ -162,7 +163,7 @@
                     
                 </div>
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto24.webp" alt = "foto24" ></div>
+                    <div class="img"><img src="indexphoto/foto24.webp" alt = "foto24" ></div>
                     <h3>These regional banks are at greatest risk of being taken over by rivals, according to KBW</h3>
                     <p>
                         A trio of regional banks faces increasing pressure on returns and profitability that makes them potential targets for acquisition by a larger rival, according to KBW analysts.
@@ -175,7 +176,7 @@
             </div>
             
         </div>
-     </div>
+     
     
     </div>
 </div>
@@ -190,7 +191,7 @@
             <div class="newsBox">
 
                 <div class="newsItem">  
-                    <div class="img1"><img src="indexphoto/foto25.webp" alt = "foto25" ></div>
+                    <div class="img"><img src="indexphoto/foto25.webp" alt = "foto25" ></div>
                     <h3>RETAIL
                         Best Buy cuts sales forecast, as holiday shoppers hunt for deals</h3>
                     <p>
@@ -201,7 +202,7 @@
                     
                 </div>
                 <div class="newsItem">  
-                    <div class="img1"><img src="indexphoto/foto26.webp" alt = "foto26" ></div>
+                    <div class="img"><img src="indexphoto/foto26.webp" alt = "foto26" ></div>
                     <h3>The hot word for CEOs on earnings calls is ‘choiceful’</h3>
                     <p>
                         “Choiceful” doesn’t exactly roll off the tongue, but chief executives love it.
@@ -210,7 +211,7 @@
                     </p>
                 </div>
                 <div class="newsItem">  
-                    <div class="img1"><img src="indexphoto/foto27.webp" alt = "foto27" ></div>
+                    <div class="img"><img src="indexphoto/foto27.webp" alt = "foto27" ></div>
                     <h3>Building an e-commerce sales success story is getting more complex and costly</h3>
                     <p>
                         Amazon may be the epitome of big business, but more than 60% of the behemoth’s sales last year came from small- and medium-sized businesses. Small businesses rely on Amazon for its reach and breadth, while Amazon needs independent sellers to fill its site with products.
@@ -219,7 +220,7 @@
                     
                 </div>
                 <div class="newsItem">  
-                    <div class="img1"><img src="indexphoto/foto28.webp" alt = "foto28" ></div>
+                    <div class="img"><img src="indexphoto/foto28.webp" alt = "foto28" ></div>
                     <h3>The last resort of bankruptcy is rising among Main Street businesses across America</h3>
                     <p>
                         Small business bankruptcies are on the rise.

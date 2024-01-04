@@ -103,7 +103,7 @@
                 <div class="newsBox">
     
                     <div class="newsItem">
-                        <div class="img1"><img src="indexphoto/foto4.webp" alt = "foto4" ></div>
+                        <div class="img"><img src="indexphoto/foto4.webp" alt = "foto4" ></div>
                         <h3>ChatGPT parent company OpenAI fires CEO Sam Altman</h3>
                         <p>OpenAI, the company behind the viral chatbot ChatGPT, fired its CEO and founder, Sam Altman, on Friday. His stunning departure sent shockwaves through the budding AI industry.
                             The company, in a statement, said an internal investigation found that Altman was not always truthful with the board.                        
@@ -111,7 +111,7 @@
                         <a href="Business.php">Read more</a>
                     </div>
                     <div class="newsItem">
-                        <div class="img1"><img src="indexphoto/foto6.webp" alt = "foto6" ></div>
+                        <div class="img"><img src="indexphoto/foto6.webp" alt = "foto6" ></div>
                         <h3>A record number of $50 bills were printed last year. It’s not why you think</h3>
                         <p>
                             Unless you’re an avid currency collector, an employee of the Bureau of Engraving and Printing, or work at the Federal Reserve, you likely didn’t know that last year a record number of $50 bills were printed.
@@ -121,7 +121,7 @@
                         <a href="Business.php">Read more</a>
                     </div>
                     <div class="newsItem">
-                        <div class="img1"><img src="indexphoto/foto11.webp" alt = "foto11" ></div>
+                        <div class="img"><img src="indexphoto/foto11.webp" alt = "foto11" ></div>
                         <h3>With Black Friday deals and flashy displays, retailers try to convince reluctant shoppers to spend</h3>
                         <p>
                            Over the past two weeks, many retailers, including Walmart, Nordstrom and Target have said shoppers have made fewer store trips, postponed big purchases or held out for better deals. This week, Lowe’s, Best Buyand Kohl’s
@@ -131,7 +131,7 @@
                         <a href="Business.php">Read more</a>
                     </div>
                     <div class="newsItem">
-                        <div class="img1"><img src="indexphoto/foto12.webp" alt = "foto12" ></div>
+                        <div class="img"><img src="indexphoto/foto12.webp" alt = "foto12" ></div>
                         <h3>Immigration needs urgent review, says business boss</h3>
                         <p>
                             The head of the Chamber of Commerce is asking the government to "urgently review" its immigration policy over fears thousands of hospitality workers will leave at the same time
@@ -145,7 +145,7 @@
                 </div>
                 
             </div>
-         </div>
+         
         
         </div>
     </div>
@@ -160,7 +160,7 @@
             <div class="newsBox">
 
                 <div class="newsItem">  
-                    <div class="img1"><img src="indexphoto/foto5.webp" alt = "foto5" ></div>
+                    <div class="img"><img src="indexphoto/foto5.webp" alt = "foto5" ></div>
                     <h3>Major advertisers flee X, deepening crisis at Elon Musk’s social media site</h3>
                     <p>
                         A torrent of prominent brands halted their advertising on X on Friday, dealing a massive reputational blow to Elon Musk’s social media company after his public embrace this week of an antisemitic conspiracy theory favored by White supremacists.
@@ -169,7 +169,7 @@
                     <a href="Technology.php">Read more</a>
                 </div>
                 <div class="newsItem">  
-                    <div class="img1"><img src="indexphoto/foto13.webp" alt = "foto13" ></div>
+                    <div class="img"><img src="indexphoto/foto13.webp" alt = "foto13" ></div>
                     <h3>Welsh technology to join search for life on Mars</h3>
                     <p>
                         A scientific instrument built in Wales will lead the search for life on Mars at the end of this decade. Enfys, meaning "rainbow" in Welsh, is an infrared spectrometer and will be assembled at Aberystwyth University.
@@ -179,7 +179,7 @@
                     <a href="Technology.php">Read more</a>
                 </div>
                 <div class="newsItem">  
-                    <div class="img1"><img src="indexphoto/foto14.avif" alt = "foto14" ></div>
+                    <div class="img"><img src="indexphoto/foto14.avif" alt = "foto14" ></div>
                     <h3>Nissan will invest $1.4 billion to make EV versions of its best-selling cars at its UK factory</h3>
                     <p>
                         Nissan will invest $1.4 billion to update its factory in northeast England to make electric versions of its two best-selling cars, a boost for the British government as it tries to revive the country's ailing economy.
@@ -188,7 +188,7 @@
                     <a href="Technology.php">Read more</a>
                 </div>
                 <div class="newsItem">  
-                    <div class="img1"><img src="indexphoto/foto15.avif" alt = "foto15" ></div>
+                    <div class="img"><img src="indexphoto/foto15.avif" alt = "foto15" ></div>
                     <h3>One of world's largest icebergs drifting beyond Antarctic waters</h3>
                     <p>
                         One of the world’s largest icebergs is drifting beyond Antarctic waters, after being grounded for more than three decades, according to the British Antarctic Survey.
@@ -211,14 +211,14 @@
             </div>
             <div class="newsBox">
                 <div class="newsItem">
-                    <div class="img1"> <img src="indexphoto/foto7.jpg" alt = "foto7"></div>
+                    <div class="img"> <img src="indexphoto/foto7.jpg" alt = "foto7"></div>
                     <h3>The most powerful rocket ever built just went farther than it had ever gone, then was lost</h3>
                     <p>SpaceX’s gargantuan deep-space rocket system, Starship, safely lifted off Saturday morning but ended prematurely with an explosion and a loss of signal.
                         The Super Heavy booster and Starship spacecraft successfully separated after liftoff, as the Starship lit up its engines and pushed away. That process ended up destroying the Super Heavy booster, which erupted into a ball of flames over the Gulf of Mexico. But the Starship spacecraft was able to briefly continue its journey.</p>
                     <a href="World.php">Read more</a>
                 </div>
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto8.webp" alt="foto8"></div>
+                    <div class="img"><img src="indexphoto/foto8.webp" alt="foto8"></div>
                     <h3>Dwindling ammunition, a jailed artist and Kyiv’s new ‘foothold’ in the south: The latest from Ukraine</h3>
                     <p>Ukraine this week claimed to have “gained a foothold” on the left bank of the Dnipro River, a welcome boost after its much vaunted counteroffensive failed to make major gains.
                         But it has been worse news elsewhere for Kyiv, after Germany admitted European targets for providing ammunition would fall short.                     
@@ -226,7 +226,7 @@
                     <a href="World.php">Read more</a>
                 </div>
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto9.jpg" alt="foto9"></div>
+                    <div class="img"><img src="indexphoto/foto9.jpg" alt="foto9"></div>
                     <h3>Gaza's largest hospital is a 'death zone,' WHO says</h3>
                     <p>The Israeli military announced a brief suspension on Sunday of “military activities” in the city of Rafah, in the southern Gaza Strip, for "humanitarian purposes." 
                         The pause took place from 10 a.m. to 2 p.m. local time (3 a.m. to 7 a.m. ET) Sunday, according to an IDF spokesperson. 
@@ -234,7 +234,7 @@
                     <a href="World.php">Read more</a>
                 </div>
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto10.webp" alt="foto10"></div>
+                    <div class="img"><img src="indexphoto/foto10.webp" alt="foto10"></div>
                     <h3>Turmoil in UK government after key minister slams police ahead of pro-Palestinian march on Armistice Day</h3>
                     <p>The British government is braced for a tricky weekend.
                         Tricky because Rishi Sunak, a prime minister whose grip on power appears to slip at every turn, is a crisis-time leader who seemingly struggles with handling crises.                           
@@ -242,7 +242,7 @@
                     <a href="World.php">Read more</a>
                 </div>
             </div>
-            </div>
+   
         </div>
     </div>
 

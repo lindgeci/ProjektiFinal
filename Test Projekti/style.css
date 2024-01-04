@@ -4,17 +4,9 @@
     padding: 0px;       
 }
 
-body {
-    font-family: 'Arial',  sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    display: flex;
-    flex-direction: column;
+body{
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-
 /* PJESA E HEADERIT */
 header {
     background-color: #333;
@@ -197,14 +189,21 @@ textarea {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 800px;
 }
-.img1 {
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-}
-.img1 img {
-    width: 100%;
-    object-fit: cover;
+
+/* KETU PERFUNDON DIVI I DYTE */
+
+
+
+/* DIVI I TRETE */
+.lajmi3 {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .newsBox {
     display: flex;
@@ -219,40 +218,7 @@ textarea {
     margin-right: 20px; 
     
 }
-/* KETU PERFUNDON DIVI I DYTE */
-
-
-
-/* DIVI I TRETE */
-  
-
-.lajmi3 {
-    margin-bottom: 50px;
-    margin-top: 50px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: 20px;
-    margin-right: 20px;
-}
 /* KETO  PERFUNDON DIVI I TRETE */
-
-
-
-/* DIVI I KATERT */
-
-.lajmi4 {
-    margin-bottom: 40px;
-    margin-left: 20px;
-    margin-right:20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* KETU PERFUNDON DIVI I KATERT */
 
 
 /* KETU FILLON FOOTER */

@@ -101,7 +101,7 @@
             <div class="newsBox">
 
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto46.webp" alt = "foto46" ></div>
+                    <div class="img"><img src="indexphoto/foto46.webp" alt = "foto46" ></div>
                     <h3>A floating village is stranded on a dry lakebed as extreme drought grips the Amazon</h3>
                     <p>
                         A floating village now lies stranded on a lakebed in Brazil’s Amazon as severe drought leaves communities struggling to access food, fresh water and fuel.
@@ -112,7 +112,7 @@
                     
                 </div>
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto47.webp" alt = "foto47" ></div>
+                    <div class="img"><img src="indexphoto/foto47.webp" alt = "foto47" ></div>
                     <h3>Mysterious cosmic ray observed in Utah came from beyond our galaxy, scientists say</h3>
                     <p>
                         Space scientists seeking to understand the enigmatic origins of powerful cosmic rays have detected an extremely rare, ultra-high-energy particle that they believe traveled to Earth from beyond the Milky Way galaxy.
@@ -120,7 +120,7 @@
                     </p>
                 </div>
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto48.webp" alt = "foto48" ></div>
+                    <div class="img"><img src="indexphoto/foto48.webp" alt = "foto48" ></div>
                     <h3>Venezuela issues arrest warrant for US-based opposition leader Juan Guaido</h3>
                     <p>
                         Venezuelan authorities on Thursday issued an arrest warrant for opposition leader and former interim president Juan Guaido, who dismissed the move as politically motivated.
@@ -130,7 +130,7 @@
                     
                 </div>
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto49.webp" alt = "foto49" ></div>
+                    <div class="img"><img src="indexphoto/foto49.webp" alt = "foto49" ></div>
                     <h3>UN Security Council approves sending foreign forces to Haiti</h3>
                    <p>
                         The United Nations Security Council has greenlit the deployment of an armed multinational force to Haiti, as the Caribbean nation wrestles with rampant gang violence and political paralysis.
@@ -142,7 +142,7 @@
             </div>
             
         </div>
-     </div>
+     
     
     </div>
 </div>
@@ -156,7 +156,7 @@
             <div class="newsBox">
 
                 <div class="newsItem">  
-                    <div class="img1"><img src="indexphoto/foto50.jpg" alt = "foto50" ></div>
+                    <div class="img"><img src="indexphoto/foto50.jpg" alt = "foto50" ></div>
                     <h3>Why has Rishi Sunak brought former UK PM David Cameron back to frontline politics?</h3>
                    <p>
                          Ever since he became British prime minister a little over a year ago, Rishi Sunak has tried to bring calm to the chaotic government he inherited.
@@ -164,7 +164,7 @@
                    </p>
                 </div>
                 <div class="newsItem">  
-                    <div class="img1"><img src="indexphoto/foto39.jpg" alt = "foto39" ></div>
+                    <div class="img"><img src="indexphoto/foto39.jpg" alt = "foto39" ></div>
                     <h3>FBI warns consumers not to use public phone charging stations</h3>
                     <p>
                         The FBI is warning consumers against using public phone charging stations in order to avoid exposing their devices to malicious software.
@@ -174,7 +174,7 @@
                     
                 </div>
                 <div class="newsItem">  
-                    <div class="img1"><img src="indexphoto/foto51.jpg" alt = "foto51" ></div>
+                    <div class="img"><img src="indexphoto/foto51.jpg" alt = "foto51" ></div>
                     <h3>Ukraine prepares for fresh Russian attacks on energy as winter nears</h3>
                     <p>
                         Oleksandr Gindyuk is determined not to be caught off guard if electricity supplies fail again this winter. When Russia pounded Ukraine’s power grid with widespread and repeated waves of airstrikes last year, causing massive rolling blackouts, his wife had just given birth to their second daughter.
@@ -183,7 +183,7 @@
                     
                 </div>
                 <div class="newsItem">  
-                    <div class="img1"><img src="indexphoto/foto41.jpg" alt = "foto41" ></div>
+                    <div class="img"><img src="indexphoto/foto41.jpg" alt = "foto41" ></div>
                     <h3>Google to begin deleting inactive accounts this week</h3>
                     <p>
                         That Google account you haven’t checked in years might be getting wiped this week.

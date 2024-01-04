@@ -105,7 +105,7 @@
             <div class="newsBox">
 
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto58.webp" alt = "foto58" ></div>
+                    <div class="img"><img src="indexphoto/foto58.webp" alt = "foto58" ></div>
                     <h3>Erling Haaland breaks a Premier League scoring record as Manchester City held by Liverpool in top-of-the-table encounter</h3>
                     <p>
                         Ever since he joined Manchester City in June 2022, Erling Haaland has scored goals and broken records and, on Saturday against Liverpool, the striker continued to make his mark on history by scoring his 50th league goal for the reigning Premier League champion.
@@ -114,14 +114,14 @@
                     
                 </div>
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto59.jpg" alt = "foto59" ></div>
+                    <div class="img"><img src="indexphoto/foto59.jpg" alt = "foto59" ></div>
                     <h3>Doc Rivers: NBA champion coach on leadership, what it takes to win and Donald Sterling</h3>
                     <p>
                         Former NBA champion coach Doc Rivers speaks with CNN This Morning's Poppy Harlow about the situation the Los Angeles Clippers lived in 2014 with Donald Sterling and reflects on his 2008 championship run with the Boston Celtics.
                     </p>
                 </div>
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto60.webp" alt = "foto60" ></div>
+                    <div class="img"><img src="indexphoto/foto60.webp" alt = "foto60" ></div>
                     <h3>Manchester United’s Harry Maguire accepts Ghana MP’s apology for mockery</h3>
                     <p>
                         Manchester United footballer Harry Maguire on Wednesday accepted the apology of a Ghanaian MP who mocked him during a parliamentary debate on the budget last year.
@@ -130,7 +130,7 @@
                     
                 </div>
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto61.webp" alt = "foto61" ></div>
+                    <div class="img"><img src="indexphoto/foto61.webp" alt = "foto61" ></div>
                     <h3>Tiger Woods to make first competitive start since Masters withdrawal at Hero World Challenge</h3>
                    <p>
                     Tiger Woods is set for his first competitive appearance in seven months at the Hero World Challenge later this month.
@@ -143,10 +143,11 @@
             </div>
             
         </div>
-     </div>
+     
     
     </div>
 </div>
+
 <div class="lajmi3">
     <div class="page3">
         <div class="box">  
@@ -157,7 +158,7 @@
             <div class="newsBox">
 
                 <div class="newsItem">  
-                    <div class="img1"><img src="indexphoto/foto62.webp" alt = "foto62" ></div>
+                    <div class="img"><img src="indexphoto/foto62.webp" alt = "foto62" ></div>
                     <h3>Formula One driver Lance Stroll suffers huge crash during Singapore GP qualifying</h3>
                    <p>
                         Formula One driver Lance Stroll will miss Sunday’s Singapore Grand Prix after the Canadian suffered a huge crash in Saturday’s qualifying, his Aston Martin team said.
@@ -165,7 +166,7 @@
                    </p>
                 </div>
                 <div class="newsItem">  
-                    <div class="img1"><img src="indexphoto/foto63.webp" alt = "foto63" ></div>
+                    <div class="img"><img src="indexphoto/foto63.webp" alt = "foto63" ></div>
                     <h3>Scary high-speed crash, described as ‘one of … if not, the biggest’ in Formula E, leaves multiple cars unable to continue</h3>
                     <p>
                         High-speed racing is accustomed to high-speed collisions, such is the nature of the sport.
@@ -175,7 +176,7 @@
                     
                 </div>
                 <div class="newsItem">  
-                    <div class="img1"><img src="indexphoto/foto64.webp" alt = "foto64" ></div>
+                    <div class="img"><img src="indexphoto/foto64.webp" alt = "foto64" ></div>
                     <h3>Rafael Nadal says he’s feeling ‘better’ but isn’t ‘setting deadlines’ for his return to tennis</h3>
                     <p>
                         Rafael Nadal says he’s not setting any “deadlines” for his long-anticipated return to tennis, with the Spaniard still recovering from a hip injury.
@@ -184,7 +185,7 @@
                     </p>
                 </div>
                 <div class="newsItem">  
-                    <div class="img1"><img src="indexphoto/foto65.webp" alt = "foto65" ></div>
+                    <div class="img"><img src="indexphoto/foto65.webp" alt = "foto65" ></div>
                     <h3>Max Verstappen wins record 10th consecutive race with victory at Italian Grand Prix</h3>
                     <p>
                         Max Verstappen further cemented his status as the dominant driver of his generation with a historic victory at the Italian Grand Prix, his 10th consecutive race win.

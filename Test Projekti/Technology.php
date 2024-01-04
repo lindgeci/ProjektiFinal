@@ -106,7 +106,7 @@
             <div class="newsBox">
 
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto34.webp" alt = "foto34" ></div>
+                    <div class="img"><img src="indexphoto/foto34.webp" alt = "foto34" ></div>
                     <h3>No, You Don’t Need to Turn Off Apple’s NameDrop Feature in iOS 17</h3>
                     <p>
                         Apple’s NameDrop feature in iOS 17 is having a bit of a viral moment. Across the United States, police departments are warning adults to turn off the contact-sharing feature on their iPhones and their children’s devices. In addition, a widely shared TikTok video, with over 2 million views, describes how the feature lets strangers at the gym or on the bus steal all your information. The catch? It’s not true. You shouldn’t worry about NameDrop being some huge security risk.
@@ -114,7 +114,7 @@
                     
                 </div>
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto35.jpg" alt = "foto35" ></div>
+                    <div class="img"><img src="indexphoto/foto35.jpg" alt = "foto35" ></div>
                     <h3>Indonesia implements new policy requiring digital ID for citizens</h3>
                     <p>
                         The Ministry of Communication and Information in Indonesia has implemented a new policy that requires all citizens to have a digital ID. This policy aims to enhance public data security in the digital space.
@@ -122,7 +122,7 @@
                     </p>
                 </div>
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto36.png" alt = "foto36" ></div>
+                    <div class="img"><img src="indexphoto/foto36.png" alt = "foto36" ></div>
                     <h3>India grants first satellite broadband license to Eutelsat OneWeb, bridging digital divide</h3>
                     <p>
                         The Indian space regulator, IN-SPACe, has granted its first satellite broadband license to Eutelsat OneWeb India. The company is now authorised to launch the first commercial satellite broadband service in India. This approval opens the door for OneWeb to deliver high-speed, low-latency internet connectivity to customers across India once spectrum allocation is granted by the government.
@@ -130,7 +130,7 @@
                     
                 </div>
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto37.avif" alt = "foto37" ></div>
+                    <div class="img"><img src="indexphoto/foto37.avif" alt = "foto37" ></div>
                     <h3>In spot bitcoin ETF race, some pioneers stick to the sidelines</h3>
                     <p>
                         Despite growing excitement that spot bitcoin exchange-traded funds (ETFs) will soon win regulatory approval, some cryptocurrency ETF pioneers plan to sit out what is expected to be a fierce industry battle for market share.
@@ -142,10 +142,11 @@
             </div>
             
         </div>
-     </div>
+     
     
     </div>
 </div>
+
 <div class="lajmi3">
     <div class="page3">
         <div class="box">  
@@ -156,7 +157,7 @@
             <div class="newsBox">
 
                 <div class="newsItem">  
-                    <div class="img1"><img src="indexphoto/foto38.webp" alt = "foto38" ></div>
+                    <div class="img"><img src="indexphoto/foto38.webp" alt = "foto38" ></div>
                     <h3>OpenAI’s turmoil is about more than Sam Altman</h3>
                     <p>
                         The battle over the most consequential technology in decades is getting ugly, fast. OpenAI’s incredible upheaval — with former CEO Sam Altman caught in the middle — could have broad implications for who gets to control the future of artificial intelligence.
@@ -164,7 +165,7 @@
                     </p>
                 </div>
                 <div class="newsItem">  
-                    <div class="img1"><img src="indexphoto/foto39.jpg" alt = "foto39" ></div>
+                    <div class="img"><img src="indexphoto/foto39.jpg" alt = "foto39" ></div>
                     <h3>FBI warns consumers not to use public phone charging stations</h3>
                     <p>
                         The FBI is warning consumers against using public phone charging stations in order to avoid exposing their devices to malicious software.
@@ -174,7 +175,7 @@
                     
                 </div>
                 <div class="newsItem">  
-                    <div class="img1"><img src="indexphoto/foto40.jpg" alt = "foto40" ></div>
+                    <div class="img"><img src="indexphoto/foto40.jpg" alt = "foto40" ></div>
                     <h3>How to protect yourself from iPhone thieves locking you out of your own device</h3>
                     <p>
                         A complex but concerning method of gaining control over a user’s iPhone and permanently locking them out the device appears to be on the rise.
@@ -183,7 +184,7 @@
                     
                 </div>
                 <div class="newsItem">  
-                    <div class="img1"><img src="indexphoto/foto41.jpg" alt = "foto41" ></div>
+                    <div class="img"><img src="indexphoto/foto41.jpg" alt = "foto41" ></div>
                     <h3>Google to begin deleting inactive accounts this week</h3>
                     <p>
                         That Google account you haven’t checked in years might be getting wiped this week.

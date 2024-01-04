@@ -103,7 +103,7 @@
             <div class="newsBox">
 
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto74.jpg" alt = "foto74" ></div>
+                    <div class="img"><img src="indexphoto/foto74.jpg" alt = "foto74" ></div>
                     <h3>Just 2 minutes of walking after eating can help blood sugar, study says</h3>
                     <p>
                         For centuries, people in the sunny Mediterranean would get up after long, leisurely meals and take a walk, often to the town square to see neighbors and socialize. Walking is so much a part of that lifestyle it is listed as a foundation of the über-healthy Mediterranean diet.
@@ -111,14 +111,14 @@
                     
                 </div>
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto75.jpg" alt = "foto75" ></div>
+                    <div class="img"><img src="indexphoto/foto75.jpg" alt = "foto75" ></div>
                     <h3>Fascia training may help you live with less pain, experts say</h3>
                     <p>
                         f you’ve dealt with stiffness and pain in the recent past, you may have come across fascia training — an approach that many in the fitness realm are encouraging people to do. That means working to improve the health of your fascia, a web of connective tissue that holds the body’s organs, muscles, bones and tissues in place.
                     </p>
                 </div>
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto76.jpg" alt = "foto76" ></div>
+                    <div class="img"><img src="indexphoto/foto76.jpg" alt = "foto76" ></div>
                     <h3>Bad habits of night owls may lead to type 2 diabetes, study says</h3>
                     <p>
                         If you’re groggy in the morning but perky in the evening, you may be a night owl — a sleep pattern or chronotype that makes you more inclined to want to stay up late and sleep in.
@@ -126,7 +126,7 @@
                     </p>
                 </div>
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto77.jpg" alt = "foto77" ></div>
+                    <div class="img"><img src="indexphoto/foto77.jpg" alt = "foto77" ></div>
                     <h3>When daylight saving ends, don’t be surprised if you feel these health impacts</h3>
                    <p>
                         When the clock is set back, does your world get turned a little upside down?
@@ -138,7 +138,7 @@
             </div>
             
         </div>
-     </div>
+     
     
     </div>
 </div>
@@ -152,7 +152,7 @@
             <div class="newsBox">
 
                 <div class="newsItem">  
-                    <div class="img1"><img src="indexphoto/foto78.jpg" alt = "foto78" ></div>
+                    <div class="img"><img src="indexphoto/foto78.jpg" alt = "foto78" ></div>
                     <h3>Cutting 1 teaspoon of salt works as well as blood pressure meds, study finds</h3>
                    <p>
                         Cutting 1 teaspoon of salt from your diet each day can lower your top blood pressure reading just as much as a typical hypertension medication, even if you don’t have high blood pressure, a new study found.
@@ -160,7 +160,7 @@
                    </p>
                 </div>
                 <div class="newsItem">  
-                    <div class="img1"><img src="indexphoto/foto79.webp" alt = "foto79" ></div>
+                    <div class="img"><img src="indexphoto/foto79.webp" alt = "foto79" ></div>
                     <h3>How your seasonal chores count toward your fitness goals</h3>
                     <p>
                         As the seasons change so do some of your inside and outside chores, especially if you live in a four-season climate. For those in the northern United States, heading into autumn usually means raking leaves, packing up summer clothes, and pulling coats and other warmer clothes out of storage.
@@ -168,7 +168,7 @@
                     
                 </div>
                 <div class="newsItem">  
-                    <div class="img1"><img src="indexphoto/foto80.jpg" alt = "foto80" ></div>
+                    <div class="img"><img src="indexphoto/foto80.jpg" alt = "foto80" ></div>
                     <h3>Groundbreaking transatlantic flight using greener fuel takes off</h3>
                     <p>
                         The first transatlantic flight by a large passenger plane powered only by alternative fuels has taken off.
@@ -178,7 +178,7 @@
                     </p>
                 </div>
                 <div class="newsItem">  
-                    <div class="img1"><img src="indexphoto/foto81.webp" alt = "foto81" ></div>
+                    <div class="img"><img src="indexphoto/foto81.webp" alt = "foto81" ></div>
                     <h3>Vaping: Australia to ban disposable vape imports from January</h3>
                     <p>
                         Australia will ban imports of disposable vapes from January, in an effort to curb nicotine addiction in children.
