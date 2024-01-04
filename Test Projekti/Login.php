@@ -118,7 +118,7 @@
             <div class="newsBox">
 
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto74.jpg" alt = "foto74" ></div>
+                    <div class="img"><img src="indexphoto/foto74.jpg" alt = "foto74" ></div>
                     <h3>Just 2 minutes of walking after eating can help blood sugar, study says</h3>
                     <p>
                         For centuries, people in the sunny Mediterranean would get up after long, leisurely meals and take a walk, often to the town square to see neighbors and socialize. Walking is so much a part of that lifestyle it is listed as a foundation of the über-healthy Mediterranean diet.
@@ -126,14 +126,14 @@
                     
                 </div>
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto75.jpg" alt = "foto75" ></div>
+                    <div class="img"><img src="indexphoto/foto75.jpg" alt = "foto75" ></div>
                     <h3>Fascia training may help you live with less pain, experts say</h3>
                     <p>
                         f you’ve dealt with stiffness and pain in the recent past, you may have come across fascia training — an approach that many in the fitness realm are encouraging people to do. That means working to improve the health of your fascia, a web of connective tissue that holds the body’s organs, muscles, bones and tissues in place.
                     </p>
                 </div>
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto76.jpg" alt = "foto76" ></div>
+                    <div class="img"><img src="indexphoto/foto76.jpg" alt = "foto76" ></div>
                     <h3>Bad habits of night owls may lead to type 2 diabetes, study says</h3>
                     <p>
                         If you’re groggy in the morning but perky in the evening, you may be a night owl — a sleep pattern or chronotype that makes you more inclined to want to stay up late and sleep in.
@@ -141,7 +141,7 @@
                     </p>
                 </div>
                 <div class="newsItem">
-                    <div class="img1"><img src="indexphoto/foto77.jpg" alt = "foto77" ></div>
+                    <div class="img"><img src="indexphoto/foto77.jpg" alt = "foto77" ></div>
                     <h3>When daylight saving ends, don’t be surprised if you feel these health impacts</h3>
                    <p>
                         When the clock is set back, does your world get turned a little upside down?
@@ -153,7 +153,7 @@
             </div>
             
         </div>
-     </div>
+     
     
     </div>
 </div>
@@ -168,7 +168,7 @@
                 <div class="newsBox">
     
                     <div class="newsItem">
-                        <div class="img1"><img src="indexphoto/foto4.webp" alt = "foto4" ></div>
+                        <div class="img"><img src="indexphoto/foto4.webp" alt = "foto4" ></div>
                         <h3>ChatGPT parent company OpenAI fires CEO Sam Altman</h3>
                         <p>OpenAI, the company behind the viral chatbot ChatGPT, fired its CEO and founder, Sam Altman, on Friday. His stunning departure sent shockwaves through the budding AI industry.
                             The company, in a statement, said an internal investigation found that Altman was not always truthful with the board.                        
@@ -176,7 +176,7 @@
                         <a href="Business.php">Read more</a>
                     </div>
                     <div class="newsItem">
-                        <div class="img1"><img src="indexphoto/foto6.webp" alt = "foto6" ></div>
+                        <div class="img"><img src="indexphoto/foto6.webp" alt = "foto6" ></div>
                         <h3>A record number of $50 bills were printed last year. It’s not why you think</h3>
                         <p>
                             Unless you’re an avid currency collector, an employee of the Bureau of Engraving and Printing, or work at the Federal Reserve, you likely didn’t know that last year a record number of $50 bills were printed.
@@ -186,7 +186,7 @@
                         <a href="Business.php">Read more</a>
                     </div>
                     <div class="newsItem">
-                        <div class="img1"><img src="indexphoto/foto11.webp" alt = "foto11" ></div>
+                        <div class="img"><img src="indexphoto/foto11.webp" alt = "foto11" ></div>
                         <h3>With Black Friday deals and flashy displays, retailers try to convince reluctant shoppers to spend</h3>
                         <p>
                            Over the past two weeks, many retailers, including Walmart, Nordstrom and Target have said shoppers have made fewer store trips, postponed big purchases or held out for better deals. This week, Lowe’s, Best Buyand Kohl’s
@@ -196,7 +196,7 @@
                         <a href="Business.php">Read more</a>
                     </div>
                     <div class="newsItem">
-                        <div class="img1"><img src="indexphoto/foto12.webp" alt = "foto12" ></div>
+                        <div class="img"><img src="indexphoto/foto12.webp" alt = "foto12" ></div>
                         <h3>Immigration needs urgent review, says business boss</h3>
                         <p>
                             The head of the Chamber of Commerce is asking the government to "urgently review" its immigration policy over fears thousands of hospitality workers will leave at the same time
