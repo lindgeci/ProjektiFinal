@@ -203,11 +203,12 @@
         </div>
    </div>
 </div> 
-    <div class="lajmi3"> 
-        <div class="page3">
-            <div class="box"> 
+<div class="lajmi3">
+    <div class="page3">
+        <div class="box">  
+            
             <div class="title">
-                <h3>Latest in World</h3>
+                <h3>Latest in Sports</h3>
             </div>
             <div class="newsBox">
                 <div class="newsItem">
@@ -242,9 +243,11 @@
                     <a href="World.php">Read more</a>
                 </div>
             </div>
-   
+            
         </div>
-    </div>
+   </div>
+</div> 
+    
 
     <div class="main">
         <div class="left">

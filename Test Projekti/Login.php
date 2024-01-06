@@ -30,7 +30,7 @@
     <div class="LoginRegister">
         <div class="Register">
             <form action="register.php" method="post" onsubmit="return validateRegistrationForm()">
-                <h2>Register</h2>
+                <h1>Register</h1>
                 <p>Name: <input id="name" type="text" name="name" required autocomplete="given-name"></p>
                 <p>Surname: <input id="surname" type="text" name="surname" required autocomplete="family-name"></p>
                 <p>Email: <input id="regEmail" type="email" name="regEmail" required autocomplete="email"></p>

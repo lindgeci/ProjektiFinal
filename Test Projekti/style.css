@@ -97,9 +97,6 @@ a:hover {
   
 /* KETO PERFUNDON PJESA E HEADER */
 
-
-
-
 /* DIVI I PARE I PESTE EDHE I GJASHTE */
 .main {
     display: flex;
@@ -297,12 +294,6 @@ textarea {
     margin: 40px;
     text-align: center;
 }
-.Register h2 {
-    text-align: center;
-    color: black;
-    font-size: 30px;
-    margin-bottom: 20px; 
-}
 .Register p {
     margin: 15px 0;
 }
@@ -328,7 +319,6 @@ button {
 }
 /* KETU PERFUNDON REGISTER FORMA */
 
-
 /* Log-in Forma */
 .Log-in {
     background-color: #fff;
@@ -342,12 +332,6 @@ button {
 }
 .Log-in p {
     margin: 15px 0;
-}
-.Log-in h2 {
-    text-align: center;
-    color: black;
-    font-size: 30px;
-    margin-bottom: 20px; 
 }
 /* KETU PERFUNDON LOGIN FORMA */
 
