@@ -23,6 +23,7 @@
                 <li><a href="Sports.php">Sports</a></li>
                 <li><a href="Health.php">Health</a></li>
                 <li><a href="Login.php">Log-in</a></li>
+                
             </ul>
         </nav>
     </header>
@@ -173,7 +174,7 @@
                         <p>OpenAI, the company behind the viral chatbot ChatGPT, fired its CEO and founder, Sam Altman, on Friday. His stunning departure sent shockwaves through the budding AI industry.
                             The company, in a statement, said an internal investigation found that Altman was not always truthful with the board.                        
                         </p>
-                        <a href="Business.php">Read more</a>
+                        
                     </div>
                     <div class="newsItem">
                         <div class="img"><img src="indexphoto/foto6.webp" alt = "foto6" ></div>
@@ -183,7 +184,7 @@
                             Last year, the government printed 756,096,000 of those bills — the highest total of the denomination printed in one year in more than 40 years. If you put all those $50s together, you’d have about $37.8 billion. That’s enough to afford Taco Bell’s parent Yum Brands, Inc. $35.3 billion market cap.
                             
                         </p>
-                        <a href="Business.php">Read more</a>
+                        
                     </div>
                     <div class="newsItem">
                         <div class="img"><img src="indexphoto/foto11.webp" alt = "foto11" ></div>
@@ -193,7 +194,7 @@
                             all cut their sales forecasts. Even some retailers that raised their outlooks.
                             
                         </p>
-                        <a href="Business.php">Read more</a>
+                        
                     </div>
                     <div class="newsItem">
                         <div class="img"><img src="indexphoto/foto12.webp" alt = "foto12" ></div>
@@ -204,7 +205,7 @@
                             The government says the sector should have benefited from workers staying for three years.
     
                         </p>
-                        <a href="Business.php">Read more</a>
+                        
                     </div>
     
                 </div>

@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +25,14 @@
                 <li><a href="World.php">World</a></li>
                 <li><a href="Sports.php">Sports</a></li>
                 <li><a href="Health.php">Health</a></li>
+                <?php if (isset($_SESSION['user'])): ?>
+                <li> <a href="<?php echo ($_SESSION['role'] === 'admin') ? 'admin_dashboard.php' : 'non_admin_dashboard.php'; ?>">
+                <?php echo ($_SESSION['role'] === 'admin') ? 'Admin Dashboard' : 'Non-Admin Dashboard'; ?></a>
+                </li>
+                <li><a href="logout.php">Logout</a></li>
+                <?php else: ?>
                 <li><a href="Login.php">Log-in</a></li>
+                <?php endif; ?>
             </ul>
         </nav>
     </header>

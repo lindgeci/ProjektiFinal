@@ -152,12 +152,9 @@ p{
     text-align: justify;
     color: #555;
 }
-
 /* KETO PERFUNDON DIVI I PARE I PESTE EDHE I GJASHTE*/
 
-
 /* KODE TE PERBASHKETA */
-
 h3 {
     margin: 10px 0;
     font-size: x-large;
@@ -175,8 +172,6 @@ textarea {
 
 /* KETU PERFUNDONJNE KODET E PERBASHKETA */
 
-
-
 /* DIVI I DYTE ME SLIDER*/
 .lajmi2 {
     margin: 20px auto;
@@ -188,8 +183,6 @@ textarea {
 }
 
 /* KETU PERFUNDON DIVI I DYTE */
-
-
 
 /* DIVI I TRETE */
 .lajmi3 {
@@ -274,13 +267,10 @@ textarea {
 }
 /* KETU PERUNDON FOOTER */
 
-
-
 /* LOGIN_REGISTER FORMA */
 .LoginRegister {
     display: flex;  
     justify-content: space-around; 
-
 }
 
 /* Register Forma */
