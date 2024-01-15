@@ -22,35 +22,61 @@
                 <li><a href="World.php">World</a></li>
                 <li><a href="Sports.php">Sports</a></li>
                 <li><a href="Health.php">Health</a></li>
-                <li><a href="Login.php">Log-in</a></li>
-                
+
+                <?php
+                session_start();
+                if(isset($_SESSION["user"]) && $_SESSION["user"] == "yes") {
+                    
+                    echo '<li><a href="logout.php">Logout</a></li>';
+                } else {
+                    
+                    echo '<li><a href="Login.php">Log-in</a></li>';
+                    echo '<li><a href="Register.php">Register</a></li>';
+                }
+                ?>
             </ul>
         </nav>
     </header>
     
     <div class="LoginRegister">
-        <div class="Register">
-            <form action="register.php" method="post" onsubmit="return validateRegistrationForm()">
-                <h1>Register</h1>
-                <p>Name: <input id="name" type="text" name="name" required autocomplete="given-name"></p>
-                <p>Surname: <input id="surname" type="text" name="surname" required autocomplete="family-name"></p>
-                <p>Email: <input id="regEmail" type="email" name="regEmail" required autocomplete="email"></p>
-                <p>Password: <input id="regPassword" type="password" name="regPassword" required autocomplete="new-password"></p>
-                <button type="submit">Register</button>
-            </form>
-        </div>
-
         <div class="Log-in">
-            <form action="log-in.php" method="post" onsubmit="return validateLoginForm()">
+
+        <?php
+
+            if(isset($_POST["submit"])){
+                $email = $_POST["loginEmail"];
+                $password = $_POST["loginPassword"];
+                require_once "database.php";
+                $sql = "SELECT * FROM users WHERE EMAIL = '$email'";
+
+                $result = mysqli_query($conn, $sql);
+                $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
+
+                if($user){
+                    if(password_verify($password, $user["Password"])){
+                        session_start();
+                        $_SESSION["user"] = "yes";
+                        header("Location: index.php");
+                        die();
+                    }
+                    else{
+                        echo "<div>Password does not match</div>";
+                    }
+                }
+                else{
+                    echo "<div>Email does not match</div>";
+                }
+            }
+        ?>
+            <form action="Login.php" method="post" onsubmit="return validateLoginForm()">
                 <h1>Log-In</h1>
                 <p>Email: <input id="loginEmail" type="email" name="loginEmail" required autocomplete="email"></p>
                 <p>Password: <input id="loginPassword" type="password" name="loginPassword" required autocomplete="current-password"></p>
-                <button type="submit">Log in</button>
+                <button type="submit" name = "submit">Log in</button>
             </form>
         </div>
     </div>
 
-    <h2 id = "h2Login">Things you may have missed </h2>
     <div class="main">
         <div class="left">
             <div class="box">
@@ -58,19 +84,22 @@
                     <h3>Breaking News</h3>
                 </div>
                 <div class="newsBox1">
-                     <div class="newsItem1">
-                        <div class="img"><img src="indexphoto/foto2.webp" alt="foto2"></div>
-                        <h3>About three-quarters of Americans do not fear getting Covid-19 this holiday season, KFF survey finds</h3>
-                        <p>Most adults in the United States are not worried about getting sick with Covid-19 or spreading it over the holidays, a new survey from KFF found. Only about half say they plan to get the latest vaccine, and there’s a similar split around plans to take other precautions.</p>
+                    <div class="newsItem1">
+                    <div class="img"><img src="indexphoto/foto5.webp" alt="foto4"></div>
+                    <h3>Major advertisers flee X, deepening crisis at Elon Musk’s social media site</h3>
+                    <p>
+                        A torrent of prominent brands halted their advertising on X on Friday, dealing a massive reputational blow to Elon Musk’s social media company after his public embrace this week of an antisemitic conspiracy theory favored by White supremacists.
+                        The high-profile advertiser revolt includes some of the world’s largest media companies, such as Disney, Paramount, NBCUniversal, Comcast, Lionsgate and Warner Bros. 
+                    </p>
                     </div>
-                
 
                     <div class="newsItem1">
-                        <div class="img"><img src="indexphoto/foto71.jpg" alt = "foto71" ></div>
-                        <h3>Air pollution, health condition</h3>
+                        <div class="img"><img src="indexphoto/foto13.webp" alt = "foto33" ></div>
+                        <h3>Welsh technology to join search for life on Mars</h3>
                         <p>
-                            No pollution is good for anyone’s health, but a new study found that scientists may have significantly underestimated just how deadly pollution from coal-fired plants can be. It also shows how tighter regulations can work.
-                            The study, published Thursday in the journal Science, found that exposure to fine particulate air pollution from coal-fired plants is associated with a mortality risk that is 2.1 times greater than that of particle pollution from other sources.
+                            A scientific instrument built in Wales will lead the search for life on Mars at the end of this decade. Enfys, meaning "rainbow" in Welsh, is an infrared spectrometer and will be assembled at Aberystwyth University.
+                            It will be fitted to the European Space Agency's Rosalind Franklin rover, which launches to the Red Planet in 2028.
+                            Enfys will work alongside the robot's other camera systems to identify the most promising rocks to drill and test for evidence of ancient biology.
                         </p>
                     </div>
                 </div>
@@ -84,70 +113,74 @@
                     <h3>Headlines</h3>
                 </div>
                 <div class="newsBox1">
-                    <div class="newsItem1"> 
-                        <div class="img"><img src="indexphoto/foto72.webp" alt="foto72"></div>
-                        <h3>Expert: What to do when the Thanksgiving buffet is too risky</h3>
+                    <div class="newsItem1">
+                        <div class="img"><img src="indexphoto/foto14.avif" alt="foto12"></div>
+                        <h3>Nissan will invest $1.4 billion to make EV versions of its best-selling cars at its UK factory</h3>
                         <p>
-                            As people gather for Thanksgiving, they might be bringing along some unexpected guests.
-                            These get-togethers are occurring as respiratory viruses such as influenza are on the rise, and Covid-19 and the respiratory syncytial virus are circulating as well. Additionally, there are also foodborne illnesses going around that can result in stomach upset and other symptoms.
+                            Nissan will invest $1.4 billion to update its factory in northeast England to make electric versions of its two best-selling cars, a boost for the British government as it tries to revive the country's ailing economy.
+                            The Japanese automaker manufactures the gasoline or gas-hybrid Qashqai and smaller Juke crossover vehicles at the factory in Sunderland, which employs 6,000 workers.
                         </p>
                         
                     </div>
-                    <div class="newsItem1">
-                        <div class="img"><img src="indexphoto/foto71.jpg" alt = "foto71" ></div>
-                        <h3>Air pollution, health condition</h3>
+                
+                    <div class="newsItem1"> 
+                        <div class="img"><img src="indexphoto/foto15.avif" alt="foto11"></div>
+                        <h3>One of world's largest icebergs drifting beyond Antarctic waters</h3>
                         <p>
-                            No pollution is good for anyone’s health, but a new study found that scientists may have significantly underestimated just how deadly pollution from coal-fired plants can be. It also shows how tighter regulations can work.
-                            The study, published Thursday in the journal Science, found that exposure to fine particulate air pollution from coal-fired plants is associated with a mortality risk that is 2.1 times greater than that of particle pollution from other sources.
+                            One of the world’s largest icebergs is drifting beyond Antarctic waters, after being grounded for more than three decades, according to the British Antarctic Survey.
+                            The iceberg, known as A23a, split from the Antarctic's Filchner Ice Shelf in 1986. But it became stuck to the ocean floor and had remained for many years in the Weddell Sea.
+                            The iceberg is about three times the size of New York City and more than twice the size of Greater London.
                         </p>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    
 
 <div class="lajmi3">
     <div class="page2">
         <div class="box" >
             
            
+            
             <div class="title">
-                <h3>Latest in Health</h3>
+                <h3>Latest in Tech</h3>
             </div>
             <div class="newsBox">
 
                 <div class="newsItem">
-                    <div class="img"><img src="indexphoto/foto74.jpg" alt = "foto74" ></div>
-                    <h3>Just 2 minutes of walking after eating can help blood sugar, study says</h3>
+                    <div class="img"><img src="indexphoto/foto34.webp" alt = "foto34" ></div>
+                    <h3>No, You Don’t Need to Turn Off Apple’s NameDrop Feature in iOS 17</h3>
                     <p>
-                        For centuries, people in the sunny Mediterranean would get up after long, leisurely meals and take a walk, often to the town square to see neighbors and socialize. Walking is so much a part of that lifestyle it is listed as a foundation of the über-healthy Mediterranean diet.
+                        Apple’s NameDrop feature in iOS 17 is having a bit of a viral moment. Across the United States, police departments are warning adults to turn off the contact-sharing feature on their iPhones and their children’s devices. In addition, a widely shared TikTok video, with over 2 million views, describes how the feature lets strangers at the gym or on the bus steal all your information. The catch? It’s not true. You shouldn’t worry about NameDrop being some huge security risk.
                     </p>
                     
                 </div>
                 <div class="newsItem">
-                    <div class="img"><img src="indexphoto/foto75.jpg" alt = "foto75" ></div>
-                    <h3>Fascia training may help you live with less pain, experts say</h3>
+                    <div class="img"><img src="indexphoto/foto35.jpg" alt = "foto35" ></div>
+                    <h3>Indonesia implements new policy requiring digital ID for citizens</h3>
                     <p>
-                        f you’ve dealt with stiffness and pain in the recent past, you may have come across fascia training — an approach that many in the fitness realm are encouraging people to do. That means working to improve the health of your fascia, a web of connective tissue that holds the body’s organs, muscles, bones and tissues in place.
+                        The Ministry of Communication and Information in Indonesia has implemented a new policy that requires all citizens to have a digital ID. This policy aims to enhance public data security in the digital space.
+                        Director General of Informatics Applications, explained that program will be developed in accordance with the Personal Data Protection Law. Its purpose is to validate the data owner and prevent the misuse of personal identities. Implementation of the policy is expected to improve public data security and reduce the risk of unauthorized access to sensitive information.
                     </p>
                 </div>
                 <div class="newsItem">
-                    <div class="img"><img src="indexphoto/foto76.jpg" alt = "foto76" ></div>
-                    <h3>Bad habits of night owls may lead to type 2 diabetes, study says</h3>
+                    <div class="img"><img src="indexphoto/foto36.png" alt = "foto36" ></div>
+                    <h3>India grants first satellite broadband license to Eutelsat OneWeb, bridging digital divide</h3>
                     <p>
-                        If you’re groggy in the morning but perky in the evening, you may be a night owl — a sleep pattern or chronotype that makes you more inclined to want to stay up late and sleep in.
-                        If so, you could be at higher risk of developing type 2 diabetes as well as a number of unhealthy lifestyle habits, a new study found.
+                        The Indian space regulator, IN-SPACe, has granted its first satellite broadband license to Eutelsat OneWeb India. The company is now authorised to launch the first commercial satellite broadband service in India. This approval opens the door for OneWeb to deliver high-speed, low-latency internet connectivity to customers across India once spectrum allocation is granted by the government.
                     </p>
+                    
                 </div>
                 <div class="newsItem">
-                    <div class="img"><img src="indexphoto/foto77.jpg" alt = "foto77" ></div>
-                    <h3>When daylight saving ends, don’t be surprised if you feel these health impacts</h3>
-                   <p>
-                        When the clock is set back, does your world get turned a little upside down?
-                        Daylight Saving Time will end on Sunday, November 5, moving the clocks in most US states back an hour – and that is no small thing for our health, according to Dr. Rajkumar Dasgupta, associate professor of clinical medicine at the University of Southern California Keck School of Medicine in Los Angeles.
-                   </p>
+                    <div class="img"><img src="indexphoto/foto37.avif" alt = "foto37" ></div>
+                    <h3>In spot bitcoin ETF race, some pioneers stick to the sidelines</h3>
+                    <p>
+                        Despite growing excitement that spot bitcoin exchange-traded funds (ETFs) will soon win regulatory approval, some cryptocurrency ETF pioneers plan to sit out what is expected to be a fierce industry battle for market share.
+                        Demand for a bitcoin ETF, which would allow retail and institutional investors to easily bet on the price of the world's biggest cryptocurrency, is expected to draw in as much as $3 billion from investors in the first few days of trading and pull in billions more thereafter.
+                    </p>
                     
                 </div>
 
@@ -158,72 +191,59 @@
     
     </div>
 </div>
+
 <div class="lajmi3">
-        <div class="page2">
-            <div class="box" >
-                
-               
-                <div class="title">
-                    <h3>Latest in Business</h3>
-                </div>
-                <div class="newsBox">
-    
-                    <div class="newsItem">
-                        <div class="img"><img src="indexphoto/foto4.webp" alt = "foto4" ></div>
-                        <h3>ChatGPT parent company OpenAI fires CEO Sam Altman</h3>
-                        <p>OpenAI, the company behind the viral chatbot ChatGPT, fired its CEO and founder, Sam Altman, on Friday. His stunning departure sent shockwaves through the budding AI industry.
-                            The company, in a statement, said an internal investigation found that Altman was not always truthful with the board.                        
-                        </p>
-                        
-                    </div>
-                    <div class="newsItem">
-                        <div class="img"><img src="indexphoto/foto6.webp" alt = "foto6" ></div>
-                        <h3>A record number of $50 bills were printed last year. It’s not why you think</h3>
-                        <p>
-                            Unless you’re an avid currency collector, an employee of the Bureau of Engraving and Printing, or work at the Federal Reserve, you likely didn’t know that last year a record number of $50 bills were printed.
-                            Last year, the government printed 756,096,000 of those bills — the highest total of the denomination printed in one year in more than 40 years. If you put all those $50s together, you’d have about $37.8 billion. That’s enough to afford Taco Bell’s parent Yum Brands, Inc. $35.3 billion market cap.
-                            
-                        </p>
-                        
-                    </div>
-                    <div class="newsItem">
-                        <div class="img"><img src="indexphoto/foto11.webp" alt = "foto11" ></div>
-                        <h3>With Black Friday deals and flashy displays, retailers try to convince reluctant shoppers to spend</h3>
-                        <p>
-                           Over the past two weeks, many retailers, including Walmart, Nordstrom and Target have said shoppers have made fewer store trips, postponed big purchases or held out for better deals. This week, Lowe’s, Best Buyand Kohl’s
-                            all cut their sales forecasts. Even some retailers that raised their outlooks.
-                            
-                        </p>
-                        
-                    </div>
-                    <div class="newsItem">
-                        <div class="img"><img src="indexphoto/foto12.webp" alt = "foto12" ></div>
-                        <h3>Immigration needs urgent review, says business boss</h3>
-                        <p>
-                            The head of the Chamber of Commerce is asking the government to "urgently review" its immigration policy over fears thousands of hospitality workers will leave at the same time
-                            Seasonal workers have been able stay in Jersey for up to three years since 2021, with the first intake set to soon leave.
-                            The government says the sector should have benefited from workers staying for three years.
-    
-                        </p>
-                        
-                    </div>
-    
-                </div>
-                
+    <div class="page3">
+        <div class="box">  
+            
+            <div class="title">
+                <h3>Latest in Tech</h3>
             </div>
-         </div>
-        
+            <div class="newsBox">
+
+                <div class="newsItem">  
+                    <div class="img"><img src="indexphoto/foto38.webp" alt = "foto38" ></div>
+                    <h3>OpenAI’s turmoil is about more than Sam Altman</h3>
+                    <p>
+                        The battle over the most consequential technology in decades is getting ugly, fast. OpenAI’s incredible upheaval — with former CEO Sam Altman caught in the middle — could have broad implications for who gets to control the future of artificial intelligence.
+                        A year ago, OpenAI was an obscure startup that unleashed a technology so powerful, it almost immediately invited comparisons to Prometheus bringing fire down from the realm of the gods. ChatGPT — the impressively human-sounding artificial intelligence tool — and the scrappy nonprofit that built it, quickly became synonymous with the emerging field of generative artificial intelligence.
+                    </p>
+                </div>
+                <div class="newsItem">  
+                    <div class="img"><img src="indexphoto/foto39.jpg" alt = "foto39" ></div>
+                    <h3>FBI warns consumers not to use public phone charging stations</h3>
+                    <p>
+                        The FBI is warning consumers against using public phone charging stations in order to avoid exposing their devices to malicious software.
+                        Public USB stations like the kind found at malls and airports are being used by bad actors to spread malware and monitoring software, according to a tweet last week from the FBI’s Denver branch. The agency did not provide any specific examples.
+                        “Carry your own charger and USB cord and use an electrical outlet instead,” the agency advised in the tweet.
+                    </p>
+                    
+                </div>
+                <div class="newsItem">  
+                    <div class="img"><img src="indexphoto/foto40.jpg" alt = "foto40" ></div>
+                    <h3>How to protect yourself from iPhone thieves locking you out of your own device</h3>
+                    <p>
+                        A complex but concerning method of gaining control over a user’s iPhone and permanently locking them out the device appears to be on the rise.
+                        Some iPhone thieves are exploiting a security setting, called the recovery key, that makes it nearly impossible for owners to access their photos, messages, data and more, according to a recent Wall Street Journal report. Some victims also told the publication their bank accounts were drained after the thieves gained access to their financial apps.
+                    </p>
+                    
+                </div>
+                <div class="newsItem">  
+                    <div class="img"><img src="indexphoto/foto41.jpg" alt = "foto41" ></div>
+                    <h3>Google to begin deleting inactive accounts this week</h3>
+                    <p>
+                        That Google account you haven’t checked in years might be getting wiped this week.
+                        Beginning Friday, Google is moving ahead with its plan to delete accounts that have been inactive for at least two years.
+                        The company announced the new policy back in May, saying it’s intended to prevent security risks: Internal findings show older accounts are more likely to rely on recycled passwords and less likely to employ up-to-date security measures like two-step-verification, making them far more vulnerable to issues like phishing, hacking and spam.
+                    </p>
+                    
+                </div>
+
+            </div>
+            
         </div>
-    </div>
-    
-
-
-  
-
-
-
-    
-
+   </div>
+</div> 
     <footer>
         <footer class="footer">
             <div class="container">
@@ -271,55 +291,19 @@
             </div>
         </div>
     </footer>  
-
-
-
-
     
  <script>
-    function validateRegistrationForm() {
-        var name = document.getElementById("name").value;
-        var surname = document.getElementById("surname").value;
-        var email = document.getElementById("regEmail").value;
-        var password = document.getElementById("regPassword").value;
 
-        var nameRegex = /^[a-zA-Z\s]+$/;
-        if (!nameRegex.test(name)) {
-            alert("Please enter a valid name");
-            return false;
-        }
-
-        var surnameRegex = /^[a-zA-Z\s]+$/;
-        if (!surnameRegex.test(surname)) {
-            alert("Please enter a valid surname");
-            return false;
-        }
-
-        var emailRegex = /^[a-zA-Z0-9._+-]+@[a-zA-Z]+\.[a-zA-Z]{3,}$/;
-        if (!emailRegex.test(email)) {
-            alert("Please enter a valid email address");
-            return false;
-        }
-
-        if (password.length < 6) {
-            alert("Password must be at least 6 characters");
-            return false;
-        }
-
-        alert("Registration validation successful");
-        return true;
-    }
 
     function validateLoginForm() {
         var loginEmail = document.getElementById("loginEmail").value;
         var loginPassword = document.getElementById("loginPassword").value;
 
-        var emailRegex = /^[a-zA-Z0-9._+-]+@[a-zA-Z]+\.[a-zA-Z]{1,3}$/;
+        var emailRegex = /^[a-zA-Z0-9._+-]+@[a-zA-Z-]+\.[a-zA-Z]{1,3}$/;
         if (!emailRegex.test(loginEmail)) {
             alert("Please enter a valid email address");
             return false;
         }
-
         
         var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$/;
         if (!passwordRegex.test(loginPassword)){
@@ -331,8 +315,6 @@
         return true;
     }
 </script>
-
-
 
 </body>
 </html>
