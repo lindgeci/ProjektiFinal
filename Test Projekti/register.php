@@ -32,15 +32,14 @@
     <div class="LoginRegister">
         <div class="Register">
             <?php
-                
-    
                 if(isset($_POST["submit"])){
-                $name = $_POST["name"];
-                $surname = $_POST["surname"];
-                $email = $_POST["regEmail"];
-                $password = $_POST["regPassword"];
-                $passwordHash = password_hash($password, PASSWORD_DEFAULT);
-                $errors =  array();
+                    $name = $_POST["name"];
+                    $surname = $_POST["surname"];
+                    $email = $_POST["regEmail"];
+                    $password = $_POST["regPassword"];
+                    $rolet = $_POST["rolet"]; 
+                    $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+                    $errors = array();
                 if (empty($name) or empty($surname) or empty($email) or empty($password)) {
                     array_push($errors, "All fields are required!");
                 }
@@ -60,31 +59,41 @@
                 if($rowCount>0){
                     array_push($errors, "Email already exists!");
                 }
+                
                 if (count($errors) > 0) {
                     foreach ($errors as $error) {
                         echo "<div>$error</div>";
                     }
-                } else {   
-                    $sql = "INSERT INTO users (Name, Surname, Email, Password) VALUES (?, ?, ?, ?)";
+                } else {
+                    $sql = "INSERT INTO users (Name, Surname, Email, Password, Rolet) VALUES (?, ?, ?, ?, ?)";
                     $stmt = mysqli_stmt_init($conn);
                     $prepareStmt =  mysqli_stmt_prepare($stmt, $sql);
                     if ($prepareStmt) {
-                        mysqli_stmt_bind_param($stmt, "ssss", $name, $surname, $email, $passwordHash);
+                        mysqli_stmt_bind_param($stmt, "sssss", $name, $surname, $email, $passwordHash, $rolet);
                         mysqli_stmt_execute($stmt);
                         echo "<div>You are registered successfully</div>";
                     } else {
                         die("Something went wrong");
                     }
-                }    
+                }
             }
             ?>
             <form action="Register.php" method="post" onsubmit="return validateRegistrationForm()">
+                
                 <h1>Register</h1>
-                <p>Name: <input id="name" type="text" name="name" required autocomplete="given-name"></p>
-                <p>Surname: <input id="surname" type="text" name="surname" required autocomplete="family-name"></p>
-                <p>Email: <input id="regEmail" type="email" name="regEmail" required autocomplete="email"></p>
-                <p>Password: <input id="regPassword" type="password" name="regPassword" required autocomplete="new-password"></p>
+    <p>Name: <input type="text" name="name" required></p>
+    <p>Surname: <input type="text" name="surname" required></p>
+    <p>Email: <input type="email" name="regEmail" required autocomplete="email"></p>
+    <p>Password: <input type="password" name="regPassword" required autocomplete="new-password"></p>
+    <p>Role: 
+        <select name="rolet" required>
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+            <!-- Add more roles if needed -->
+        </select>
+    </p>
                 <button type="submit" name = "submit">Register</button>
+
             </form>
         </div>
 

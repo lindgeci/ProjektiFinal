@@ -24,15 +24,19 @@
                 <li><a href="Health.php">Health</a></li>
 
                 <?php
-                session_start();
-                if(isset($_SESSION["user"]) && $_SESSION["user"] == "yes") {
-                    
-                    echo '<li><a href="logout.php">Logout</a></li>';
-                } else {
-                    
-                    echo '<li><a href="Login.php">Log-in</a></li>';
-                    echo '<li><a href="Register.php">Register</a></li>';
-                }
+                 session_start();
+                    if (isset($_SESSION["user"]) && $_SESSION["user"] == "yes") {
+           
+                    if ($_SESSION["Rolet"] == "admin") {
+                        echo '<li><a href="admin-dashboard.php">Admin Dashboard</a></li>';
+                    } else {
+                        echo '<li><a href="user-dashboard.php">User Dashboard</a></li>';
+                    }
+                        echo '<li><a href="logout.php">Logout</a></li>';
+                    } else {
+                        echo '<li><a href="Login.php">Log-in</a></li>';
+                        echo '<li><a href="Register.php">Register</a></li>';
+                    }
                 ?>
             </ul>
         </nav>
@@ -42,7 +46,6 @@
         <div class="Log-in">
 
         <?php
-
             if(isset($_POST["submit"])){
                 $email = $_POST["loginEmail"];
                 $password = $_POST["loginPassword"];
@@ -56,6 +59,7 @@
                     if(password_verify($password, $user["Password"])){
                         session_start();
                         $_SESSION["user"] = "yes";
+                        $_SESSION["Rolet"] = $user["Rolet"];
                         header("Location: index.php");
                         die();
                     }
@@ -68,10 +72,12 @@
                 }
             }
         ?>
+
+
             <form action="Login.php" method="post" onsubmit="return validateLoginForm()">
                 <h1>Log-In</h1>
                 <p>Email: <input id="loginEmail" type="email" name="loginEmail" required autocomplete="email"></p>
-                <p>Password: <input id="loginPassword" type="password" name="loginPassword" required autocomplete="current-password"></p>
+                <p>Password: <input id="loginPassword" type="password" name="loginPassword" required autocomplete="current-password"></p>     
                 <button type="submit" name = "submit">Log in</button>
             </form>
         </div>

@@ -24,15 +24,19 @@
                 <li><a href="Health.php">Health</a></li>
                 
                 <?php
-                session_start();
-                if(isset($_SESSION["user"]) && $_SESSION["user"] == "yes") {
-                    // User is logged in
-                    echo '<li><a href="logout.php">Logout</a></li>';
-                } else {
-                    // User is not logged in
-                    echo '<li><a href="Login.php">Log-in</a></li>';
-                    echo '<li><a href="Register.php">Register</a></li>';
-                }
+                 session_start();
+                    if (isset($_SESSION["user"]) && $_SESSION["user"] == "yes") {
+           
+                    if ($_SESSION["Rolet"] == "admin") {
+                        echo '<li><a href="admin-dashboard.php">Admin Dashboard</a></li>';
+                    } else {
+                        echo '<li><a href="user-dashboard.php">User Dashboard</a></li>';
+                    }
+                        echo '<li><a href="logout.php">Logout</a></li>';
+                    } else {
+                        echo '<li><a href="Login.php">Log-in</a></li>';
+                        echo '<li><a href="Register.php">Register</a></li>';
+                    }
                 ?>
             </ul>
         </nav>
