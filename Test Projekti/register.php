@@ -1,4 +1,61 @@
+<?php
+include_once 'USER.php';
+include_once 'CRUDAT_PER_USER.php';
 
+               if(isset($_POST["submit"])){
+                    $name = $_POST["name"];
+                    $surname = $_POST["surname"];
+                    $email = $_POST["regEmail"];
+                    $password = $_POST["regPassword"];    
+                    
+                    $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+                    
+                    $User = new USER($name, $surname, $email, $passwordHash);
+                    $crudat_per_user = new CRUDAT_PER_USER();
+                    $crudat_per_user->insertUser($User);
+                    header("Location: Login.php");
+                //     $errors = array();
+
+                // if (empty($name) or empty($surname) or empty($email) or empty($password)) {
+                //     array_push($errors, "All fields are required!");
+                // }
+                // if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+                //     array_push($errors, "Email is not valid!");
+                // }
+                // if(strlen($password)<6){
+                //     array_push($errors, "Password must be at least 6 characters long!");
+                // }
+                // require_once "database.php";
+                // $sql = "SELECT * FROM users WHERE Email = '$email'";
+
+                // $result = mysqli_query($conn, $sql);
+
+                // $rowCount = mysqli_num_rows($result);
+
+                // if($rowCount>0){
+                //     array_push($errors, "Email already exists!");
+                // }
+                
+               
+                
+                // if (count($errors) > 0){
+                //     foreach ($errors as $error) {
+                //         echo "<div>$error</div>";
+                //     }
+                // } else {
+                //     $sql = "INSERT INTO users (Name, Surname, Email, Password) VALUES (?, ?, ?, ?)";
+                //     $stmt = mysqli_stmt_init($conn);
+                //     $prepareStmt =  mysqli_stmt_prepare($stmt, $sql);
+                //     if ($prepareStmt) {
+                //         mysqli_stmt_bind_param($stmt, "ssss", $name, $surname, $email, $passwordHash);
+                //         mysqli_stmt_execute($stmt);
+                //         echo "<div>You are registered successfully</div>";
+                //     } else {
+                //         die("Something went wrong");
+                //     }
+                // }
+            }
+            ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,67 +88,15 @@
     
     <div class="LoginRegister">
         <div class="Register">
-            <?php
-                if(isset($_POST["submit"])){
-                    $name = $_POST["name"];
-                    $surname = $_POST["surname"];
-                    $email = $_POST["regEmail"];
-                    $password = $_POST["regPassword"];
-                    $rolet = $_POST["rolet"]; 
-                    $passwordHash = password_hash($password, PASSWORD_DEFAULT);
-                    $errors = array();
-                if (empty($name) or empty($surname) or empty($email) or empty($password)) {
-                    array_push($errors, "All fields are required!");
-                }
-                if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-                    array_push($errors, "Email is not valid!");
-                }
-                if(strlen($password)<6){
-                    array_push($errors, "Password must be at least 6 characters long!");
-                }
-                require_once "database.php";
-                $sql = "SELECT * FROM users WHERE Email = '$email'";
+            
+        <form action="" method="post" onsubmit="return validateRegistrationForm()">
 
-                $result = mysqli_query($conn, $sql);
-
-                $rowCount = mysqli_num_rows($result);
-
-                if($rowCount>0){
-                    array_push($errors, "Email already exists!");
-                }
-                
-                if (count($errors) > 0) {
-                    foreach ($errors as $error) {
-                        echo "<div>$error</div>";
-                    }
-                } else {
-                    $sql = "INSERT INTO users (Name, Surname, Email, Password, Rolet) VALUES (?, ?, ?, ?, ?)";
-                    $stmt = mysqli_stmt_init($conn);
-                    $prepareStmt =  mysqli_stmt_prepare($stmt, $sql);
-                    if ($prepareStmt) {
-                        mysqli_stmt_bind_param($stmt, "sssss", $name, $surname, $email, $passwordHash, $rolet);
-                        mysqli_stmt_execute($stmt);
-                        echo "<div>You are registered successfully</div>";
-                    } else {
-                        die("Something went wrong");
-                    }
-                }
-            }
-            ?>
-            <form action="Register.php" method="post" onsubmit="return validateRegistrationForm()">
                 
                 <h1>Register</h1>
-    <p>Name: <input type="text" name="name" required></p>
-    <p>Surname: <input type="text" name="surname" required></p>
-    <p>Email: <input type="email" name="regEmail" required autocomplete="email"></p>
-    <p>Password: <input type="password" name="regPassword" required autocomplete="new-password"></p>
-    <p>Role: 
-        <select name="rolet" required>
-            <option value="user">User</option>
-            <option value="admin">Admin</option>
-            <!-- Add more roles if needed -->
-        </select>
-    </p>
+                <p>Name: <input type="text" name="name" required></p>
+                <p>Surname: <input type="text" name="surname" required></p>
+                <p>Email: <input type="email" name="regEmail" required autocomplete="email"></p>
+                 <p>Password: <input type="password" name="regPassword" required autocomplete="new-password"></p>
                 <button type="submit" name = "submit">Register</button>
 
             </form>

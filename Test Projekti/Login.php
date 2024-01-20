@@ -1,3 +1,45 @@
+<?php
+    require_once "DATABASE.php"; 
+
+if (isset($_POST["submit"])) {
+    $email = $_POST["loginEmail"];
+    $password = $_POST["loginPassword"];
+
+    $database = new DATABASE();
+    $conn = $database->startConnection();
+
+    if ($conn) {
+        $sql = "SELECT * FROM users WHERE EMAIL = :email";
+        $stmt = $conn->prepare($sql);
+        $stmt->bindParam(':email', $email);
+        $stmt->execute();
+
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if ($user) {
+            if ($email === "lindgeci1@gmail.com" && password_verify($password, $user["Password"])) {
+                session_start();
+                $_SESSION["user"] = "yes";
+                $_SESSION["Rolet"] = "admin";
+                header("Location: index.php");
+                exit();
+            } elseif (password_verify($password, $user["Password"])) {
+                session_start();
+                $_SESSION["user"] = "yes";
+                $_SESSION["Rolet"] = $user["Rolet"];
+                header("Location: index.php");
+                exit();
+            } else {
+                echo "<div>Password does not match</div>";
+            }
+        } else {
+            echo "<div>Email does not match</div>";
+        }
+    } else {
+        echo "<div>Database connection error</div>";
+    }
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +70,8 @@
                     if (isset($_SESSION["user"]) && $_SESSION["user"] == "yes") {
            
                     if ($_SESSION["Rolet"] == "admin") {
-                        echo '<li><a href="admin-dashboard.php">Admin Dashboard</a></li>';
+                        echo '<li><a href="dashboard.php">Admin Dashboard</a></li>';
+                        
                     } else {
                         echo '<li><a href="user-dashboard.php">User Dashboard</a></li>';
                     }
@@ -44,35 +87,6 @@
     
     <div class="LoginRegister">
         <div class="Log-in">
-
-        <?php
-            if(isset($_POST["submit"])){
-                $email = $_POST["loginEmail"];
-                $password = $_POST["loginPassword"];
-                require_once "database.php";
-                $sql = "SELECT * FROM users WHERE EMAIL = '$email'";
-
-                $result = mysqli_query($conn, $sql);
-                $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
-
-                if($user){
-                    if(password_verify($password, $user["Password"])){
-                        session_start();
-                        $_SESSION["user"] = "yes";
-                        $_SESSION["Rolet"] = $user["Rolet"];
-                        header("Location: index.php");
-                        die();
-                    }
-                    else{
-                        echo "<div>Password does not match</div>";
-                    }
-                }
-                else{
-                    echo "<div>Email does not match</div>";
-                }
-            }
-        ?>
-
 
             <form action="Login.php" method="post" onsubmit="return validateLoginForm()">
                 <h1>Log-In</h1>
