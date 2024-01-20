@@ -1,5 +1,5 @@
 <?php
-    require_once "DATABASE.php"; 
+    require_once "database.php"; 
 
 if (isset($_POST["submit"])) {
     $email = $_POST["loginEmail"];

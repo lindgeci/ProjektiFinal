@@ -68,7 +68,7 @@ $Users = $strep->getallUsers();
                     <td><?= $User["Email"]; ?></td>
                     <td><?= $User["Password"]; ?></td>
                     <td><a href='editUser.php?id=<?= $User["id"] ?>'>Edit</a></td>
-                    <td><a href='deleteUser.php?id=<?= $User["id"] ?>'>Delete</a></td>
+                    <td><a href='deleteuser.php?id=<?= $User["id"] ?>'>Delete</a></td>
                 </tr>
             <?php } ?>
         </tbody>
