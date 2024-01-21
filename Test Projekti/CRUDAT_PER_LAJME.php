@@ -56,15 +56,14 @@ class CRUDAT_PER_LAJME
         return $news;
     }
 
-    // //public function getAllNews()
-    // {
-    //     $conn = $this->connection;
-
-    //     $sql = "SELECT * FROM news";
-    //     $statement = $conn->prepare($sql);
-    //     $statement->execute();
-    //     $newsList = $statement->fetchAll();
-    //     return $newsList;
-    // }
+    public function getAllNews()
+    {
+    $conn = $this->connection;
+    $sql = "SELECT * FROM news";
+     $statement = $conn->prepare($sql);
+     $statement->execute();
+     $newsList = $statement->fetchAll();
+        return $newsList;
+     }
 }
 ?>
