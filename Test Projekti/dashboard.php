@@ -63,10 +63,10 @@ $Users = $strep->getallUsers();
         <tbody>
             <?php foreach ($Users as $User) { ?>
                 <tr>
-                    <td><?= $User["Name"]; ?></td>
-                    <td><?= $User["Surname"]; ?></td>
-                    <td><?= $User["Email"]; ?></td>
-                    <td><?= $User["Password"]; ?></td>
+                    <td><?php echo $User["Name"]; ?></td>
+                    <td><?php echo $User["Surname"]; ?></td>
+                    <td><?php echo $User["Email"]; ?></td>
+                    <td><?php echo $User["Password"]; ?></td>
                     <td><a href='editUser.php?id=<?= $User["id"] ?>'>Edit</a></td>
                     <td><a href='deleteuser.php?id=<?= $User["id"] ?>'>Delete</a></td>
                 </tr>

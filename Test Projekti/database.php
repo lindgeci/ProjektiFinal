@@ -9,8 +9,7 @@ class DATABASE {
     function startConnection() {
         try {
             $conn = new PDO("mysql:host=$this->host;dbname=$this->db", $this->dbusername, $this->dbpassword, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-        
-            echo "Connection successful!"; 
+            
             return $conn;
             
         } catch (PDOException $e) {

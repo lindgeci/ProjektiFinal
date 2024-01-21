@@ -1,5 +1,5 @@
 <?php
-    require_once "database.php"; 
+require_once "database.php"; 
 
 if (isset($_POST["submit"])) {
     $email = $_POST["loginEmail"];
@@ -17,29 +17,22 @@ if (isset($_POST["submit"])) {
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
         if ($user) {
-            if ($email === "lindgeci1@gmail.com" && password_verify($password, $user["Password"])) {
+            if (password_verify($password, $user["Password"])) {
                 session_start();
                 $_SESSION["user"] = "yes";
-                $_SESSION["Rolet"] = "admin";
-                header("Location: index.php");
-                exit();
-            } elseif (password_verify($password, $user["Password"])) {
-                session_start();
-                $_SESSION["user"] = "yes";
-                $_SESSION["Rolet"] = $user["Rolet"];
+                $_SESSION["Rolet"] = ($email === "lg69462@ubt-uni.net") ? "admin" : $user["Rolet"];
                 header("Location: index.php");
                 exit();
             } else {
-                echo "<div>Password does not match</div>";
+                echo "<script>alert('Password does not match');</script>";
             }
         } else {
-            echo "<div>Email does not match</div>";
+            echo "<script>alert('Email does not match');</script>";
         }
-    } else {
-        echo "<div>Database connection error</div>";
-    }
+    } 
 }
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>

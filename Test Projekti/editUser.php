@@ -23,9 +23,9 @@ $User = $strep->getUserbyId($id);
             <h1>Register</h1>
             <p>Name: <input type="text" name="name" value="<?php echo $User["Name"] ?>" required><br></p>
             <p>Surname: <input type="text" name="surname" value="<?php echo $User["Surname"] ?>" required><br></p>
-            <p>Email: <input type="email" name="regEmail" value="<?php echo $User["Email"] ?>" required autocomplete="email"><br></p>
-            <p>Password: <input type="password" name="regPassword" value="<?php echo $User["Password"] ?>" required autocomplete="new-password"><br></p>
-            <input type="hidden" name="id" value="<?php echo $User["id"] ?>">
+            <p>Email: <input type="email" name="regEmail" value="<?php echo $User["Email"] ?>" required><br></p>
+            <p>Password: <input type="password" name="regPassword" value="<?php echo $User["Password"] ?>" required><br></p>
+                
             <button type="submit" name="submitt">Save</button>
         </form>
     </div>
@@ -42,8 +42,21 @@ if (isset($_POST["submitt"])) {
     $surname = $_POST["surname"];
     $regEmail = $_POST["regEmail"];
     $regPassword = $_POST["regPassword"];
+    
+    $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+    $errors = array();
 
-    $strep->editStudent($id, $name, $surname, $regEmail, $regPassword);
+                if (empty($name) || empty($surname) || empty($regEmail) || empty($regPassword)) {
+                    array_push($errors, "All fields are required!");
+                }
+                if(!filter_var($regEmail, FILTER_VALIDATE_EMAIL)){
+                    array_push($errors, "Email is not valid!");
+                }
+                if(strlen($regPassword)<6){
+                    array_push($errors, "Password must be at least 6 characters long!");
+                }
+
+    $strep->editStudent($id, $name, $surname, $regEmail, $passwordHash);
     header("Location: dashboard.php");
 }
 
