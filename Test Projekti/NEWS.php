@@ -6,6 +6,7 @@
       
         public function __construct($NewsName,$NewsText){
             $this->NewsName = $NewsName;
+            $this->NewsText = $NewsText;
         }
 
         public function getNewsName(){

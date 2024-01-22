@@ -42,13 +42,22 @@ $Users = $strep->getallUsers();
             background-color: #4CAF50;
             color: white;
         } 
+        /* @media (max-width: 700px) {
+            table {
+                width: 100%;
+            }
+        }
+
+        .goback {
+            margin-top: 20px;
+        } */
     </style>
     <title>User List</title>
     
 </head>
 
 <body>
-
+        
     <table>
         <thead>
             <tr>
@@ -75,7 +84,7 @@ $Users = $strep->getallUsers();
     </table>
 
     <div class="goback">
-        Go back<a href="index.php">GO BACK</a>
+        <a href="index.php">GO BACK</a>
     </div>
 
 </body>

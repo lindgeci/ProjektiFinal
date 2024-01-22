@@ -1,5 +1,5 @@
 <?php
-include "database.php";
+include "databaseN.php";
 include_once "CRUDAT_PER_LAJME.php";
 
 $crud = new CRUDAT_PER_LAJME();
@@ -32,8 +32,7 @@ $newsList = $crud->getAllNews();
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        th,
-        td {
+        th,td {
             padding: 15px;
             text-align: left;
             border-bottom: 1px solid #ddd;
@@ -43,6 +42,15 @@ $newsList = $crud->getAllNews();
             background-color: #4CAF50;
             color: white;
         }
+        /* @media (max-width: 600px) {
+            table {
+                width: 100%;
+            }
+        }
+
+        .goback {
+            margin-top: 20px;
+        } */
     </style>
     <title>News List</title>
 
@@ -53,7 +61,8 @@ $newsList = $crud->getAllNews();
     <table>
         <thead>
             <tr>
-                <th>EmriILajmeve</th>
+                <th>Emri i Lajmeve</th>
+                <th>Paragrafi</th>
                 <th>Edit</th>
                 <th>Delete</th>
            
@@ -72,7 +81,7 @@ $newsList = $crud->getAllNews();
     </table>
 
     <div class="goback">
-        Go back<a href="index.php">GO BACK</a>
+        <a href="index.php">GO BACK</a>
     </div>
 
 </body>

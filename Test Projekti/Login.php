@@ -20,7 +20,12 @@ if (isset($_POST["submit"])) {
             if (password_verify($password, $user["Password"])) {
                 session_start();
                 $_SESSION["user"] = "yes";
-                $_SESSION["Rolet"] = ($email === "lg69462@ubt-uni.net") ? "admin" : $user["Rolet"];
+ 
+                if ($email === "lg69462@gmail.com" && $password === "LindGeci#123") {
+                    $_SESSION["Rolet"] = "admin"; 
+                } else {
+                    $_SESSION["Rolet"] = $user["Rolet"]; 
+                }
                 header("Location: index.php");
                 exit();
             } else {
@@ -28,10 +33,13 @@ if (isset($_POST["submit"])) {
             }
         } else {
             echo "<script>alert('Email does not match');</script>";
+            $_SESSION["Rolet"] = "default";
         }
     } 
 }
 ?>
+
+
 
 <!DOCTYPE html>
 <html>

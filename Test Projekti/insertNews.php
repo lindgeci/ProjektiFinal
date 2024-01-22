@@ -1,14 +1,17 @@
 <?php
+include_once("NEWS.php");
 include_once('CRUDAT_PER_LAJME.php');
 
 if (isset($_POST["submit"])) {
-    $newsName = $_POST["newsName"];
-    $newsText = $_POST["newsText"];
+    $newsname = $_POST["newsname"];
+    $newstext = $_POST["newstext"];
 
+    
+    $NEWS = new NEWS($newsname, $newstext);
     $crud = new CRUDAT_PER_LAJME();
-    $crud->insertNews($newsName, $newsText);
-    header("Location: newsdashboard.php");
-    exit();
+    $crud->insertNews($NEWS);
+    header("Location: index.php");
+    
 }
 ?>
 
@@ -27,11 +30,14 @@ if (isset($_POST["submit"])) {
         <div class="NewsForm">
             <form action="" method="post">
                 <h1>Insert News</h1>
-                <p>News Name: <input type="text" name="newsname" required><br></p>
-                <p>News Text: <textarea name="newstext" required></textarea></p>
+                <p>News : <input type="text" name="newsname" required><br></p>
+                <p>Text: <input type ="text" name="newstext" required><br></p>
                 <button type="submit" name="submit">Add News</button>
             </form>
         </div>
+    </div>
+    <div>
+        <a href="index.php">GO BACK</a>
     </div>
 </body>
 

@@ -22,8 +22,8 @@ $News = $strep->getNewsById($id);
         <div class="Newslist">
             <form action="" method="post">
                 <h1>Edit News</h1>
-                <p>News Name: <input type="text" name="newsname" value="<?php echo $News["NewsName"] ?>" required><br></p>
-                <p>News Text: <input type="text" name="newstext" value="<?php echo $News["NewsText"] ?>" required><br></p>
+                <p>News Name: <input type="text" name="newsname" value="<?php echo $News["newsName"] ?>" required><br></p>
+                <p>News Text: <input type="text" name="newstext" value="<?php echo $News["newsText"] ?>" required><br></p>
                 
                 <button type="submit" name="submitt">Save</button>
             </form>
@@ -38,8 +38,8 @@ $News = $strep->getNewsById($id);
 
 if (isset($_POST["submitt"])) {
     $id = $News["id"];
-    $newsName = $_POST["newsName"];
-    $newsText = $_POST["newsText"];
+    $newsName = $_POST["newsname"];
+    $newsText = $_POST["newstext"];
 
     $strep->editNews($id, $newsName, $newsText);
     header("Location: newsdashboard.php");

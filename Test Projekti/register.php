@@ -90,16 +90,13 @@ include_once 'CRUDAT_PER_USER.php';
         <div class="Register">
             
         <form action="" method="post" onsubmit="return validateRegistrationForm()">
-
-                
-                <h1>Register</h1>
-                <p>Name: <input type="text" name="name" required></p>
-                <p>Surname: <input type="text" name="surname" required></p>
-                <p>Email: <input type="email" name="regEmail" required autocomplete="email"></p>
-                 <p>Password: <input type="password" name="regPassword" required autocomplete="new-password"></p>
-                <button type="submit" name = "submit">Register</button>
-
-            </form>
+    <h1>Register</h1>
+    <p>Name: <input type="text" name="name" id="name" required></p>
+    <p>Surname: <input type="text" name="surname" id="surname" required></p>
+    <p>Email: <input type="email" name="regEmail" id="regEmail" required ></p>
+    <p>Password: <input type="password" name="regPassword" id="regPassword" required ></p>
+    <button type="submit" name="submit">Register</button>
+</form>
         </div>
 
         
