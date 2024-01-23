@@ -32,7 +32,7 @@ $newsList = $crud->getAllNews();
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        th,td {
+        th, td {
             padding: 15px;
             text-align: left;
             border-bottom: 1px solid #ddd;
@@ -42,15 +42,6 @@ $newsList = $crud->getAllNews();
             background-color: #4CAF50;
             color: white;
         }
-        /* @media (max-width: 600px) {
-            table {
-                width: 100%;
-            }
-        }
-
-        .goback {
-            margin-top: 20px;
-        } */
     </style>
     <title>News List</title>
 
@@ -61,11 +52,12 @@ $newsList = $crud->getAllNews();
     <table>
         <thead>
             <tr>
-                <th>Emri i Lajmeve</th>
+                <th>Titulli</th>
                 <th>Paragrafi</th>
+                <th>Foto</th>
                 <th>Edit</th>
                 <th>Delete</th>
-           
+
             </tr>
         </thead>
         <tbody>
@@ -73,6 +65,12 @@ $newsList = $crud->getAllNews();
                 <tr>
                     <td><?php echo $news["newsName"]; ?></td>
                     <td><?php echo $news["newsText"]; ?></td>
+                    <td>
+                        <?php
+                        $imagePath = "indexphoto/" . $news["foto"];
+                        echo "<img src='$imagePath' style='max-width: 200px; max-height: 200px;'>";
+                        ?>
+                    </td>
                     <td><a href='editNews.php?id=<?= $news["id"] ?>'>Edit</a></td>
                     <td><a href='deletenews.php?id=<?= $news["id"] ?>'>Delete</a></td>
                 </tr>

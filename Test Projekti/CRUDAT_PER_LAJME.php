@@ -16,22 +16,22 @@ class CRUDAT_PER_LAJME
 
         $newsname = $NEWS->getNewsName();
         $newstext = $NEWS->getNewsText();
+        $foto = $NEWS->getFoto();
 
-
-        $sql = "INSERT INTO news(newsName, newsText) VALUES (?, ?)";
+        $sql = "INSERT INTO news(newsName, newsText, foto) VALUES (?, ?, ?)";
 
         $statement = $conn->prepare($sql);
-        $statement->execute([$newsname, $newstext]);
+        $statement->execute([$newsname, $newstext, $foto]);
         echo '<script>alert("U Shtua me sukses");</script>';
     }
 
-    public function editNews($id, $newsName, $newsText)
+    public function editNews($id, $newsName, $newsText, $foto)
     {
         $conn = $this->connection;
-        $sql = "UPDATE news SET newsName=?, newsText=? WHERE id=?";
+        $sql = "UPDATE news SET newsName=?, newsText=?, foto=? WHERE id=?";
 
         $statement = $conn->prepare($sql);
-        $statement->execute([$newsName, $newsText, $id]);
+        $statement->execute([$newsName, $newsText, $foto, $id]);
 
         echo '<script>alert("U ndryshua me sukses");</script>';
     }

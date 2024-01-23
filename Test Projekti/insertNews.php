@@ -5,9 +5,9 @@ include_once('CRUDAT_PER_LAJME.php');
 if (isset($_POST["submit"])) {
     $newsname = $_POST["newsname"];
     $newstext = $_POST["newstext"];
-
+    $foto = $_POST["Foto"];
     
-    $NEWS = new NEWS($newsname, $newstext);
+    $NEWS = new NEWS($newsname, $newstext, $foto);
     $crud = new CRUDAT_PER_LAJME();
     $crud->insertNews($NEWS);
     header("Location: index.php");
@@ -32,6 +32,7 @@ if (isset($_POST["submit"])) {
                 <h1>Insert News</h1>
                 <p>News : <input type="text" name="newsname" required><br></p>
                 <p>Text: <input type ="text" name="newstext" required><br></p>
+                <p>Upload: <input type ="file" name="Foto" required><br></p>
                 <button type="submit" name="submit">Add News</button>
             </form>
         </div>

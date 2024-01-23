@@ -20,8 +20,8 @@ if (isset($_POST["submit"])) {
             if (password_verify($password, $user["Password"])) {
                 session_start();
                 $_SESSION["user"] = "yes";
- 
-                if ($email === "lg69462@gmail.com" && $password === "LindGeci#123") {
+        
+                if ($user["Rolet"] == "admin") {
                     $_SESSION["Rolet"] = "admin"; 
                 } else {
                     $_SESSION["Rolet"] = $user["Rolet"]; 
@@ -35,6 +35,7 @@ if (isset($_POST["submit"])) {
             echo "<script>alert('Email does not match');</script>";
             $_SESSION["Rolet"] = "default";
         }
+        
     } 
 }
 ?>

@@ -22,9 +22,9 @@ $News = $strep->getNewsById($id);
         <div class="Newslist">
             <form action="" method="post">
                 <h1>Edit News</h1>
-                <p>News Name: <input type="text" name="newsname" value="<?php echo $News["newsName"] ?>" required><br></p>
-                <p>News Text: <input type="text" name="newstext" value="<?php echo $News["newsText"] ?>" required><br></p>
-                
+                <p>News Name: <input type="text" name="newsname" value="<?php echo $News["newsName"] ?>" ><br></p>
+                <p>News Text: <input type="text" name="newstext" value="<?php echo $News["newsText"] ?>" ><br></p>
+                <p>Foto: <input type="file" name="Foto" value="<?php echo $News["foto"] ?>" ><br></p>
                 <button type="submit" name="submitt">Save</button>
             </form>
         </div>
@@ -37,13 +37,19 @@ $News = $strep->getNewsById($id);
 
 
 if (isset($_POST["submitt"])) {
+    if(empty($_POST['newsname']) || empty($_POST['newstext'])){
+        echo "Fill all fields!";
+    }
+    else{
     $id = $News["id"];
     $newsName = $_POST["newsname"];
     $newsText = $_POST["newstext"];
+    $foto = $_POST["Foto"];
 
-    $strep->editNews($id, $newsName, $newsText);
+    $strep->editNews($id, $newsName, $newsText, $foto);
     header("Location: newsdashboard.php");
     exit();
+    }
 }
 
 ?>

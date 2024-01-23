@@ -3,10 +3,12 @@
         private $id;
         private $NewsName;
         private $NewsText;
+        private $Foto;
       
-        public function __construct($NewsName,$NewsText){
+        public function __construct($NewsName, $NewsText, $Foto){
             $this->NewsName = $NewsName;
             $this->NewsText = $NewsText;
+            $this->Foto = $Foto;
         }
 
         public function getNewsName(){
@@ -14,6 +16,12 @@
         }
         public function setNewsName($NewsName){
             $this->NewsName = $NewsName;
+        }
+        public function getFoto(){
+            return $this->Foto;
+        }
+        public function setFoto($Foto){
+            $this->Foto = $Foto;
         }
 
         public function getNewsText(){
@@ -23,8 +31,8 @@
             $this->NewsText = $NewsText;
         }
 
-        public function __toString() {
-            return "EmriILajmit: " . $this->NewsName . ", Paragrafi: " . $this->NewsText;
-        }
+        // public function __toString() {
+        //     return "EmriILajmit: " . $this->NewsName . ", Paragrafi: " . $this->NewsText;
+        // }
     }
 
