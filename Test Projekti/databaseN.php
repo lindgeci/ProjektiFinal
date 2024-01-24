@@ -19,5 +19,6 @@ class DATABASE1
     }
 }
 
-
+$test = new DATABASE1;
+$test->startConnection();
 ?>

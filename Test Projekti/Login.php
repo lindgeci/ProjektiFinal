@@ -1,28 +1,24 @@
 <?php
 require_once "database.php"; 
-
 if (isset($_POST["submit"])) {
     $email = $_POST["loginEmail"];
     $password = $_POST["loginPassword"];
-
     $database = new DATABASE();
     $conn = $database->startConnection();
-
     if ($conn) {
         $sql = "SELECT * FROM users WHERE EMAIL = :email";
         $stmt = $conn->prepare($sql);
         $stmt->bindParam(':email', $email);
         $stmt->execute();
-
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
-
         if ($user) {
             if (password_verify($password, $user["Password"])) {
                 session_start();
                 $_SESSION["user"] = "yes";
-        
-                if ($user["Rolet"] == "admin") {
-                    $_SESSION["Rolet"] = "admin"; 
+                if ($user["Email"] == "lg69462@ubt-uni.net" && password_verify("LindGeci#123", $user["Password"])) {
+                    $_SESSION["Rolet"] = "admin";
+                } elseif ($user["Email"] == "ar12345@ubt-uni.net" && password_verify("AlketaRama#123", $user["Password"])) {
+                    $_SESSION["Rolet"] = "admin";
                 } else {
                     $_SESSION["Rolet"] = $user["Rolet"]; 
                 }
@@ -35,7 +31,6 @@ if (isset($_POST["submit"])) {
             echo "<script>alert('Email does not match');</script>";
             $_SESSION["Rolet"] = "default";
         }
-        
     } 
 }
 ?>
@@ -72,11 +67,10 @@ if (isset($_POST["submit"])) {
                     if (isset($_SESSION["user"]) && $_SESSION["user"] == "yes") {
            
                     if ($_SESSION["Rolet"] == "admin") {
-                        echo '<li><a href="dashboard.php">Admin Dashboard</a></li>';
-                        
-                    } else {
-                        echo '<li><a href="user-dashboard.php">User Dashboard</a></li>';
-                    }
+                        echo '<li><a href="dashboard.php">Admin</a></li>';
+                        echo '<li><a href="newsdashboard.php">News</a></li>';
+                        echo '<li><a href="insertNews.php">Insert</a></li>';
+                    } 
                         echo '<li><a href="logout.php">Logout</a></li>';
                     } else {
                         echo '<li><a href="Login.php">Log-in</a></li>';

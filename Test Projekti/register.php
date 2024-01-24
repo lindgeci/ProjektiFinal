@@ -103,7 +103,7 @@ include_once 'CRUDAT_PER_USER.php';
        
     </div>
 
-    <h2 id = "h2Login">Things you may have missed </h2>
+
     <div class="main">
         <div class="left">
             <div class="box">

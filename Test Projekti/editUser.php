@@ -50,6 +50,7 @@ if (isset($_POST["submit"])) {
         $passwordHash = password_hash($regPassword, PASSWORD_DEFAULT);
         
         $strep->editStudent($id, $name, $surname, $regEmail, $passwordHash);
+        
         header("Location: dashboard.php");
         exit();
     }

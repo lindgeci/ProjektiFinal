@@ -6,10 +6,10 @@ class DATABASE {
     private $dbpassword = ""; 
     private $db = "lg";
 
-    function startConnection() {
+    function startConnection(){
         try {
             $conn = new PDO("mysql:host=$this->host;dbname=$this->db", $this->dbusername, $this->dbpassword, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-            
+           
             return $conn;
             
         } catch (PDOException $e) {
@@ -18,4 +18,7 @@ class DATABASE {
         }
     }
 }
+
+$test = new DATABASE;
+$test->startConnection();
 ?>

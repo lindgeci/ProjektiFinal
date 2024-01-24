@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="logo">
-            <h1>𝔗𝔥𝔢 𝔑𝔢𝔴 𝔜𝔬𝔯𝔨 𝔗𝔦𝔪𝔢𝔰</h1>
+            <h1>The New York Times</h1>
         </div>
         <nav>
             <ul>
@@ -28,12 +28,10 @@
                     if (isset($_SESSION["user"]) && $_SESSION["user"] == "yes") {
            
                     if ($_SESSION["Rolet"] == "admin") {
-                        echo '<li><a href="dashboard.php">Admin Dashboard</a></li>';
-                        echo '<li><a href="newsdashboard.php">News Dashboard</a></li>';
-                        echo '<li><a href="insertNews.php">Insert News</a></li>';
-                    } else {
-                        echo '<li><a href="user-dashboard.php">User Dashboard</a></li>';
-                    }
+                        echo '<li><a href="dashboard.php">Admin</a></li>';
+                        echo '<li><a href="newsdashboard.php">News</a></li>';
+                        echo '<li><a href="insertNews.php">Insert</a></li>';
+                    } 
                         echo '<li><a href="logout.php">Logout</a></li>';
                     } else {
                         echo '<li><a href="Login.php">Log-in</a></li>';
