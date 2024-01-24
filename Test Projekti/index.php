@@ -32,7 +32,6 @@
                         echo '<li><a href="dashboard.php">Admin</a></li>';
                         echo '<li><a href="newsdashboard.php">News</a></li>';
                         echo '<li><a href="insertNews.php">Insert</a></li>';
-
                     } 
                         echo '<li><a href="logout.php">Logout</a></li>';
                     } else {

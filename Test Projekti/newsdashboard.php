@@ -57,7 +57,6 @@ $newsList = $crud->getAllNews();
                 <th>Foto</th>
                 <th>Edit</th>
                 <th>Delete</th>
-
             </tr>
         </thead>
         <tbody>
@@ -72,7 +71,7 @@ $newsList = $crud->getAllNews();
                         ?>
                     </td>
                     <td><a href='editNews.php?id=<?= $news["id"] ?>'>Edit</a></td>
-                    <td><a href='deletenews.php?id=<?= $news["id"] ?>'>Delete</a></td>
+                    <td><a href='deleteNews.php?id=<?= $news["id"] ?>'>Delete</a></td>
                 </tr>
             <?php } ?>
         </tbody>
