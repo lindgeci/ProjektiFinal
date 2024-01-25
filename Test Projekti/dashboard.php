@@ -1,10 +1,13 @@
 <?php
+session_start();
+
 include "database.php";
 include_once "CRUDAT_PER_USER.php";
 
 $strep = new CRUDAT_PER_USER();
 $Users = $strep->getallUsers();
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -42,15 +45,6 @@ $Users = $strep->getallUsers();
             background-color: #4CAF50;
             color: white;
         } 
-        /* @media (max-width: 700px) {
-            table {
-                width: 100%;
-            }
-        }
-
-        .goback {
-            margin-top: 20px;
-        } */
     </style>
     <title>User List</title>
     
@@ -67,6 +61,7 @@ $Users = $strep->getallUsers();
                 <th>Password</th>
                 <th>Edit</th>
                 <th>Delete</th>
+                
             </tr>
         </thead>
         <tbody>

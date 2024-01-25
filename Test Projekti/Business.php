@@ -366,8 +366,8 @@
             <div class="section">
                 <h2>Subscribe to Our News</h2>
                 <div class="email">
-                    <input type="email" id="emailInput" placeholder="Enter Your Email Here">
-                    <button onclick="checkEmail()">Subscribe</button>
+                    <input type="search" id="emailInput" placeholder="Enter Your Email Here">
+                    <button onclick="checkSearch()">Subscribe</button>
                 </div>
             </div>
         </div>
@@ -380,19 +380,6 @@
         
         
         <script>
-
-
-            function checkEmail() {
-
-
-                let domain = document.getElementById("emailInput").value.split('@')[1];
-        
-                if (domain !== "@gmail.com") {
-                    alert("Please use the correct email domain!");
-                } else {
-                    alert("You have successfully subscribed!");
-                }
-            }
 
 
             function checkSearch() {

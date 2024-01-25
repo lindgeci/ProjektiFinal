@@ -64,5 +64,16 @@
         $User = $statement->fetch();
         return $User;
     }
+
+    public function getUserByEmail($email) {
+    $conn = $this->connection;
+
+    $sql = "SELECT * FROM users WHERE Email=?";
+    $statement = $conn->prepare($sql);
+    $statement->execute([$email]);
+    $user = $statement->fetch();
+    
+    return $user;
+}
  }
 ?>

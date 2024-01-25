@@ -5,13 +5,13 @@ if (isset($_POST["submit"])) {
     $password = $_POST["loginPassword"];
     $database = new DATABASE();
     $conn = $database->startConnection();
-    if ($conn) {
+    if ($conn){
         $sql = "SELECT * FROM users WHERE EMAIL = :email";
         $stmt = $conn->prepare($sql);
         $stmt->bindParam(':email', $email);
         $stmt->execute();
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
-        if ($user) {
+        if ($user){
             if (password_verify($password, $user["Password"])) {
                 session_start();
                 $_SESSION["user"] = "yes";
