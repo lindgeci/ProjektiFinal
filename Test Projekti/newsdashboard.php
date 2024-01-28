@@ -65,9 +65,10 @@ $newsList = $crud->getAllNews();
                     <td><?php echo $news["newsName"]; ?></td>
                     <td><?php echo $news["newsText"]; ?></td>
                     <td>
+                        
                         <?php
-                        $imagePath = "indexphoto/" . $news["foto"];
-                        echo "<img src='$imagePath' style='max-width: 200px; max-height: 200px;'>";
+                        $image = "indexphoto/" .$news["foto"];
+                        echo "<img src = '$image' style = 'max-height: 100px; max-width: 100;'";
                         ?>
                     </td>
                     <td><a href='editNews.php?id=<?= $news["id"] ?>'>Edit</a></td>

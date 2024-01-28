@@ -347,8 +347,12 @@
             <div class="section">
                 <h2>Contact Us</h2>
                 <div class="contact-info">
-                    <p>Phone: <span>+383 123-456-789</span></p>
-                    <p>Email: <span>NYTimes@gmail.com</span></p>
+                    <p>Phone:
+                    <span>+383 123-456-789</span><br>
+                    <span>+383 123-456-789</span></p><hr>
+                    <p>Email:
+                    <span>lindgeci@gmail.com</span><br>
+                    <span>alketarama@gmail.com</span></p><hr>
                     <p>Address: <span>Prishtine, Kosove</span></p>
                 </div>
                 <textarea id="commentInput" name="comment" placeholder="Write your comment..."></textarea>

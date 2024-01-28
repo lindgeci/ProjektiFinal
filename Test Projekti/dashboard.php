@@ -1,13 +1,13 @@
 <?php
-session_start();
+
 
 include "database.php";
 include_once "CRUDAT_PER_USER.php";
 
+
 $strep = new CRUDAT_PER_USER();
 $Users = $strep->getallUsers();
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,31 +27,30 @@ $Users = $strep->getallUsers();
             align-items: center;
         }
 
-          table {
+        table {
             width: 80%;
             border-collapse: collapse;
             margin-top: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        } 
+        }
 
         th, td {
             padding: 15px;
             text-align: left;
             border-bottom: 1px solid #ddd;
         }
-        
+
         th {
             background-color: #4CAF50;
             color: white;
-        } 
+        }
     </style>
     <title>User List</title>
-    
 </head>
 
 <body>
-        
+
     <table>
         <thead>
             <tr>
