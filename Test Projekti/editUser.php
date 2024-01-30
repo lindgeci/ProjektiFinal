@@ -33,7 +33,7 @@ $User = $strep->getUserbyId($id);
 
     <?php
     if (isset($_POST["submitt"])) {
-        if (empty($_POST['name']) || empty($_POST['surname']) || empty($_POST['regEmail']) || empty($_POST['regPassword']) ) {
+        if (empty($_POST['name']) || empty($_POST['surname']) || empty($_POST['regEmail']) || empty($_POST['regPassword'])) {
             echo "Fill all fields!";
         } else {
             $id = $User["id"];
@@ -42,21 +42,24 @@ $User = $strep->getUserbyId($id);
             $regEmail = $_POST["regEmail"];
             $regPassword = $_POST["regPassword"];
 
-
             if (strlen($regPassword) < 8) {
                 echo "Password should be at least 8 characters long.";
             } else {
-                // $passwordHash = !empty($regPassword) ? password_hash($regPassword, PASSWORD_DEFAULT) : $User["Password"];
+                 // $passwordHash = !empty($regPassword) ? password_hash($regPassword, PASSWORD_DEFAULT) : $User["Password"];
                 $passwordHash = password_hash($regPassword, PASSWORD_DEFAULT);
-                $strep->editStudent($id, $name, $surname, $regEmail, $passwordHash);
 
-                header("Location: dashboard.php");
+                session_start();
+        
+                $adminName = $_SESSION["admin_username"] ?? "Unknown Admin";
+
+                $strep->editStudent($id, $name, $surname, $regEmail, $passwordHash);
+                header("Location: dashboard.php?admin=$adminName");
                 exit();
             }
         }
     }
     ?>
-
+    
 </body>
 
 </html>

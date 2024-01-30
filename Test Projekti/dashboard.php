@@ -1,9 +1,6 @@
 <?php
-
-
 include "database.php";
 include_once "CRUDAT_PER_USER.php";
-
 
 $strep = new CRUDAT_PER_USER();
 $Users = $strep->getallUsers();
@@ -75,7 +72,13 @@ $Users = $strep->getallUsers();
                 </tr>
             <?php } ?>
         </tbody>
-    </table>
+    </table>    
+    <?php
+     if (isset($_GET["admin"])) {
+         $admin = $_GET["admin"];
+         echo "<p>Edit/modified performed by: $admin</p>";
+        }
+    ?>
 
     <div class="goback">
         <a href="index.php">GO BACK</a>

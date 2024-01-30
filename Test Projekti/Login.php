@@ -1,27 +1,34 @@
 <?php
-require_once "database.php"; 
+require_once "database.php";
+
 if (isset($_POST["submit"])) {
     $email = $_POST["loginEmail"];
     $password = $_POST["loginPassword"];
     $database = new DATABASE();
     $conn = $database->startConnection();
-    if ($conn){
+
+    if ($conn) {
         $sql = "SELECT * FROM users WHERE EMAIL = :email";
         $stmt = $conn->prepare($sql);
         $stmt->bindParam(':email', $email);
         $stmt->execute();
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
-        if ($user){
+
+        if ($user) {
             if (password_verify($password, $user["Password"])) {
                 session_start();
                 $_SESSION["user"] = "yes";
+
                 if ($user["Email"] == "lg69462@ubt-uni.net" && password_verify("LindGeci#123", $user["Password"])) {
                     $_SESSION["Rolet"] = "admin";
+                    $_SESSION["admin_username"] = "Lind";
                 } elseif ($user["Email"] == "ar12345@ubt-uni.net" && password_verify("AlketaRama#123", $user["Password"])) {
                     $_SESSION["Rolet"] = "admin";
+                    $_SESSION["admin_username"] = "Alketa";
                 } else {
-                    $_SESSION["Rolet"] = $user["Rolet"]; 
+                    $_SESSION["Rolet"] = $user["Rolet"];
                 }
+
                 header("Location: index.php");
                 exit();
             } else {
@@ -31,9 +38,10 @@ if (isset($_POST["submit"])) {
             echo "<script>alert('Email does not match');</script>";
             $_SESSION["Rolet"] = "default";
         }
-    } 
+    }
 }
 ?>
+
 
 <!DOCTYPE html>
 <html>
