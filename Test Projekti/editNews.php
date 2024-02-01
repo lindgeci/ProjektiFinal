@@ -24,7 +24,7 @@ $News = $strep->getNewsById($id);
                 <h1>Edit News</h1>
                 <p>News Name: <input type="text" name="newsname" value="<?php echo $News["newsName"] ?>" ><br></p>
                 <p>News Text: <input type="text" name="newstext" value="<?php echo $News["newsText"] ?>" ><br></p>
-                <p>Foto: <input type="file" name="Foto" value="<?php echo $News["foto"] ?>" ><br></p>
+                <p>Foto: <input type="file" name="Foto" value="" ><br></p>
                 <button type="submit" name="submitt">Save</button>
             </form>
         </div>
@@ -37,7 +37,7 @@ $News = $strep->getNewsById($id);
 
 
 if (isset($_POST["submitt"])) {
-    if(empty($_POST['newsname']) || empty($_POST['newstext'])){
+    if(empty($_POST['newsname']) || empty($_POST['newstext']) || empty($_POST['Foto'])){
         echo "Fill all fields!";
     }
     else{
@@ -46,8 +46,11 @@ if (isset($_POST["submitt"])) {
     $newsText = $_POST["newstext"];
     $foto = $_POST["Foto"];
 
+    session_start();
+        
+    $adminName = $_SESSION["admin_username"] ?? "Unknown Admin";
     $strep->editNews($id, $newsName, $newsText, $foto);
-    header("Location: newsdashboard.php");
+    header("Location: newsdashboard.php?admin=$adminName");
     exit();
     }
 }

@@ -77,7 +77,12 @@ $newsList = $crud->getAllNews();
             <?php } ?>
         </tbody>
     </table>
-
+    <?php
+      if (isset($_GET["admin"])) {
+         $admin = $_GET["admin"];
+         echo "<p>Edit/modified performed by: $admin</p>";
+        }
+    ?>
     <div class="goback">
         <a href="index.php">GO BACK</a>
     </div>
