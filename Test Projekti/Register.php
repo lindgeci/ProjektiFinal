@@ -40,7 +40,7 @@ if (isset($_POST["submit"])) {
 
     <header>
         <div class="logo">
-            <h1>𝔗𝔥𝔢 𝔑𝔢𝔴 𝔜𝔬𝔯𝔨 𝔗𝔦𝔪𝔢𝔰</h1>
+            <h1>The New York Times</h1>
         </div>
         <nav>
             <ul>
